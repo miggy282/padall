@@ -4,7 +4,7 @@ namespace :heroku do
   task :config do
     puts "Reading config/config.yml and sending PRODUCTION config vars to Heroku..."
     CONFIG = YAML.load_file('config/config.yml')['production'] rescue {}
-    command = "heroku config:add"
+    command = "heroku config:add -a padall-core"
     CONFIG.each {|key, val|
       command << " #{key}=#{val} " if val
       }
