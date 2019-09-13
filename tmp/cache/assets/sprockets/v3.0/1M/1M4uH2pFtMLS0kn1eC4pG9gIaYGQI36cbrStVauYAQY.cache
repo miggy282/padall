@@ -1,0 +1,112 @@
+I"F(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  this.Mercury.Toolbar.Expander = (function(superClass) {
+    extend(Expander, superClass);
+
+    function Expander(name, options) {
+      this.name = name;
+      this.options = options;
+      this.container = this.options["for"];
+      Expander.__super__.constructor.call(this, null, this.name, this.options);
+      return this.element;
+    }
+
+    Expander.prototype.build = function() {
+      var ref;
+      this.container.css({
+        whiteSpace: 'normal',
+        visibility: 'hidden',
+        display: 'block'
+      });
+      this.container.css({
+        visibility: 'visible'
+      });
+      this.trigger = jQuery('<div>', {
+        "class": 'mercury-toolbar-expander'
+      }).appendTo((ref = jQuery(this.options.appendTo).get(0)) != null ? ref : 'body');
+      this.element = jQuery('<div>', {
+        "class": "mercury-palette mercury-expander mercury-" + this.name + "-expander",
+        style: 'display:none'
+      });
+      return this.windowResize();
+    };
+
+    Expander.prototype.bindEvents = function() {
+      Mercury.on('hide:dialogs', (function(_this) {
+        return function(event, dialog) {
+          if (dialog !== _this) {
+            return _this.hide();
+          }
+        };
+      })(this));
+      Mercury.on('resize', (function(_this) {
+        return function() {
+          return _this.windowResize();
+        };
+      })(this));
+      Expander.__super__.bindEvents.apply(this, arguments);
+      this.trigger.click((function(_this) {
+        return function(event) {
+          var button, hiddenButtons, i, len, ref;
+          event.stopPropagation();
+          hiddenButtons = [];
+          ref = _this.container.find('.mercury-button');
+          for (i = 0, len = ref.length; i < len; i++) {
+            button = ref[i];
+            button = jQuery(button);
+            if (button.position().top > 5) {
+              hiddenButtons.push(button.data('expander'));
+            }
+          }
+          _this.loadContent(hiddenButtons.join(''));
+          return _this.toggle();
+        };
+      })(this));
+      return this.element.click((function(_this) {
+        return function(event) {
+          var button, buttonName;
+          buttonName = jQuery(event.target).closest('[data-button]').data('button');
+          button = _this.container.find(".mercury-" + buttonName + "-button");
+          return button.click();
+        };
+      })(this));
+    };
+
+    Expander.prototype.windowResize = function() {
+      if (jQuery(window).width() === this.container.outerWidth()) {
+        this.trigger.show();
+      } else {
+        this.trigger.hide();
+      }
+      return this.hide();
+    };
+
+    Expander.prototype.position = function(keepVisible) {
+      var position, width;
+      this.element.css({
+        top: 0,
+        left: 0,
+        display: 'block',
+        visibility: 'hidden'
+      });
+      position = this.trigger.position();
+      width = this.element.width();
+      if (position.left + width > jQuery(window).width()) {
+        position.left = position.left - width + this.trigger.width();
+      }
+      return this.element.css({
+        top: position.top + this.trigger.height(),
+        left: position.left,
+        display: keepVisible ? 'block' : 'none',
+        visibility: 'visible'
+      });
+    };
+
+    return Expander;
+
+  })(Mercury.Palette);
+
+}).call(this);
+:ET

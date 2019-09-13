@@ -1,0 +1,114 @@
+I"(function() {
+  var slice = [].slice;
+
+  this.Mercury || (this.Mercury = {});
+
+  jQuery.extend(this.Mercury, {
+    version: '0.9.0',
+    Regions: Mercury.Regions || {},
+    modalHandlers: Mercury.modalHandlers || {},
+    lightviewHandlers: Mercury.lightviewHandlers || {},
+    dialogHandlers: Mercury.dialogHandlers || {},
+    preloadedViews: Mercury.preloadedViews || {},
+    ajaxHeaders: function() {
+      var headers;
+      headers = {};
+      headers[Mercury.config.csrfHeader] = Mercury.csrfToken;
+      return headers;
+    },
+    on: function(eventName, callback) {
+      return jQuery(window).on("mercury:" + eventName, callback);
+    },
+    off: function(eventName, callback) {
+      return jQuery(window).off("mercury:" + eventName, callback);
+    },
+    one: function(eventName, callback) {
+      return jQuery(window).one("mercury:" + eventName, callback);
+    },
+    trigger: function(eventName, options) {
+      Mercury.log(eventName, options);
+      return jQuery(window).trigger("mercury:" + eventName, options);
+    },
+    notify: function() {
+      var args;
+      args = 1 <= arguments.length ? slice.call(arguments, 0) : [];
+      return window.alert(Mercury.I18n.apply(this, args));
+    },
+    warn: function(message, severity) {
+      var e1, e2;
+      if (severity == null) {
+        severity = 0;
+      }
+      if (console) {
+        try {
+          return console.warn(message);
+        } catch (error) {
+          e1 = error;
+          if (severity >= 1) {
+            try {
+              return console.debug(message);
+            } catch (error) {
+              e2 = error;
+            }
+          }
+        }
+      } else if (severity >= 1) {
+        return Mercury.notify(message);
+      }
+    },
+    deprecated: function(message) {
+      if (console && console.trace) {
+        message = message + " -- " + (console.trace());
+      }
+      return Mercury.warn("deprecated: " + message, 1);
+    },
+    log: function() {
+      var e;
+      if (Mercury.debug && console) {
+        if (arguments[0] === 'hide:toolbar' || arguments[0] === 'show:toolbar') {
+          return;
+        }
+        try {
+          return console.debug(arguments);
+        } catch (error) {
+          e = error;
+        }
+      }
+    },
+    locale: function() {
+      var locale, subLocale, topLocale;
+      if (Mercury.determinedLocale) {
+        return Mercury.determinedLocale;
+      }
+      if (Mercury.config.localization.enabled) {
+        locale = [];
+        if (navigator.language && (locale = navigator.language.toString().split('-')).length) {
+          topLocale = Mercury.I18n[locale[0]] || {};
+          subLocale = locale.length > 1 ? topLocale["_" + (locale[1].toUpperCase()) + "_"] : void 0;
+        }
+        if (!Mercury.I18n[locale[0]]) {
+          locale = Mercury.config.localization.preferredLocale.split('-');
+          topLocale = Mercury.I18n[locale[0]] || {};
+          subLocale = locale.length > 1 ? topLocale["_" + (locale[1].toUpperCase()) + "_"] : void 0;
+        }
+      }
+      return Mercury.determinedLocale = {
+        top: topLocale || {},
+        sub: subLocale || {}
+      };
+    },
+    I18n: function() {
+      var args, locale, sourceString, translation;
+      sourceString = arguments[0], args = 2 <= arguments.length ? slice.call(arguments, 1) : [];
+      locale = Mercury.locale();
+      translation = (locale.sub[sourceString] || locale.top[sourceString] || sourceString || '').toString();
+      if (args.length) {
+        return translation.printf.apply(translation, args);
+      } else {
+        return translation;
+      }
+    }
+  });
+
+}).call(this);
+:ET

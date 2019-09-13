@@ -1,0 +1,36 @@
+{:uriI"áfile://app/assets/javascripts/locales/ca.json?type=application/json&id=1710e0d3fb821ae43b69f4f1bcd55d7b7cb5e7b6ad001c981cc41fecfadadc1e:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/ca.json;T:	nameI"locales/ca;T:logical_pathI"locales/ca.json;T:content_typeI"application/json;T:sourceI"-{
+  "please_wait": "Si us plau espereu...",
+  "validation_messages": {
+    "accept": "L'arxiu d'imatge ha de ser en format GIF, JPG o PNG.",
+    "creditcard": "Si us plau, introdueix un n√∫mero de targeta de cr√®dit v√†lid.",
+    "date": "Si us plau, introdueix una data v√†lida.",
+    "dateISO": "Si us plau, introdueix una data v√†lida (en format ISO)",
+    "digits": "Si us plau, introdueix nom√©s d√≠gits.",
+    "email": "Si us plau, introdueix una adre√ßa electr√≤nica v√†lida.",
+    "equalTo": "Si us plau, introdueix una altra vegada el mateix valor.",
+    "max": "Si us plau, introdueix un valor inferior o igual a {0}.",
+    "maxlength": "Si us plau, no introdueixis m√©s de {0} car√†cters.",
+    "min": "Si us plau, introdueix un valor major o igual a {0} .",
+    "minlength": "Si us plau, introdueix com a m√≠nim {0} car√†cters.",
+    "number": "Si us plau, introdueix un n√∫mero v√†lid.",
+    "range": "Si us plau, introdueix un valor entre  {0} i {1}.",
+    "rangelength": "Si us plau, introdueix un valor entre {0} i {1} car√†cters de longitud.",
+    "remote": "Si us plau arregla aquest camp.",
+    "required": "Aquest camp √©s obligatori.",
+    "url": "Si us plau, introdueix una adre√ßa URL v√†lida.",
+    "address_validator": "No s'ha trobat la ubicaci√≥.",
+    "money": "S'ha d'introdu√Ør una quantitat v√†lida.",
+    "night_selected": "Has de seleccionar almenys una nit",
+    "availability_range": "L'interval seleccionat inclou dates que no estan disponibles",
+    "min_bound": "Si us plau, introduiex un valor inferior al valor m√†xim ({0})",
+    "max_bound": "Si us plau, introdueix un valor superior al valor m√≠nim ({0})",
+    "number_no_decimals": "Si us plau, introdueix un nombre sencer",
+    "number_decimals": "Si us plau, introdueix un nombre v√†lid amb punt (.) o coma (,) com a separador decimal."
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/ca.json;TTF:charsetI"
+utf-8;F:digest"%º´)G$˙ß€∂ ‘CµbÆnB]w”Ø¨ÒÈ©Q
+◊¬
+:lengthi-:dependencies_digest"%Vf›ÌôŒ`vârn`¬oÂv“m‚R‹∂ŸÄ5Ø›Ú01:idI"E1710e0d3fb821ae43b69f4f1bcd55d7b7cb5e7b6ad001c981cc41fecfadadc1e;F:
+mtimel+â·˙[

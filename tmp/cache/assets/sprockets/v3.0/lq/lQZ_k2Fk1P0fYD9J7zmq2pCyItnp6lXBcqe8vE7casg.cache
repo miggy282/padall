@@ -1,0 +1,35 @@
+{:uriI"�file://app/assets/javascripts/locales/tr-TR.json?type=application/json&id=35d667a4f869572e394c199ee217a62bb580ef29e17dee615301ce070bffe212:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/tr-TR.json;T:	nameI"locales/tr-TR;T:logical_pathI"locales/tr-TR.json;T:content_typeI"application/json;T:sourceI"�{
+  "please_wait": "Lütfen bekleyin...",
+  "validation_messages": {
+    "accept": "Resim dosyası GIF, JPG veya PNG formatında olmalıdır.",
+    "creditcard": "Lütfen geçerli bir kredi kartı numarası giriniz.",
+    "date": "Lütfen geçerli bir tarih giriniz.",
+    "dateISO": "Lütfen geçerli bir tarih giriniz (ISO).",
+    "digits": "Lütfen sadece rakam giriniz.",
+    "email": "Lütfen geçerli bir e-posta adresi giriniz.",
+    "equalTo": "Lütfen aynı değeri tekrar giriniz.",
+    "max": "Lütfen küçük eşit {0} olacak bir değer giriniz.",
+    "maxlength": "Lütfen {0} karakterden fazla giriş yapmayınız.",
+    "min": "Lütfen büyük eşit {0} olan bir değer giriniz.",
+    "minlength": "Lütfen en az {0} karakter giriniz.",
+    "number": "Lütfen geçerli bir sayı giriniz.",
+    "range": "Lütfen {0} ile {1} arasında bir değer giriniz.",
+    "rangelength": "Lütfen {0} ile {1} karakter uzunluğunda bir değer giriniz.",
+    "remote": "Lütfen bu alanı düzeltiniz.",
+    "required": "Bu alan zorunludur.",
+    "url": "Lütfen geçerli bir URL girin.",
+    "address_validator": "Bu yer bulunamamıştır.",
+    "money": "Geçerli bir parasal değer girmeniz gerekiyor.",
+    "night_selected": "En az bir gece seçmelisiniz",
+    "availability_range": "Seçilen aralık, mevcut olmayan tarihleri içeriyor",
+    "min_bound": "Lütfen {0} en yüksek değerinden daha küçük bir değer giriniz.",
+    "max_bound": "Lütfen {0} en düşük değerinden daha yüksek bir değer giriniz.",
+    "number_no_decimals": "Lütfen bir tam sayı giriniz.",
+    "number_decimals": "Lütfen ondalıkları ayırmak için nokta (.) veya virgül (,) kullandığınız geçerli bir sayı giriniz."
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/tr-TR.json;TTF:charsetI"
+utf-8;F:digest"%��<(��Q b,�鮺����h��oF��:lengthi�:dependencies_digest"%
+���pwl/�#cxs����%��b��C@:idI"E35d667a4f869572e394c199ee217a62bb580ef29e17dee615301ce070bffe212;F:
+mtimel+���[

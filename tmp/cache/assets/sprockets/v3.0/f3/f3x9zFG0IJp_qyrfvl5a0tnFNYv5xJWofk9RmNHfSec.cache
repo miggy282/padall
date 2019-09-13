@@ -1,0 +1,82 @@
+I"L
+(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  this.Mercury.Select = (function(superClass) {
+    extend(Select, superClass);
+
+    function Select(url, name, options) {
+      this.url = url;
+      this.name = name;
+      this.options = options != null ? options : {};
+      Select.__super__.constructor.apply(this, arguments);
+    }
+
+    Select.prototype.build = function() {
+      var ref;
+      this.element = jQuery('<div>', {
+        "class": "mercury-select mercury-" + this.name + "-select loading",
+        style: 'display:none'
+      });
+      return this.element.appendTo((ref = jQuery(this.options.appendTo).get(0)) != null ? ref : 'body');
+    };
+
+    Select.prototype.bindEvents = function() {
+      Mercury.on('hide:dialogs', (function(_this) {
+        return function(event, dialog) {
+          if (dialog !== _this) {
+            return _this.hide();
+          }
+        };
+      })(this));
+      this.element.on('mousedown', (function(_this) {
+        return function(event) {
+          return event.preventDefault();
+        };
+      })(this));
+      return Select.__super__.bindEvents.apply(this, arguments);
+    };
+
+    Select.prototype.position = function(keepVisible) {
+      var documentHeight, elementHeight, elementWidth, height, left, position, top;
+      this.element.css({
+        top: 0,
+        left: 0,
+        display: 'block',
+        visibility: 'hidden'
+      });
+      position = this.button.position();
+      elementWidth = this.element.width();
+      elementHeight = this.element.height();
+      documentHeight = jQuery(document).height();
+      top = position.top + (this.button.height() / 2) - (elementHeight / 2);
+      if (top < position.top - 100) {
+        top = position.top - 100;
+      }
+      if (top < 20) {
+        top = 20;
+      }
+      height = this.loaded ? 'auto' : elementHeight;
+      if (top + elementHeight >= documentHeight - 20) {
+        height = documentHeight - top - 20;
+      }
+      left = position.left;
+      if (left + elementWidth > jQuery(window).width()) {
+        left = left - elementWidth + this.button.width();
+      }
+      return this.element.css({
+        top: top,
+        left: left,
+        height: height,
+        display: keepVisible ? 'block' : 'none',
+        visibility: 'visible'
+      });
+    };
+
+    return Select;
+
+  })(Mercury.Dialog);
+
+}).call(this);
+:ET

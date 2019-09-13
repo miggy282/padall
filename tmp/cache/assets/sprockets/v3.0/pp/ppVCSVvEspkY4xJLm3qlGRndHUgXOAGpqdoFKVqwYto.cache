@@ -1,0 +1,100 @@
+I"h(function() {
+  this.Mercury.modalHandlers.insertTable = {
+    initialize: function() {
+      this.table = this.element.find('#table_display table');
+      this.table.on('click', (function(_this) {
+        return function(event) {
+          return _this.onCellClick($(event.target));
+        };
+      })(this));
+      this.element.find('#table_alignment').on('change', (function(_this) {
+        return function() {
+          return _this.setTableAlignment();
+        };
+      })(this));
+      this.element.find('#table_border').on('keyup', (function(_this) {
+        return function() {
+          return _this.setTableBorder();
+        };
+      })(this));
+      this.element.find('#table_spacing').on('keyup', (function(_this) {
+        return function() {
+          return _this.setTableCellSpacing();
+        };
+      })(this));
+      this.element.find('[data-action]').on('click', (function(_this) {
+        return function(event) {
+          event.preventDefault();
+          return _this.onActionClick(jQuery(event.target).data('action'));
+        };
+      })(this));
+      this.selectFirstCell();
+      return this.element.find('form').on('submit', (function(_this) {
+        return function(event) {
+          event.preventDefault();
+          _this.submitForm();
+          return _this.hide();
+        };
+      })(this));
+    },
+    selectFirstCell: function() {
+      var firstCell;
+      firstCell = this.table.find('td, th').first();
+      firstCell.addClass('selected');
+      return Mercury.tableEditor(this.table, firstCell, '&nbsp;');
+    },
+    onCellClick: function(cell) {
+      this.cell = cell;
+      this.table = this.cell.closest('table');
+      this.table.find('.selected').removeAttr('class');
+      this.cell.addClass('selected');
+      return Mercury.tableEditor(this.table, this.cell, '&nbsp;');
+    },
+    onActionClick: function(action) {
+      if (!action) {
+        return;
+      }
+      return Mercury.tableEditor[action]();
+    },
+    setTableAlignment: function() {
+      return this.table.attr({
+        align: this.element.find('#table_alignment').val()
+      });
+    },
+    setTableBorder: function() {
+      var border;
+      border = parseInt(this.element.find('#table_border').val(), 10);
+      if (isNaN(border)) {
+        return this.table.removeAttr('border');
+      } else {
+        return this.table.attr({
+          border: border
+        });
+      }
+    },
+    setTableCellSpacing: function() {
+      var cellspacing;
+      cellspacing = parseInt(this.element.find('#table_spacing').val(), 10);
+      if (isNaN(cellspacing)) {
+        return this.table.removeAttr('cellspacing');
+      } else {
+        return this.table.attr({
+          cellspacing: cellspacing
+        });
+      }
+    },
+    submitForm: function() {
+      var html, value;
+      this.table.find('.selected').removeAttr('class');
+      this.table.find('td, th').html('<br/>');
+      html = jQuery('<div>').html(this.table).html();
+      value = html.replace(/^\s+|\n/gm, '').replace(/(<\/.*?>|<table.*?>|<tbody>|<tr>)/g, '$1\n');
+      return Mercury.trigger('action', {
+        action: 'insertTable',
+        value: value
+      });
+    }
+  };
+
+}).call(this);
+:ET

@@ -1,0 +1,113 @@
+I"è(function() {
+  this.Mercury.tooltip = function(forElement, content, options) {
+    if (options == null) {
+      options = {};
+    }
+    Mercury.tooltip.show(forElement, content, options);
+    return Mercury.tooltip;
+  };
+
+  jQuery.extend(Mercury.tooltip, {
+    show: function(forElement1, content1, options1) {
+      this.forElement = forElement1;
+      this.content = content1;
+      this.options = options1 != null ? options1 : {};
+      this.document = this.forElement.get(0).ownerDocument;
+      this.initialize();
+      if (this.visible) {
+        return this.update();
+      } else {
+        return this.appear();
+      }
+    },
+    initialize: function() {
+      if (this.initialized) {
+        return;
+      }
+      this.build();
+      this.bindEvents();
+      return this.initialized = true;
+    },
+    build: function() {
+      var ref;
+      this.element = jQuery('<div>', {
+        "class": 'mercury-tooltip'
+      });
+      return this.element.appendTo((ref = jQuery(this.options.appendTo).get(0)) != null ? ref : 'body');
+    },
+    bindEvents: function() {
+      var i, len, parent, ref;
+      Mercury.on('resize', (function(_this) {
+        return function() {
+          if (_this.visible) {
+            return _this.position();
+          }
+        };
+      })(this));
+      this.element.on('mousedown', function(event) {
+        event.preventDefault();
+        return event.stopPropagation();
+      });
+      ref = this.forElement.parentsUntil(jQuery('body', this.document));
+      for (i = 0, len = ref.length; i < len; i++) {
+        parent = ref[i];
+        if (!(parent.scrollHeight > parent.clientHeight)) {
+          continue;
+        }
+        jQuery(parent).on('scroll', (function(_this) {
+          return function() {
+            if (_this.visible) {
+              return _this.position();
+            }
+          };
+        })(this));
+      }
+      return jQuery(this.document).on('scroll', (function(_this) {
+        return function() {
+          if (_this.visible) {
+            return _this.position();
+          }
+        };
+      })(this));
+    },
+    appear: function() {
+      this.update();
+      this.element.show();
+      return this.element.animate({
+        opacity: 1
+      }, 200, 'easeInOutSine', (function(_this) {
+        return function() {
+          return _this.visible = true;
+        };
+      })(this));
+    },
+    update: function() {
+      this.element.html(this.content);
+      return this.position();
+    },
+    position: function() {
+      var left, offset, top, width;
+      offset = this.forElement.offset();
+      width = this.element.width();
+      top = offset.top + (Mercury.displayRect.top - jQuery(this.document).scrollTop()) + this.forElement.outerHeight();
+      left = offset.left - jQuery(this.document).scrollLeft();
+      if ((left + width + 25) > Mercury.displayRect.width) {
+        left = left - (left + width + 25) - Mercury.displayRect.width;
+      }
+      left = left <= 0 ? 0 : left;
+      return this.element.css({
+        top: top,
+        left: left
+      });
+    },
+    hide: function() {
+      if (!this.initialized) {
+        return;
+      }
+      this.element.hide();
+      return this.visible = false;
+    }
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,16 @@
+I"‹(function() {
+  this.Mercury.dialogHandlers.formatblock = function() {
+    return this.element.find('[data-tag]').on('click', (function(_this) {
+      return function(event) {
+        var tag;
+        tag = jQuery(event.target).data('tag');
+        return Mercury.trigger('action', {
+          action: 'formatblock',
+          value: tag
+        });
+      };
+    })(this));
+  };
+
+}).call(this);
+:ET

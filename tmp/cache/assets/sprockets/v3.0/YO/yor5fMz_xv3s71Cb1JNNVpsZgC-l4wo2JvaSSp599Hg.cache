@@ -1,0 +1,34 @@
+{:uriI"áfile://app/assets/javascripts/locales/sv.json?type=application/json&id=f819bbc4b4d8b2f1354758cba0ed406733655dd8676da499332e42c325441471:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/sv.json;T:	nameI"locales/sv;T:logical_pathI"locales/sv.json;T:content_typeI"application/json;T:sourceI"ˆ{
+  "please_wait": "V√§nligen v√§nta...",
+  "validation_messages": {
+    "accept": "Bilden m√•ste vara i formatet GIF, JPG eller PNG.",
+    "creditcard": "V√§nligen ange ett giltigt kreditkortsnummer.",
+    "date": "V√§nligen ange ett giltigt datum.",
+    "dateISO": "V√§nligen ange ett giltigt datum.",
+    "digits": "V√§nligen ange endast siffror.",
+    "email": "Ange en giltig e-postadress.",
+    "equalTo": "Ange samma v√§rde igen.",
+    "max": "Skriv in ett v√§rde mindre eller lika med {0}.",
+    "maxlength": "Skriv inte mer √§n {0} tecken.",
+    "min": "Skriv ett v√§rde st√∂rre eller lika med {0}.",
+    "minlength": "V√§nligen skriv in minst {0} tecken.",
+    "number": "Ange ett korrekt nummer.",
+    "range": "Ange ett v√§rde mellan {0} och {1}.",
+    "rangelength": "Ange ett v√§rde mellan {0} och {1} tecken.",
+    "remote": "V√§nligen r√§tta detta f√§lt.",
+    "required": "Detta f√§lt √§r obligatoriskt.",
+    "url": "Var v√§nlig ange en giltig URL.",
+    "address_validator": "Platsen hittades inte.",
+    "money": "Du beh√∂ver skriva in ett giltigt v√§rde.",
+    "night_selected": "V√§lj √•tminstone en natt",
+    "availability_range": "Ditt val inneh√•ller dagar som inte √§r tillg√§ngliga",
+    "min_bound": "Skriv in ett v√§rde mindre √§n maxv√§rdet {0}",
+    "max_bound": "Skriv in ett v√§rde st√∂rre √§n minimumv√§rdet ({0})",
+    "number_no_decimals": "Skriv in ett heltal",
+    "number_decimals": "V√§nligen skriv in ett giltigt v√§rde med antingen en punkt (.) eller komma (,) som avgr√§nsare"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/sv.json;TTF:charsetI"
+utf-8;F:digest"%Ω5eû4|ø∑…YAvÈ”∑Î‘6,\∑ù©g&íËa:lengthiˆ:dependencies_digest"%™Ê?+Aû™¡æû-ÔtqïÿX{Í¨âxc(L§:idI"Ef819bbc4b4d8b2f1354758cba0ed406733655dd8676da499332e42c325441471;F:
+mtimel+â·˙[

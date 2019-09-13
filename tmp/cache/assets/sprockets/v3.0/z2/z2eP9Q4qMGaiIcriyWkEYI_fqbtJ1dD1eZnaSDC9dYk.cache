@@ -1,0 +1,95 @@
+I"á
+(function() {
+  this.Mercury.Statusbar = (function() {
+    function Statusbar(options1) {
+      this.options = options1 != null ? options1 : {};
+      this.visible = this.options.visible;
+      this.build();
+      this.bindEvents();
+    }
+
+    Statusbar.prototype.build = function() {
+      var ref;
+      this.element = jQuery('<div>', {
+        "class": 'mercury-statusbar'
+      });
+      this.aboutElement = jQuery('<a>', {
+        "class": "mercury-statusbar-about"
+      }).appendTo(this.element).html("Mercury Editor v" + Mercury.version);
+      this.pathElement = jQuery('<div>', {
+        "class": 'mercury-statusbar-path'
+      }).appendTo(this.element);
+      if (!this.visible) {
+        this.element.css({
+          visibility: 'hidden'
+        });
+      }
+      return this.element.appendTo((ref = jQuery(this.options.appendTo).get(0)) != null ? ref : 'body');
+    };
+
+    Statusbar.prototype.bindEvents = function() {
+      Mercury.on('region:update', (function(_this) {
+        return function(event, options) {
+          if (options.region && jQuery.type(options.region.path) === 'function') {
+            return _this.setPath(options.region.path());
+          }
+        };
+      })(this));
+      return this.aboutElement.on('click', (function(_this) {
+        return function() {
+          return Mercury.lightview('/mercury/lightviews/about.html', {
+            title: "Mercury Editor v" + Mercury.version
+          });
+        };
+      })(this));
+    };
+
+    Statusbar.prototype.height = function() {
+      return this.element.outerHeight();
+    };
+
+    Statusbar.prototype.top = function() {
+      var currentTop, top;
+      top = this.element.offset().top;
+      currentTop = parseInt(this.element.css('bottom')) < 0 ? top - this.element.outerHeight() : top;
+      if (this.visible) {
+        return currentTop;
+      } else {
+        return top + this.element.outerHeight();
+      }
+    };
+
+    Statusbar.prototype.setPath = function(elements) {
+      var element, i, len, path;
+      path = [];
+      for (i = 0, len = elements.length; i < len; i++) {
+        element = elements[i];
+        path.push("<a>" + (element.tagName.toLowerCase()) + "</a>");
+      }
+      return this.pathElement.html("<span><strong>" + (Mercury.I18n('Path:')) + " </strong>" + (path.reverse().join(' &raquo; ')) + "</span>");
+    };
+
+    Statusbar.prototype.show = function() {
+      this.visible = true;
+      this.element.css({
+        opacity: 0,
+        visibility: 'visible'
+      });
+      return this.element.animate({
+        opacity: 1
+      }, 200, 'easeInOutSine');
+    };
+
+    Statusbar.prototype.hide = function() {
+      this.visible = false;
+      return this.element.css({
+        visibility: 'hidden'
+      });
+    };
+
+    return Statusbar;
+
+  })();
+
+}).call(this);
+:ET

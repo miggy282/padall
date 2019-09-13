@@ -1,0 +1,16 @@
+I"•(function() {
+  this.Mercury.dialogHandlers.style = function() {
+    return this.element.find('[data-class]').on('click', (function(_this) {
+      return function(event) {
+        var className;
+        className = jQuery(event.target).data('class');
+        return Mercury.trigger('action', {
+          action: 'style',
+          value: className
+        });
+      };
+    })(this));
+  };
+
+}).call(this);
+:ET

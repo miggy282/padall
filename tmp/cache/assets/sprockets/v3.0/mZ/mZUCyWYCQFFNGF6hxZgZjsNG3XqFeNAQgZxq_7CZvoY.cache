@@ -1,0 +1,22 @@
+I"E(function() {
+  this.Mercury.dialogHandlers.backColor = function() {
+    return this.element.find('.picker, .last-picked').on('click', (function(_this) {
+      return function(event) {
+        var color;
+        color = jQuery(event.target).css('background-color');
+        _this.element.find('.last-picked').css({
+          background: color
+        });
+        _this.button.css({
+          backgroundColor: color
+        });
+        return Mercury.trigger('action', {
+          action: 'backColor',
+          value: color
+        });
+      };
+    })(this));
+  };
+
+}).call(this);
+:ET

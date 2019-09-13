@@ -1,0 +1,34 @@
+{:uriI"äfile://app/assets/javascripts/locales/az-AZ.json?type=application/json&id=46d5fc7ef84c4c090e9189807ea711cc80cd756d2944dfd7b136fccaffc89337:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/az-AZ.json;T:	nameI"locales/az-AZ;T:logical_pathI"locales/az-AZ.json;T:content_typeI"application/json;T:sourceI"ı{
+  "please_wait": "Z…ôhm…ôt olmasa g√∂zl…ôyin...",
+  "validation_messages": {
+    "accept": null,
+    "creditcard": null,
+    "date": null,
+    "dateISO": null,
+    "digits": null,
+    "email": null,
+    "equalTo": "Z…ôhm…ôt olmasa eyni …ôd…ôd yenid…ôn daxil edin.",
+    "max": "Z…ôhm…ôt olmasa {0}-dan ki√ßik v…ô ya b…ôrab…ôr …ôd…ôd daxil edin.",
+    "maxlength": "Z…ôhm…ôt olmasa {0}-dan b√∂y√ºk olmayan …ôd…ôd daxil edin.",
+    "min": "Z…ôhm…ôt olmasa {0}-dan b√∂y√ºk v…ô ya b…ôrab…ôr …ôd…ôd daxil edin.",
+    "minlength": "Z…ôhm…ôt olmasa …ôn azƒ± {0} h…ôrf daxil edin.",
+    "number": "Z…ôhm…ôt olmasa d√ºzg√ºn n√∂mr…ô daxil edin.",
+    "range": "Z…ôhm…ôt olmasa {0} v…ô {1} arasƒ±nda …ôd…ôd yazƒ±n.",
+    "rangelength": null,
+    "remote": null,
+    "required": null,
+    "url": null,
+    "address_validator": null,
+    "money": null,
+    "night_selected": null,
+    "availability_range": null,
+    "min_bound": null,
+    "max_bound": null,
+    "number_no_decimals": null,
+    "number_decimals": null
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/az-AZ.json;TTF:charsetI"
+utf-8;F:digest"%IŸ}OåﬂF“ñm8¸.¡x≈äq«ÖΩ¡~íù™:lengthiı:dependencies_digest"%ã«''/§¡2„8¿œÏ:#÷¸ØZn˛∆≈\∞í˘:idI"E46d5fc7ef84c4c090e9189807ea711cc80cd756d2944dfd7b136fccaffc89337;F:
+mtimel+â·˙[

@@ -1,0 +1,34 @@
+{:uriI"�file://app/assets/javascripts/locales/cs.json?type=application/json&id=f3c4db7bdbbf9e447c00d6f961cb418623b34df7f68f0ad7f92d247770948611:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/cs.json;T:	nameI"locales/cs;T:logical_pathI"locales/cs.json;T:content_typeI"application/json;T:sourceI"B{
+  "please_wait": "Vyčkejte...",
+  "validation_messages": {
+    "accept": "Obrázek musí být ve formátu GIF, JPG nebo PNG.",
+    "creditcard": "Prosíme, vložte platné číslo platební karty.",
+    "date": "Prosíme, vložte platné datum.",
+    "dateISO": "Prosíme, vložte platné datum.",
+    "digits": "Prosíme, vložte pouze číslice.",
+    "email": "Prosíme, vložte platnou e-mailovou adresu.",
+    "equalTo": "Prosíme, vložte znova tu samou hodnotu.",
+    "max": "Prosíme, vložte hodnotu menší nebo rovnou {0}.",
+    "maxlength": "Prosíme, nevkládejte více jak {0} znaků.",
+    "min": "Prosíme, vložte hodnotu větší nebo rovnou {0}.",
+    "minlength": "Prosíme, vložte alespoň {0} znaků.",
+    "number": "Prosíme, zadejte platné číslo.",
+    "range": "Prosíme, zadejte hodnotu mezi {0} a {1}.",
+    "rangelength": "Prosíme, zadejte hodnotu od {0} do {1} znaků.",
+    "remote": "Prosíme, upravte toto pole.",
+    "required": "Toto pole je povinné.",
+    "url": "Prosíme, zadejte platnou URL adresu.",
+    "address_validator": "Adresa nebyla nalezena.",
+    "money": "Zadejte platnou měnovou hodnotu.",
+    "night_selected": "Musíš zvolit alespoň jednu noc",
+    "availability_range": "V některé dny zvoleného období není k dispozici",
+    "min_bound": "Prosíme, zadejte hodnotu menší než {0}.",
+    "max_bound": "Prosíme, zadejte hodnotu větší než {0}",
+    "number_no_decimals": "Prosíme, zadejte celé číslo.",
+    "number_decimals": "Prosíme, zadejte platné číslo s tečkou (.) nebo čárkou (,) pro desetinná čísla."
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/cs.json;TTF:charsetI"
+utf-8;F:digest"%�������`Z1�0��x�E����+�mrR�1�::lengthiB:dependencies_digest"%!(>�9Q\XY�2z�Aj��+�o8]��.�X��L:idI"Ef3c4db7bdbbf9e447c00d6f961cb418623b34df7f68f0ad7f92d247770948611;F:
+mtimel+���[

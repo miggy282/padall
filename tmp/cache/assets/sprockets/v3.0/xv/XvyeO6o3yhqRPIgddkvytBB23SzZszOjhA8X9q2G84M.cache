@@ -1,0 +1,34 @@
+{:uriI"�file://app/assets/javascripts/locales/ja.json?type=application/json&id=d90d000b2063f8cef2991aef66281b1d8891e93a593f497acde86a061366300e:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/ja.json;T:	nameI"locales/ja;T:logical_pathI"locales/ja.json;T:content_typeI"application/json;T:sourceI"{
+  "please_wait": "しばらくお待ちください...",
+  "validation_messages": {
+    "accept": "GIF、JPG、PNGのいずれかの画像フォーマットにしてください。",
+    "creditcard": "正しいクレジットカード番号を入力してください。",
+    "date": "有効な日付けを入力して下さい。",
+    "dateISO": "有効な（ 国際標準による）日にちを入力して下さい。",
+    "digits": "0から9の数字のみ入力してください。",
+    "email": "有効なメールアドレスを入力してください。",
+    "equalTo": "もう一度同じ値を入力してください。",
+    "max": "{0}と同じか、それより小さい値を入力してください。",
+    "maxlength": "{0}文字を超えない範囲で入力してください。",
+    "min": "{0}と同じか、それより大きい値を入力してください。",
+    "minlength": "{0}文字以上で入力してください。",
+    "number": "正しい数字を入力してください。",
+    "range": "{0}から{1}の間の値を入力してください。",
+    "rangelength": "{0}～{1}文字の範囲で入力してください。",
+    "remote": "この項目を修正してください。",
+    "required": "この項目は入力必須です。",
+    "url": "有効な URL を入力してください。",
+    "address_validator": "位置情報は見つかりませんでした。",
+    "money": "有効な通貨の値を記入する必要があります。",
+    "night_selected": "最低１泊を選択して下さい",
+    "availability_range": "指定された日付の中に利用できない日程が選択されています。",
+    "min_bound": "最大値「{0}」より小さい値を入力してください。",
+    "max_bound": "最小値「{0}」より大きい数字を入力してください。",
+    "number_no_decimals": "全部の数字を入力してください",
+    "number_decimals": "小数点「.」、桁を切る「,」を用いるなどして有効な数を入力してください"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/ja.json;TTF:charsetI"
+utf-8;F:digest"%CZ�G��p�]�0�'��k�1K��ò_���3:lengthi:dependencies_digest"%���]R��g�wJq�{��Ǧ��j)������:idI"Ed90d000b2063f8cef2991aef66281b1d8891e93a593f497acde86a061366300e;F:
+mtimel+���[

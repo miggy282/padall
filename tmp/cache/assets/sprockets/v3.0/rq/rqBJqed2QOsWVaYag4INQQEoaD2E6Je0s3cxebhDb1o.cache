@@ -1,0 +1,81 @@
+I"L(function() {
+  String.prototype.titleize = function() {
+    return this[0].toUpperCase() + this.slice(1);
+  };
+
+  String.prototype.toHex = function() {
+    if (this[0] === '#') {
+      return this;
+    }
+    return this.replace(/rgb(a)?\(([0-9|%]+)[\s|,]?\s?([0-9|%]+)[\s|,]?\s?([0-9|%]+)[\s|,]?\s?([0-9|.|%]+\s?)?\)/gi, function(x, alpha, r, g, b, a) {
+      return "#" + (parseInt(r).toHex()) + (parseInt(g).toHex()) + (parseInt(b).toHex());
+    });
+  };
+
+  String.prototype.regExpEscape = function() {
+    var escaped, specials;
+    specials = ['/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\'];
+    escaped = new RegExp('(\\' + specials.join('|\\') + ')', 'g');
+    return this.replace(escaped, '\\$1');
+  };
+
+  String.prototype.printf = function() {
+    var arg, chunk, chunks, index, j, len, offset, p, re, result;
+    chunks = this.split('%');
+    result = chunks[0];
+    re = /^([sdf])([\s\S%]*)$/;
+    offset = 0;
+    for (index = j = 0, len = chunks.length; j < len; index = ++j) {
+      chunk = chunks[index];
+      p = re.exec(chunk);
+      if (index === 0 || !p || arguments[index] === null) {
+        if (index > 1) {
+          offset += 2;
+          result += "%" + chunk;
+        }
+        continue;
+      }
+      arg = arguments[(index - 1) - offset];
+      switch (p[1]) {
+        case 's':
+          result += arg;
+          break;
+        case 'd':
+        case 'i':
+          result += parseInt(arg.toString(), 10);
+          break;
+        case 'f':
+          result += parseFloat(arg);
+      }
+      result += p[2];
+    }
+    return result;
+  };
+
+  Number.prototype.toHex = function() {
+    var result;
+    result = this.toString(16).toUpperCase();
+    if (result[1]) {
+      return result;
+    } else {
+      return "0" + result;
+    }
+  };
+
+  Number.prototype.toBytes = function() {
+    var bytes, i;
+    bytes = parseInt(this);
+    i = 0;
+    while (1023 < bytes) {
+      bytes /= 1024;
+      i += 1;
+    }
+    if (i) {
+      return "" + (bytes.toFixed(2)) + ['', ' kb', ' Mb', ' Gb', ' Tb', ' Pb', ' Eb'][i];
+    } else {
+      return bytes + " bytes";
+    }
+  };
+
+}).call(this);
+:ET

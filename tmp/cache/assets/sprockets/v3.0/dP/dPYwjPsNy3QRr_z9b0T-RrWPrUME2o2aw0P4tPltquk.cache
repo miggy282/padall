@@ -1,0 +1,29 @@
+I"½(function() {
+  this.Mercury.dialogHandlers.snippetPanel = function() {
+    this.element.find('input.filter').on('keyup', (function(_this) {
+      return function() {
+        var i, len, ref, results, snippet, value;
+        value = _this.element.find('input.filter').val();
+        ref = _this.element.find('li[data-filter]');
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          snippet = ref[i];
+          if (LiquidMetal.score(jQuery(snippet).data('filter'), value) === 0) {
+            results.push(jQuery(snippet).hide());
+          } else {
+            results.push(jQuery(snippet).show());
+          }
+        }
+        return results;
+      };
+    })(this));
+    return this.element.find('img[data-snippet]').on('dragstart', function() {
+      return Mercury.snippet = {
+        name: jQuery(this).data('snippet'),
+        hasOptions: !(jQuery(this).data('options') === false)
+      };
+    });
+  };
+
+}).call(this);
+:ET

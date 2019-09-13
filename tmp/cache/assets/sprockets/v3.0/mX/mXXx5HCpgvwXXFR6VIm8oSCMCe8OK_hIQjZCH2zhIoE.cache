@@ -1,0 +1,34 @@
+{:uriI"Šfile://app/assets/javascripts/locales/en-NZ.json?type=application/json&id=c6dfe2ccc566461aaba92493956b0fd42b9bc00bfaeddbb8e884eb18e0b74dc3:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/en-NZ.json;T:	nameI"locales/en-NZ;T:logical_pathI"locales/en-NZ.json;T:content_typeI"application/json;T:sourceI"{
+  "please_wait": "Please wait...",
+  "validation_messages": {
+    "accept": "The image file must be either in GIF, JPG or PNG format.",
+    "creditcard": "Please enter a valid credit card number.",
+    "date": "Please enter a valid date.",
+    "dateISO": "Please enter a valid date (ISO).",
+    "digits": "Please enter only digits.",
+    "email": "Please enter a valid email address.",
+    "equalTo": "Please enter the same value again.",
+    "max": "Please enter a value less than or equal to {0}.",
+    "maxlength": "Please enter no more than {0} characters.",
+    "min": "Please enter a value greater than or equal to {0}.",
+    "minlength": "Please enter at least {0} characters.",
+    "number": "Please enter a valid number.",
+    "range": "Please enter a value between {0} and {1}.",
+    "rangelength": "Please enter a value between {0} and {1} characters long.",
+    "remote": "Please fix this field.",
+    "required": "This field is required.",
+    "url": "Please enter a valid URL.",
+    "address_validator": "The location was not found.",
+    "money": "You need to insert a valid monetary value.",
+    "night_selected": "You need to select at least one night",
+    "availability_range": "The selected range includes dates that are not available",
+    "min_bound": "Please enter a value less than max value ({0})",
+    "max_bound": "Please enter a value more than min value ({0})",
+    "number_no_decimals": "Please enter a whole number",
+    "number_decimals": "Please enter a valid number with either dot (.) or comma (,) as a decimal separator"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/en-NZ.json;TTF:charsetI"
+utf-8;F:digest"%ÉŠžÓô÷‚°‘„{ÊçcúµÏÅà…¨‘{Óî¯Ñ!:lengthi:dependencies_digest"%Ëÿ[‡×rÆJ¸‚ñÛvýMµ×?$]¬1}Ñh:idI"Ec6dfe2ccc566461aaba92493956b0fd42b9bc00bfaeddbb8e884eb18e0b74dc3;F:
+mtimel+‰áú[

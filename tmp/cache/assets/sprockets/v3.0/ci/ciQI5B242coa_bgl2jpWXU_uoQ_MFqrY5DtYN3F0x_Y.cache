@@ -1,0 +1,21 @@
+I">(function() {
+  this.Mercury.modalHandlers.htmlEditor = function() {
+    var content;
+    content = Mercury.region.content(null, true, false);
+    this.element.find('textarea').val(content);
+    return this.element.find('form').on('submit', (function(_this) {
+      return function(event) {
+        var value;
+        event.preventDefault();
+        value = _this.element.find('textarea').val();
+        Mercury.trigger('action', {
+          action: 'replaceHTML',
+          value: value
+        });
+        return _this.hide();
+      };
+    })(this));
+  };
+
+}).call(this);
+:ET

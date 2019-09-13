@@ -1,0 +1,49 @@
+I"Q(function() {
+  this.Mercury.HistoryBuffer = (function() {
+    function HistoryBuffer(maxLength) {
+      this.maxLength = maxLength != null ? maxLength : 200;
+      this.index = 0;
+      this.stack = [];
+      this.markerRegExp = /<em class="mercury-marker"><\/em>/g;
+    }
+
+    HistoryBuffer.prototype.push = function(item) {
+      if (jQuery.type(item) === 'string') {
+        if (this.stack[this.index] && this.stack[this.index].replace(this.markerRegExp, '') === item.replace(this.markerRegExp, '')) {
+          return;
+        }
+      } else if (jQuery.type(item) === 'object' && item.html) {
+        if (this.stack[this.index] && this.stack[this.index].html === item.html) {
+          return;
+        }
+      }
+      this.stack = this.stack.slice(0, this.index + 1);
+      this.stack.push(item);
+      if (this.stack.length > this.maxLength) {
+        this.stack.shift();
+      }
+      return this.index = this.stack.length - 1;
+    };
+
+    HistoryBuffer.prototype.undo = function() {
+      if (this.index < 1) {
+        return null;
+      }
+      this.index -= 1;
+      return this.stack[this.index];
+    };
+
+    HistoryBuffer.prototype.redo = function() {
+      if (this.index >= this.stack.length - 1) {
+        return null;
+      }
+      this.index += 1;
+      return this.stack[this.index];
+    };
+
+    return HistoryBuffer;
+
+  })();
+
+}).call(this);
+:ET

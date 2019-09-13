@@ -1,0 +1,15 @@
+I"•(function() {
+  this.Mercury.modalHandlers.insertCharacter = function() {
+    return this.element.find('.character').on('click', (function(_this) {
+      return function(event) {
+        Mercury.trigger('action', {
+          action: 'insertHTML',
+          value: "&" + (jQuery(event.target).attr('data-entity')) + ";"
+        });
+        return _this.hide();
+      };
+    })(this));
+  };
+
+}).call(this);
+:ET

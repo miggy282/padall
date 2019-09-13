@@ -1,0 +1,34 @@
+{:uriI"�file://app/assets/javascripts/locales/fi.json?type=application/json&id=4dce2ff57053c7e63f61e789bf8f7550110fca6c5a949c1c5eff05cb81c7b487:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/fi.json;T:	nameI"locales/fi;T:logical_pathI"locales/fi.json;T:content_typeI"application/json;T:sourceI"{
+  "please_wait": "Odota hetki...",
+  "validation_messages": {
+    "accept": "Kuvatiedosto on vääräntyyppinen. Sallitut tiedostomuodot: JPG, PNG ja GIF.",
+    "creditcard": "Anna oikeantyyppinen luottokortin numero.",
+    "date": "Anna päivämäärä oikessa muodossa.",
+    "dateISO": "Anna päivämäärä oikeassa muodossa (ISO).",
+    "digits": "Tähän kenttään voit syöttää ainoastaan kirjaimia.",
+    "email": "Anna toimiva sähköpostiosoite.",
+    "equalTo": "Antamasi arvot eivät täsmää.",
+    "max": "Arvo voi olla enintään {0}.",
+    "maxlength": "Voit syöttää tähän kenttään maksimissaan {0} merkkiä.",
+    "min": "Arvon täytyy olla vähintään {0}.",
+    "minlength": "Syötä tähän kenttään vähintään {0} merkkiä.",
+    "number": "Annetun arvon pitää olla numero.",
+    "range": "Kentän arvon tulee olla välillä {0} ja {1}.",
+    "rangelength": "Merkkimäärän tulee olla välillä {0} ja {1}.",
+    "remote": "Kentän arvo on virheellinen.",
+    "required": "Tämä on pakollinen kenttä.",
+    "url": "Anna oikeanlainen URL-osoite.",
+    "address_validator": "Sijaintia ei löytynyt.",
+    "money": "Antamasi arvo ei kelpaa.",
+    "night_selected": "Sinun tulee valita ainakin yksi yö.",
+    "availability_range": "Valitsemasi aikajakso sisältää päiviä, jotka eivät ole saatavilla",
+    "min_bound": "Arvon täytyy olla pienempi kuin maksimiarvo ({0})",
+    "max_bound": "Arvon täytyy olla suurempi kuin minimiarvo ({0})",
+    "number_no_decimals": "Annetun arvon pitää olla kokonaisluku",
+    "number_decimals": "Syötä numero käyttäen pilkkua (,) tai pistettä (.) desimaalierottimena"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/fi.json;TTF:charsetI"
+utf-8;F:digest"%�������ܾ�drXɄXFFK����MC4:lengthi:dependencies_digest"%�V@�*&]Œ�ے�A9��+�?q��S�߱:idI"E4dce2ff57053c7e63f61e789bf8f7550110fca6c5a949c1c5eff05cb81c7b487;F:
+mtimel+���[

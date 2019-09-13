@@ -1,0 +1,138 @@
+I"(function() {
+  this.Mercury.Dialog = (function() {
+    function Dialog(url, name, options) {
+      this.url = url;
+      this.name = name;
+      this.options = options != null ? options : {};
+      this.button = this.options["for"];
+      this.build();
+      this.bindEvents();
+      this.preload();
+    }
+
+    Dialog.prototype.build = function() {
+      var ref;
+      this.element = jQuery('<div>', {
+        "class": "mercury-dialog mercury-" + this.name + "-dialog loading",
+        style: 'display:none'
+      });
+      return this.element.appendTo((ref = jQuery(this.options.appendTo).get(0)) != null ? ref : 'body');
+    };
+
+    Dialog.prototype.bindEvents = function() {
+      return this.element.on('mousedown', function(event) {
+        return event.stopPropagation();
+      });
+    };
+
+    Dialog.prototype.preload = function() {
+      if (this.options.preload) {
+        return this.load();
+      }
+    };
+
+    Dialog.prototype.toggle = function() {
+      if (this.visible) {
+        return this.hide();
+      } else {
+        return this.show();
+      }
+    };
+
+    Dialog.prototype.resize = function() {
+      return this.show();
+    };
+
+    Dialog.prototype.show = function() {
+      Mercury.trigger('hide:dialogs', this);
+      this.visible = true;
+      if (this.loaded) {
+        this.element.css({
+          width: 'auto',
+          height: 'auto'
+        });
+        this.position(this.visible);
+      } else {
+        this.position();
+      }
+      return this.appear();
+    };
+
+    Dialog.prototype.position = function(keepVisible) {};
+
+    Dialog.prototype.appear = function() {
+      this.element.css({
+        display: 'block',
+        opacity: 0
+      });
+      return this.element.animate({
+        opacity: 0.95
+      }, 200, 'easeInOutSine', (function(_this) {
+        return function() {
+          if (!_this.loaded) {
+            return _this.load(function() {
+              return _this.resize();
+            });
+          }
+        };
+      })(this));
+    };
+
+    Dialog.prototype.hide = function() {
+      this.element.hide();
+      return this.visible = false;
+    };
+
+    Dialog.prototype.load = function(callback) {
+      if (!this.url) {
+        return;
+      }
+      if (Mercury.preloadedViews[this.url]) {
+        this.loadContent(Mercury.preloadedViews[this.url]);
+        if (Mercury.dialogHandlers[this.name]) {
+          Mercury.dialogHandlers[this.name].call(this);
+        }
+        if (callback) {
+          return callback();
+        }
+      } else {
+        return jQuery.ajax(this.url, {
+          success: (function(_this) {
+            return function(data) {
+              _this.loadContent(data);
+              if (Mercury.dialogHandlers[_this.name]) {
+                Mercury.dialogHandlers[_this.name].call(_this);
+              }
+              if (callback) {
+                return callback();
+              }
+            };
+          })(this),
+          error: (function(_this) {
+            return function() {
+              _this.hide();
+              if (_this.button) {
+                _this.button.removeClass('pressed');
+              }
+              return Mercury.notify('Mercury was unable to load %s for the "%s" dialog.', _this.url, _this.name);
+            };
+          })(this)
+        });
+      }
+    };
+
+    Dialog.prototype.loadContent = function(data) {
+      this.loaded = true;
+      this.element.removeClass('loading');
+      this.element.html(data);
+      if (Mercury.config.localization.enabled) {
+        return this.element.localize(Mercury.locale());
+      }
+    };
+
+    return Dialog;
+
+  })();
+
+}).call(this);
+:ET

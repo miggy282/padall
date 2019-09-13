@@ -1,0 +1,25 @@
+I"ô(function() {
+  this.Mercury.modalHandlers.insertSnippet = function() {
+    return this.element.find('form').on('submit', (function(_this) {
+      return function(event) {
+        var serializedForm, snippet;
+        event.preventDefault();
+        serializedForm = _this.element.find('form').serializeObject();
+        if (Mercury.snippet) {
+          snippet = Mercury.snippet;
+          snippet.setOptions(serializedForm);
+          Mercury.snippet = null;
+        } else {
+          snippet = Mercury.Snippet.create(_this.options.snippetName, serializedForm);
+        }
+        Mercury.trigger('action', {
+          action: 'insertSnippet',
+          value: snippet
+        });
+        return _this.hide();
+      };
+    })(this));
+  };
+
+}).call(this);
+:ET

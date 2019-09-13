@@ -1,0 +1,61 @@
+I"°(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  this.Mercury.Palette = (function(superClass) {
+    extend(Palette, superClass);
+
+    function Palette(url, name, options) {
+      this.url = url;
+      this.name = name;
+      this.options = options != null ? options : {};
+      Palette.__super__.constructor.apply(this, arguments);
+    }
+
+    Palette.prototype.build = function() {
+      var ref;
+      this.element = jQuery('<div>', {
+        "class": "mercury-palette mercury-" + this.name + "-palette loading",
+        style: 'display:none'
+      });
+      return this.element.appendTo((ref = jQuery(this.options.appendTo).get(0)) != null ? ref : 'body');
+    };
+
+    Palette.prototype.bindEvents = function() {
+      Mercury.on('hide:dialogs', (function(_this) {
+        return function(event, dialog) {
+          if (dialog !== _this) {
+            return _this.hide();
+          }
+        };
+      })(this));
+      return Palette.__super__.bindEvents.apply(this, arguments);
+    };
+
+    Palette.prototype.position = function(keepVisible) {
+      var position, width;
+      this.element.css({
+        top: 0,
+        left: 0,
+        display: 'block',
+        visibility: 'hidden'
+      });
+      position = this.button.position();
+      width = this.element.width();
+      if (position.left + width > jQuery(window).width()) {
+        position.left = position.left - width + this.button.width();
+      }
+      return this.element.css({
+        top: position.top + this.button.height(),
+        left: position.left,
+        display: keepVisible ? 'block' : 'none',
+        visibility: 'visible'
+      });
+    };
+
+    return Palette;
+
+  })(Mercury.Dialog);
+
+}).call(this);
+:ET
