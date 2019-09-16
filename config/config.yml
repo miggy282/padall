@@ -49,7 +49,7 @@ staging:
   smtp_email_port: 587
   smtp_email_user_name: "4ddb6b64c7668bc8a05e4cc4a6a97537"
   smtp_email_password: "a1259805fca7b79a1ba1a8418b3435de"
-  smtp_email_domain: "localhost"
+  smtp_email_domain: "padall.co.uk"
   sharetribe_mail_from_address: "no-reply@padall.co.uk"
 
 production:
@@ -63,6 +63,6 @@ production:
   smtp_email_port: 587
   smtp_email_user_name: "4ddb6b64c7668bc8a05e4cc4a6a97537"
   smtp_email_password: "a1259805fca7b79a1ba1a8418b3435de"
-  smtp_email_domain: "localhost"
+  smtp_email_domain: "padall.co.uk"
   sharetribe_mail_from_address: "no-reply@padall.co.uk"
 
