@@ -58,7 +58,7 @@ production:
   
   # Skip email confirmation
   skip_email_confirmation: true
-  log_level: INFO
+  log_level: DEBUG
   smtp_email_address: "in-v3.mailjet.com"
   smtp_email_port: 587
   smtp_email_user_name: "4ddb6b64c7668bc8a05e4cc4a6a97537"
