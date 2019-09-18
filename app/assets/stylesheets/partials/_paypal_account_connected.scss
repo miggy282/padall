@@ -17,3 +17,11 @@
 .paypal-account-disabled {
   color: $error-red;
 }
+
+.stripe-account-restricted-soon {
+  color: #eaac10;
+}
+
+.stripe-account-pending-verification {
+  color: #808080;
+}

@@ -1,34 +1,0 @@
-{:uriI"�file://app/assets/javascripts/locales/az-AZ.json?type=application/json&id=bb8d2b9f13988b1915101380e7644683793e87519cef65ea06576d59811750d8:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/az-AZ.json;T:	nameI"locales/az-AZ;T:logical_pathI"locales/az-AZ.json;T:content_typeI"application/json;T:sourceI"o{
-  "please_wait": "Zəhmət olmasa, gözləyin...",
-  "validation_messages": {
-    "accept": "Şəkil faylının GIF, JPG və ya PNG formatında olması lazımdır.",
-    "creditcard": "Düzgün bir kredit kartı nömrəsi daxil edin.",
-    "date": "Düzgün bir tarix daxil edin.",
-    "dateISO": "Düzgün bir tarix (ISO) daxil edin.",
-    "digits": "Yalnız rəqəmləri daxil edin.",
-    "email": "Düzgün bir e-poçt ünvanı daxil edin",
-    "equalTo": "Yenidən eyni ədədi daxil edin.",
-    "max": "{0}-dan az və ya bərabər bir ədəd daxil edin.",
-    "maxlength": "Ən çox {0} simvol daxil edin.",
-    "min": "{0}-dan çox və ya bərabər bir ədəd daxil edin.",
-    "minlength": "Ən azı {0} simvol daxil edin.",
-    "number": "Düzgün bir sayı daxil edin.",
-    "range": "{0} və {1} arasında bir ədəd daxil edin.",
-    "rangelength": "Uzunluğu {0} və {1} arasında olan bir mətn daxil edin.",
-    "remote": "Bu xananı düzəldin.",
-    "required": "Bu xananın doldurulması məcburidir.",
-    "url": "Düzgün bir URL daxil edin.",
-    "address_validator": "Yer tapılmadı.",
-    "money": "Düzgün pul dəyərini əlavə etməlisiniz.",
-    "night_selected": "Ən azı bir gecəni seçməlisiniz",
-    "availability_range": "Seçilmiş məsafə mövcud olmayan tarixləri əhatə edir",
-    "min_bound": "Maksimum ədəddən ({0}) az olan bir ədəd daxil edin",
-    "max_bound": "Minimum ədəddən ({0}) az olmayan bir ədəd daxil edin",
-    "number_no_decimals": "Tam ədəd daxil edin",
-    "number_decimals": "Onluq ayırıcı olaraq nöqtə (.) və ya vergül (,) ilə düzgün bir sayı daxil edin"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/az-AZ.json;TTF:charsetI"
-utf-8;F:digest"%J��>>X��%u/5O[��8�ߜ�+�治':lengthio:dependencies_digest"%����ydp��ܥ#�w�����=c:�+�x����:idI"Ebb8d2b9f13988b1915101380e7644683793e87519cef65ea06576d59811750d8;F:
-mtimel+�E�[

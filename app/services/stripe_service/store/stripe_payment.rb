@@ -11,9 +11,13 @@ module StripeService::Store::StripePayment
     [:currency, :mandatory, :string],
     [:sum_cents, :fixnum],
     [:commission_cents, :fixnum],
+    [:buyer_commission_cents, :fixnum],
     [:fee_cents, :fixnum],
     [:subtotal_cents, :fixnum],
-    [:stripe_charge_id, :string]
+    [:stripe_charge_id, :string],
+    [:stripe_payment_intent_id, :string],
+    [:stripe_payment_intent_status, :string],
+    [:stripe_payment_intent_client_secret, :string]
   )
 
   StripePayment = EntityUtils.define_builder(
@@ -24,13 +28,17 @@ module StripeService::Store::StripePayment
     [:status, :mandatory, :to_symbol],
     [:sum, :money],
     [:commission, :money],
+    [:buyer_commission, :money],
     [:fee, :money],
     [:real_fee, :money],
     [:subtotal, :money],
     [:stripe_charge_id, :string],
     [:stripe_transfer_id, :string],
     [:transfered_at, :time],
-    [:available_on, :time]
+    [:available_on, :time],
+    [:stripe_payment_intent_id, :string],
+    [:stripe_payment_intent_status, :string],
+    [:stripe_payment_intent_client_secret, :string]
   )
 
   module_function
@@ -66,8 +74,9 @@ module StripeService::Store::StripePayment
           sum: stripe_payment.sum,
           fee: stripe_payment.fee,
           commission: stripe_payment.commission,
+          buyer_commission: stripe_payment.buyer_commission,
           subtotal: stripe_payment.subtotal,
-          real_fee: stripe_payment.real_fee,
+          real_fee: stripe_payment.real_fee
         }))
     StripePayment.call(hash)
   end
@@ -85,7 +94,7 @@ module StripeService::Store::StripePayment
   end
 
   def update_payment!(payment, data)
-    payment.update_attributes!(data)
+    payment.update!(data)
     from_model(payment.reload)
   end
 end

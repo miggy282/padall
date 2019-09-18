@@ -16,7 +16,6 @@ class Admin::ListingShapesController < Admin::AdminBaseController
              selected_left_navi_link: LISTING_SHAPES_NAVI_LINK,
              templates: template_label_key_list,
              display_knowledge_base_articles: APP_CONFIG.display_knowledge_base_articles,
-             knowledge_base_url: APP_CONFIG.knowledge_base_url,
              category_count: category_count,
              listing_shapes: @current_community.shapes
              })
@@ -143,7 +142,7 @@ class Admin::ListingShapesController < Admin::AdminBaseController
       @current_community.shapes.where(id: d[:value][:id]).update_all(sort_priority: d[:value][:sort_priority])
     }
 
-    render body: nil, status: 200
+    render body: nil, status: :ok
   end
 
   def close_listings
@@ -187,7 +186,7 @@ class Admin::ListingShapesController < Admin::AdminBaseController
     {
       shipping_enabled: !process_summary[:preauthorize_available] || !author_is_seller,
       online_payments: !process_summary[:preauthorize_available] || !author_is_seller,
-      availability: !process_summary[:preauthorize_available] || !author_is_seller,
+      availability: !process_summary[:preauthorize_available] || !author_is_seller
     }
   end
 
@@ -225,8 +224,7 @@ class Admin::ListingShapesController < Admin::AdminBaseController
       count: count,
       harmony_in_use: APP_CONFIG.harmony_api_in_use.to_s == "true",
       display_knowledge_base_articles: APP_CONFIG.display_knowledge_base_articles.to_s == "true",
-      knowledge_base_url: APP_CONFIG.knowledge_base_url,
-      locale_name_mapping: available_locs.map { |name, l| [l, name] }.to_h,
+      locale_name_mapping: available_locs.map { |name, l| [l, name] }.to_h
     }
   end
 
@@ -333,7 +331,7 @@ class Admin::ListingShapesController < Admin::AdminBaseController
 
       parsed_params = form_params.merge(
         units: parse_units_from_params(form_params),
-        author_is_seller: form_params[:author_is_seller] == "false" ? false : true # default true
+        author_is_seller: form_params[:author_is_seller] != "false" # default true
       )
 
       Shape.call(parsed_params)

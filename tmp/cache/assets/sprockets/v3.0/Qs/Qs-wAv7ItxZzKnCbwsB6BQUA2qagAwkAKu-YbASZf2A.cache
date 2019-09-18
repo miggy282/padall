@@ -1,34 +1,0 @@
-{:uriI"Šfile://app/assets/javascripts/locales/sq-AL.json?type=application/json&id=f13d635c324804539db6fe2227d03b6e54955a555f95ecd0d5ad21a2cf6f021b:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/sq-AL.json;T:	nameI"locales/sq-AL;T:logical_pathI"locales/sq-AL.json;T:content_typeI"application/json;T:sourceI"k{
-  "please_wait": null,
-  "validation_messages": {
-    "accept": null,
-    "creditcard": null,
-    "date": null,
-    "dateISO": null,
-    "digits": null,
-    "email": null,
-    "equalTo": null,
-    "max": null,
-    "maxlength": null,
-    "min": null,
-    "minlength": null,
-    "number": null,
-    "range": null,
-    "rangelength": null,
-    "remote": null,
-    "required": null,
-    "url": null,
-    "address_validator": null,
-    "money": null,
-    "night_selected": null,
-    "availability_range": null,
-    "min_bound": null,
-    "max_bound": null,
-    "number_no_decimals": null,
-    "number_decimals": null
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/sq-AL.json;TTF:charsetI"
-utf-8;F:digest"%‹'}~Ü©în ÙåÎñŸ†ëŠ~¶Š½xËbô|L¼ƒ:lengthik:dependencies_digest"%v±™¸Û	˜”µÜK\)8ÿ,&õã<ò<å#šÍu:idI"Ef13d635c324804539db6fe2227d03b6e54955a555f95ecd0d5ad21a2cf6f021b;F:
-mtimel+‰áú[

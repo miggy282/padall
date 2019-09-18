@@ -1,34 +1,0 @@
-{:uriI"äfile://app/assets/javascripts/locales/pt-PT.json?type=application/json&id=01c741e27be3efa66d7c7596a65659a84624cbfe9d35fdaac5737cdf16995adc:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/pt-PT.json;T:	nameI"locales/pt-PT;T:logical_pathI"locales/pt-PT.json;T:content_typeI"application/json;T:sourceI"Y{
-  "please_wait": "Por favor aguarde...",
-  "validation_messages": {
-    "accept": "O formato do ficheiro de imagem deve ser GIF, JPG ou PNG.",
-    "creditcard": "Por favor, insira um n√∫mero v√°lido de cart√£o de cr√©dito.",
-    "date": "Digite uma data v√°lida.",
-    "dateISO": "Digite uma data v√°lida. (ISO)",
-    "digits": "Por favor, digite apenas n√∫meros.",
-    "email": "Por favor, indique um email v√°lido.",
-    "equalTo": "Por favor, digite o mesmo valor novamente.",
-    "max": "Por favor, digite um valor menor ou igual a {0}.",
-    "maxlength": "Por favor, digite mais de {0} caracteres.",
-    "min": "Por favor, digite um valor maior que {0}.",
-    "minlength": "Por favor, digite pelo menos {0} caracteres.",
-    "number": "Por favor, insira um n√∫mero v√°lido",
-    "range": "Por favor, digite um valor entre {0} e {1}.",
-    "rangelength": "Por favor, digite um valor com {0} a {1} caracteres de comprimento",
-    "remote": "Por favor, corrija este campo.",
-    "required": "Este campo √© obrigat√≥rio.",
-    "url": "Por favor, insira um URL v√°lido.",
-    "address_validator": "O local n√£o foi encontrado.",
-    "money": "Deve inserir um valor financeiro valido.",
-    "night_selected": "Deve selecionar pelo menos uma noite",
-    "availability_range": null,
-    "min_bound": "Por favor, insira um valor menor que o valor m√°ximo ({0})",
-    "max_bound": "Por favor, insira um valor maior que o valor m√≠nimo ({0})",
-    "number_no_decimals": "Por favor, insira um numero inteiro.",
-    "number_decimals": "Por favor, digite um numero valido, com ponto (.) ou virgula (,) como separador decimal."
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/pt-PT.json;TTF:charsetI"
-utf-8;F:digest"%´M){∑{ÕÊ›m3tq•A¢¿Æ¥Öpˆu™=«Ö:lengthiY:dependencies_digest"%[¿ÎËÄE»˙’˚+∆∏ﬂ!•ÏÈ	Ñ÷ﬂ›¢èıà]:idI"E01c741e27be3efa66d7c7596a65659a84624cbfe9d35fdaac5737cdf16995adc;F:
-mtimel+â·˙[

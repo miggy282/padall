@@ -1,34 +1,0 @@
-{:uriI"‡file://app/assets/javascripts/locales/fr.json?type=application/json&id=687a04ca2372febaf8513c41753b464681e1888cf11ca23563dee1b7429c421b:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/fr.json;T:	nameI"locales/fr;T:logical_pathI"locales/fr.json;T:content_typeI"application/json;T:sourceI"Í{
-  "please_wait": "Veuillez patienter...",
-  "validation_messages": {
-    "accept": "L'image doit Ãªtre dans un fomat GIF, JPG ou PNG.",
-    "creditcard": "Veuillez saisir un numÃ©ro de carte bleue valide.",
-    "date": "Veuillez saisir une date valide.",
-    "dateISO": "Veuillez saisir une date valide (ISO).",
-    "digits": "Veuillez saisir uniquement les chiffres.",
-    "email": "Veuillez saisir une adresse email valide.",
-    "equalTo": "Veuillez saisir la mÃªme valeur Ã  nouveau.",
-    "max": "Veuillez saisir une valeur infÃ©rieure ou Ã©gale Ã  {0}.",
-    "maxlength": "Veuillez ne pas saisir plus de {0} caractÃ¨res.",
-    "min": "Veuillez saisir une valeur supÃ©rieure ou Ã©gale Ã  {0}.",
-    "minlength": "Veuillez saisir au moins {0} caractÃ¨res.",
-    "number": "Veuillez saisir un chiffre valide.",
-    "range": "Veuillez saisir une valeur entre {0} et {1}.",
-    "rangelength": "Veuillez saisir une valeur longue de {0} Ã  {1} caractÃ¨res.",
-    "remote": "Veuillez corriger ce champ.",
-    "required": "Ce champ est obligatoire",
-    "url": "Veuillez saisir une URL valide.",
-    "address_validator": "L'adresse n'a pas Ã©tÃ© trouvÃ©e.",
-    "money": "Vous devez insÃ©rer un montant correct.",
-    "night_selected": "Vous devez sÃ©lectionner au moins une nuit",
-    "availability_range": "Les dates sÃ©lectionnÃ©es comportent des dates qui ne sont pas disponibles",
-    "min_bound": "Veuillez saisir une valeur infÃ©rieure Ã  la valeur maximale ({0})",
-    "max_bound": "Veuillez saisir une valeur supÃ©rieure Ã  la valeur minimale ({0})",
-    "number_no_decimals": "Veuillez saisir un nombre entier",
-    "number_decimals": "Veuillez saisir un nombre avec un point (.) ou une virgule (,) comme sÃ©parateur dÃ©cimal"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/fr.json;TTF:charsetI"
-utf-8;F:digest"%òU¢Æ„"·?ö)’_+­¹>»ê¢µäDÇ¶‘ìœR:lengthiÍ:dependencies_digest"%üºßGg_¥¢x{”Vå[ÈxµtY“ğ_Õfë%B:idI"E687a04ca2372febaf8513c41753b464681e1888cf11ca23563dee1b7429c421b;F:
-mtimel+‰áú[

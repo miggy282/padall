@@ -20,10 +20,10 @@ he-IL:
         new_listing_category: "קטרגוריה חדשה"
       form:
         category_name:
-          category_title: ~
+          category_title: "כותרת הקטגוריה"
         category_parent:
           category_parent: "כותרת קטגוריה"
-          no_parent: ~
+          no_parent: "אין הורה"
         category_transaction_types:
           transaction_types: "סוגי הזמנות"
           transaction_types_description: "סוגי הזמנות קובעים איזה סוג של תהליך הזמנה מותר עם רישומים בקטגוריה זו. לדוגמה, זה רק למכור, או להשכיר ולתת משם בחינם מותר גם."
@@ -67,7 +67,7 @@ he-IL:
         edit_community_description_description_hideable: ~
         community_search_placeholder: "חפש טקסט עזרה"
         edit_community_search_placeholder_description: ~
-        private_community_homepage_content: ~
+        private_community_homepage_content: "תוכן עמוד הבית של מרקטפלייס פרטי."
         edit_private_community_homepage_content_description: "תוכן זה מוצג בדף הבית של משווקים פרטיים למשתמשים שאינם מחוברים. כאן תוכל לתאר את האתר שלך ואת התהליך הצטרפות אליו. ניתן גם להוסיף תמונות, קטעי וידאו ותוכן HTML כאן. ‎%{see_how_it_looks_like}‎"
         update_information: "שמור הגדרות"
         invite_people: "הזמן את החברים ל‎%{service_name}‎"
@@ -86,6 +86,8 @@ he-IL:
         transaction_agreement_checkbox_label_description: "טקסט זה יוצג ליד ריבוע סימון בטופס ההרשמה. המשתמש צריך לסמן את הריבוע כדי להמשיך בעסקה. תווית לדוגמה תהיה משהו כמו \"על ידי לחיצה על ריבוע זה אני מקבל את ההסכם.\""
         transaction_agreement_text_header: "טקסט הסכם"
         transaction_agreement_description: ~
+        terms_privacy_policy_and_static_content: ~
+        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "ערוך את המראה והתחושה של האתר \"‎%{community_name}‎\""
         community_logo: לוגו
@@ -108,6 +110,8 @@ he-IL:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "תמונת השער מוצגת בדף הבית עבור משתמשים שאינם מחוברים."
         cover_photo_instructions_text_with_dimensions: "התמונה תשנה את גודלה ל - ‎%{height}‎‎%{width}‎ פיקסל ותמונות גבוהות יותר ייחתכו באמצע. ‎%{see_how_it_looks_like}‎"
+        we_have_you_covered: ~
+        cover_photo_ready_made: ~
         small_cover_photo_visibility: "תמונת שער קטנה מוצגת בכל הדפים, למעט בדף הבית עבור משתמשים שאינם מחוברים."
         small_cover_photo_instructions_text_with_dimensions: "התמונה תשנה את גודלה ל - ‎%{height}‎‎%{width}‎ פיקסל ותמונות גבוהות יותר ייחתכו באמצע."
         main_content_width: "בעת בחירת תמונות רקע, שים לב שהתוכן הראשי בדף הוא‎%{main_width}‎ פיקסלים לכל היותר. זכור גם לבדוק כיצד נראית תמונת השער שלך במסכים הקטנים יותר (למשל באמצעות חלון דפדפן צר יותר)."
@@ -174,27 +178,33 @@ he-IL:
       getting_started:
         getting_started: ~
       available_languages:
+        cs: ~
+        da-DK: ~
+        de: ~
         en: ~
         en-AU: ~
         en-GB: ~
-        fr: ~
-        fr-CA: ~
         es: ~
         es-ES: ~
-        pt-PT: ~
-        pt-BR: ~
-        nb: ~
-        sv: ~
-        da-DK: ~
         fi: ~
-        ru: ~
-        de: ~
+        fr: ~
+        fr-CA: ~
         el: ~
-        nl: ~
-        tr-TR: ~
-        zh: ~
-        ja: ~
         it: ~
+        ja: ~
+        ko: ~
+        nb: ~
+        nl: ~
+        pl: ~
+        pt-BR: ~
+        pt-PT: ~
+        ru: ~
+        sv: ~
+        th-TH: ~
+        tr-TR: ~
+        vi: ~
+        zh: ~
+        zh-TW: ~
       settings:
         settings: הגדרות
         general: כללי
@@ -203,6 +213,7 @@ he-IL:
         users_can_invite_new_users: "אפשר לכל המשתמשים להזמין משתמשים חדשים"
         private: "אפשר רק למשתמשים הרשומים לראות רישומים ופרופילים של משתמשים (להפוך את האתר למקום פרטי)"
         require_verification_to_post_listings: "אפשר רק משתמשים מאומתים על ידי מנהל כדי לפרסם רישומים חדשים"
+        allow_free_conversations: ~
         search_preferences: ~
         default_search_type: ~
         keyword_search: ~
@@ -225,6 +236,7 @@ he-IL:
         update_settings: "שמור הגדרות"
         automatically_confirmed_no_escrow: ~
         automatically_confirmed_no_escrow_stripe_info: ~
+        buyer_transaction_fees_are_only_supported_with_stripe: ~
         automatic_newsletter_frequency: "שלח עלון אוטומטי: ‎%{frequency_dropdown}‎"
         newsletter_daily: יומי
         newsletter_weekly: שבועי
@@ -238,6 +250,8 @@ he-IL:
         you_will_be_redirected_to: ~
         delete_this_marketplace: ~
         payment_preferences: ~
+        pre_approved_listings: ~
+        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "ניהול משתמשים"
         email: דוא"ל
@@ -259,6 +273,22 @@ he-IL:
         reset_search: ~
         for_search_terms: ~
         this_makes_the_user_an_admin: ~
+        status_filter:
+          all: ~
+          selected: ~
+          selected_js: ~
+          admin: ~
+          banned: ~
+          posting_allowed: ~
+          accepted: ~
+          unconfirmed: ~
+          pending: ~
+        this_user_hasnt_confirmed_their_email_address: ~
+        unconfirmed_user: ~
+        resend: ~
+        cancel: ~
+        user_didnt_complete_the_signup_process: ~
+        pending_user: ~
       new_layout:
         new_layout: ~
         description_roadmap_new: ~
@@ -270,6 +300,12 @@ he-IL:
         social_media: ~
         logo: ~
         logo_info: ~
+        social_media_title: ~
+        social_media_title_info: ~
+        link_for_facebook: ~
+        link_for_linkedin: ~
+        link_for_twitter: ~
+        social_media_description: ~
         twitter_handle: ~
         twitter_handle_info_text: ~
         twitter_handle_info_text_with_instructions: ~
@@ -277,6 +313,7 @@ he-IL:
         twitter_handle_placeholder: "שם משתמש"
         invalid_twitter_handle: ~
         facebook_connect: ~
+        facebook_developers_dashboard: ~
         facebook_connect_info_text: ~
         facebook_connect_info_text_with_instructions: ~
         facebook_instructions_link_text: ~
@@ -287,6 +324,69 @@ he-IL:
         enable_facebook_login: ~
         save: ~
         add_another_image: ~
+        google_connect: ~
+        google_instructions_link_text: ~
+        google_developers_console: ~
+        google_connect_info_text_with_instructions: ~
+        google_connect_info_text: ~
+        enable_google_login: ~
+        google_connect_id: ~
+        google_connect_secret: ~
+        linkedin_connect: ~
+        linkedin_instructions_link_text: ~
+        linkedin_developers_dashboard: ~
+        linkedin_connect_info_text_with_instructions: ~
+        linkedin_connect_info_text: ~
+        enable_linkedin_login: ~
+        linkedin_connect_id: ~
+        linkedin_connect_secret: ~
+      seo_settings:
+        seo: ~
+        title: ~
+        meta_title_label: ~
+        meta_title_info: ~
+        meta_title_link_text: ~
+        meta_description_label: ~
+        meta_description_info: ~
+        meta_description_link_text: ~
+        search_title: ~
+        search_meta_title_label: ~
+        search_meta_title_info: ~
+        search_meta_title_link_text: ~
+        search_meta_description_label: ~
+        search_meta_description_info: ~
+        search_meta_description_link_text: ~
+        listing_title: ~
+        listing_meta_title_label: ~
+        listing_meta_title_info: ~
+        listing_meta_title_link_text: ~
+        listing_meta_description_label: ~
+        listing_meta_description_info: ~
+        listing_meta_description_link_text: ~
+        category_title: ~
+        category_meta_title_label: ~
+        category_meta_title_info: ~
+        category_meta_title_link_text: ~
+        category_meta_description_label: ~
+        category_meta_description_info: ~
+        category_meta_description_link_text: ~
+        profile_title: ~
+        profile_meta_title_label: ~
+        profile_meta_title_info: ~
+        profile_meta_title_link_text: ~
+        profile_meta_description_label: ~
+        profile_meta_description_info: ~
+        profile_meta_description_link_text: ~
+        sitemap_label: ~
+        sitemap_info: ~
+        sitemap_info_link_text: ~
+        sitemap_info_public: ~
+        sitemap_info_private: ~
+        robots_label: ~
+        robots_info: ~
+        robots_info_link_text: ~
+        robots_info_2: ~
+        save: ~
       analytics:
         analytics: ~
         google_analytics_key: ~
@@ -298,8 +398,14 @@ he-IL:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: ~
+      logo_link:
+        title: ~
+        info: ~
+        url: ~
+        placeholder: ~
       menu_links:
         menu_links: "תפריט קישורים"
+        menu_links_display: ~
         save: "שמור הגדרות"
         add_menu_link: "הוסף לינק חדש לתפריט"
         title_placeholder: "כותרת הלינק"
@@ -312,6 +418,15 @@ he-IL:
         all: ~
         max_number_of_links_info: ~
         about_page: ~
+      default_menu_links:
+        title: ~
+        about_link_title: ~
+        contact_link_title: ~
+        invite_link_title: ~
+        info: ~
+        display_about: ~
+        display_contact: ~
+        display_invite: ~
       topbar:
         topbar: "סרגל עליון"
         new_listing_button_label: "טקסט ל\"צור שירות חדש\""
@@ -333,6 +448,8 @@ he-IL:
           canceled: ~
           preauthorized: ~
           rejected: ~
+          payment_intent_requires_action: ~
+          payment_intent_action_expired: ~
         headers:
           conversation: ~
           listing: שירות
@@ -378,6 +495,9 @@ he-IL:
             canceled: ~
             initiated: ~
             pending_ext: ~
+            payment_intent_requires_action: ~
+            payment_intent_action_expired: ~
+            payment_intent_failed: ~
         not_available: ~
       conversations:
         conversations: "בדוק שיחות"
@@ -390,10 +510,18 @@ he-IL:
           other_party: "צד אחר"
         participants: שיחה
         profile: "‎%{author}‎ פרופיל"
+        search_by_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
       testimonials:
         testimonials: ~
         no_testimonials_found: ~
         displaying_xx_reviews: ~
+        search_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
         headers:
           transaction: ~
           author: ~
@@ -406,6 +534,16 @@ he-IL:
           skipped: ~
           published: ~
           blocked: ~
+        status_filter:
+          selected: ~
+          all: ~
+          published: ~
+          positive: ~
+          negative: ~
+          skipped: ~
+          waiting: ~
+          blocked: ~
+          selected_js: ~
         form:
           review_text: ~
           save: ~
@@ -415,17 +553,35 @@ he-IL:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
+          unskip: ~
+          if_you_unskip_the_review: ~
+          they_will_not_be_notified_automatically: ~
+      invitations:
+        invitations: ~
+        used:
+          "yes": ~
+          "no": ~
+        headers:
+          sent_by: ~
+          message: ~
+          sent_to: ~
+          used: ~
+          date_sent: ~
       listings:
         listings: ~
         search_by_title_author_category: ~
         search: ~
         reset_search: ~
+        export_all_as_csv: ~
+        processing_export: ~
         status:
           all: ~
           selected_js: ~
           open: ~
           closed: ~
           expired: ~
+          approval_pending: ~
+          approval_rejected: ~
         headers:
           title: ~
           author: ~
@@ -436,6 +592,14 @@ he-IL:
         open: ~
         closed: ~
         expired: ~
+        approved: ~
+        approval_pending: ~
+        approval_rejected: ~
+        form:
+          this_listing_has_not_not_been_approved_yet: ~
+          approve: ~
+          reject: ~
+          cancel: ~
       user_fields:
         user_fields: ~
       footer:
@@ -452,20 +616,26 @@ he-IL:
         footer_copyright: ~
         footer_enabled: ~
         social_links: ~
+        title_placeholder: ~
+        url_placeholder: ~
         style:
           dark: ~
           light: ~
+          marketplace_color: ~
+          logo: ~
         social:
-          facebook: ~
-          twitter: ~
-          instagram: ~
-          youtube: ~
-          googleplus: ~
-          linkedin: ~
-          pinterest: ~
-          soundcloud: ~
           title: ~
           url: ~
+      domain:
+        domain: ~
+        marketplace_domain: ~
+        offer_pro: ~
+        upgrade_pro_plan_link: ~
+        your_marketplace_address_is: ~
+        would_you_like_to_change_address: ~
+        contact_us: ~
+        you_can_now_use_a_custom_domain: ~
+        would_you_like_to_change_domain: ~
     custom_fields:
       edit:
         edit_listing_field: "ערוך את ‎%{field_name}‎"
@@ -583,6 +753,7 @@ he-IL:
       emails_title: ~
       subscription: ~
       preview: ~
+      whats_new: ~
     listing_shapes:
       availability_title: ~
       read_more: ~
@@ -716,7 +887,10 @@ he-IL:
       stripe_fee: ~
       stripe_fee_notice: ~
       fee_should_be_less_than_minimum_price: ~
+      the_transaction_fee_must_be_lower_than_100: ~
       confirm_disable: ~
+      commission_from_buyer_label: ~
+      minimum_buyer_transaction_fee_label: ~
       stripe_connected:
         title: ~
         disable: ~
@@ -729,6 +903,7 @@ he-IL:
         enable: ~
       cannot_enable_gateway: ~
       cannot_disable_gateway: ~
+      cannot_enable_gateway_because_of_buyer_commission: ~
       stripe_form:
         add_your_api_keys: ~
         how_to_get_these: ~
@@ -773,7 +948,7 @@ he-IL:
         inquiry: "שלח/י הודעה"
   common:
     edit_page: "ערוך דף"
-    default_community_slogan: ~
+    default_community_slogan: "מרקטפלייס קהילתי"
     default_community_description: "זה מקום למכור, לשכור, להחליף ולשתף סחורות ושירותים עם שאר חברי האתר."
     cancel: בטל
     fields_that_are_mandatory: "שדות המסומנים ב (*) הם חובה."
@@ -798,7 +973,7 @@ he-IL:
     categories:
       item: פריטים
       favor: שירותים
-      rideshare: ~
+      rideshare: "נסיעה שיתופית"
       housing: מקומות
       tools: כלים
       sports: ספורט
@@ -850,13 +1025,14 @@ he-IL:
       quantity_label: "כמות:"
       sum_label: ~
       service_fee_label: "מחיר ‎%{service_name}‎ :"
+      buyer_service_fee_label: ~
       you_will_get_label: ~
       total_label: סה"כ
       total_value: ~
       total_value_paypal: ~
       total_value_stripe: ~
+      paypal_fee: ~
       paypal_fee_info: ~
-      payment_fee_info: ~
       shipping_price_label: משלוח
       stripe-fee_label: ~
     confirm:
@@ -895,6 +1071,7 @@ he-IL:
     message:
       accepted_request: "אישר את הבקשה"
       received_payment: ~
+      received_payment_wo_sum: ~
       accepted_offer: "אישר את ההצעה"
       rejected_request: "דחה את הבקשה, התשלום בוטל"
       rejected_offer: "דחה את ההצעה"
@@ -904,8 +1081,10 @@ he-IL:
       canceled_offer: "ביטל את ההזמנה"
       paid: "שולם ‎%{sum}‎"
       payment_preauthorized: ~
+      payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
+        held_payment_wo_sum: ~
         confirmed_request: ~
     new:
       message: הודעה
@@ -929,7 +1108,7 @@ he-IL:
       conversation_about_listing: "‎%{listing}‎ לגבי ‎‎%{person}‎‎  עם"
       conversation_with_user: "‎%{person}‎ עם"
       conversation_with: "שיחה עם ‎%{person}‎"
-      last_message_at: ~
+      last_message_at: "הודעה אחרונה ‎%{time}‎ ‎ "
       price: "‎%{price}‎ מחיר"
       sum: "סה\"כ: ‎%{sum}‎"
       total: "סה\"כ: ‎%{total}‎"
@@ -938,7 +1117,7 @@ he-IL:
       payment_errored_starter: ~
       payment_errored_author: ~
       cancel_payed_transaction: ביטול
-      feedback_given: "קיים משוב"
+      feedback_given: "ביקורת ניתנה"
       feedback_skipped: "לא קיים משוב"
       give_feedback: "כתוב/כתבי המלצה או הערה"
       offer_accepted: "התקבל בהצלחה"
@@ -966,11 +1145,11 @@ he-IL:
       request_preauthorized: "התשלום אושר"
       skip_feedback: "דלג/י על המשוב"
       waiting_for_listing_author_to_accept_offer: "ממתין ל-‎%{listing_author_name}‎ כדי לאשר את ההצעה"
-      waiting_for_listing_author_to_accept_request: ~
+      waiting_for_listing_author_to_accept_request: "מחכה ל‎%{listing_author_name}‎ שיאשר את הבקשה. ברגע ש‎%{listing_author_name}‎  ייאשר, אתה תחוייב."
       waiting_for_you_to_accept_request: "ממתין שתאשר את הבקשה"
-      waiting_confirmation_from_requester: ~
+      waiting_confirmation_from_requester: "מחכה ל‎%{requester_name}‎ שייסמן את ההזמנה כהושלמה."
       waiting_confirmation_from_you: "ממתין לסמן את ההזמנה"
-      waiting_payment_from_requester: ~
+      waiting_payment_from_requester: "מחכה ל‎%{requester_name}‎ שישלם."
       waiting_payment_from_you: "מחכה לתשלום שלך"
       waiting_feedback_from_you: "ממתין למשוב שלך"
       pending_external_inbox:
@@ -1046,9 +1225,9 @@ he-IL:
       here_is_a_message_from: "‎%{other_party_given_name}‎ הודעה מ"
       request_marked_as_confirmed: "ההזמנה הושלמה - זכור לתת משוב"
       request_marked_as_canceled: "ההזמנה בוטלה"
-      has_marked_request_as_confirmed: ~
-      has_marked_request_as_canceled: ~
-      giving_feedback_is_good_idea: ~
+      has_marked_request_as_confirmed: "‎%{other_party_full_name}‎  סימן את ההזמנה ‎%{request}‎ כהושלמה. אתה יכול עכשיו לתת ביקורת ל‎%{other_party_given_name}‎."
+      has_marked_request_as_canceled: "‎%{other_party_full_name}‎ ביטל את ההזמנה הבאה ‎%{request}‎. אתה עדיין יכול לדרג את ‎%{other_party_given_name}‎."
+      giving_feedback_is_good_idea: "לתת ביקורת זה תמיד רעיון טוב. אם הכול הלך כשורה, את אמור לתת לאחרים לדעת ש‎%{other_party_given_name}‎ אמין. אם היו בעיות כלשהן, חשוב להזכיר גם אותן."
       give_feedback_to: "לתת משוב ל ‎%{other_party_given_name}‎"
       stripe:
         has_marked_request_as_confirmed: ~
@@ -1113,14 +1292,16 @@ he-IL:
       new_payment: "קיבלת תשלום חדש"
       price_per_unit_type: "‎%{unit_type}‎ מחיר ל"
       quantity: ~
-      you_have_received_new_payment: ~
+      you_have_received_new_payment: "קיבלת תשלום בסך: ‎%{payment_sum}‎  עבור: ‎%{listing_title}‎ מ‎%{payer_full_name}‎. הנה הקבלה שלך. "
       listing_per_unit_title: ~
     payment_receipt_to_seller:
       payment_gateway_fee: ~
       shipping_total: ~
       product: ~
       price_payer_paid: ~
+      subtotal: ~
       service_fee: ~
+      buyer_service_fee: ~
       you_will_get: ~
       new_payment: ~
       price_per_unit_type: ~
@@ -1136,6 +1317,7 @@ he-IL:
       duration: ~
       quantity: ~
       subtotal: ~
+      buyer_service_fee: ~
       total: ~
       price: ~
       service_fee: ~
@@ -1152,7 +1334,7 @@ he-IL:
       you_will_get: "סה\"כ:"
     receipt_to_payer:
       receipt_of_payment: "קבלת תשלום"
-      you_have_made_new_payment: ~
+      you_have_made_new_payment: "שילמת ‎%{payment_sum}‎ עבור ‎%{listing_title}‎ ל‎%{recipient_full_name}‎. הנה הקבלה שלך."
       product: מוצר
       price_per_unit_type: "‎%{unit_type}‎ מחיר ל"
       duration: ~
@@ -1160,7 +1342,7 @@ he-IL:
       subtotal: ~
       total: סה"כ
       price: מחיר
-      service_fee: "עמלת שירות"
+      buyer_service_fee: ~
       stripe_gateway_fee: ~
       paypal_gateway_fee: ~
       money_will_be_transferred: ~
@@ -1173,7 +1355,7 @@ he-IL:
       view_feedback: "הצג משוב"
     new_update_to_listing:
       listing_you_follow_has_been_updated: "המודעה שאתה עוקב אחריה עודכנה"
-      has_updated_listing_you_follow_in_kassi: ~
+      has_updated_listing_you_follow_in_kassi: "‎%{author}‎ עדכן את הרישום '‎%{listing}‎' אתה עוקב ב‎%{service_name}‎."
       view_changes: "הצג שינויים"
     community_updates:
       added_offer: "הוסיף מודעה ‎%{name_link}‎"
@@ -1198,7 +1380,7 @@ he-IL:
           ‎%{password_reset_link}‎ :לאיפוס סיסמה לחץ כאן
     testimonial_reminder:
       remember_to_give_feedback_to: "‎%{name}‎ תזכורת: זכור/זכרי לתת משוב ל‎"
-      you_have_not_given_feedback_yet: ~
+      you_have_not_given_feedback_yet: "עוד לא נתת ביקורת ל‎%{name}‎ בקשר לאירוע ‎%{event}‎. אנא זכור לתת ביקורת על ביצועו של ‎%{given_name}‎ באירוע."
     transaction_preauthorized:
       subject: ~
       transaction_requested_by_user: ~
@@ -1228,6 +1410,32 @@ he-IL:
       this_is_automatic_message: ~
       person_name: ~
       person_email: ~
+    listing_submited_for_review:
+      subject: ~
+      there_is_a_new_listing_to_review: ~
+      review_the_listing: ~
+      this_is_automatic_message: ~
+    listing_approved:
+      subject: ~
+      listing_has_been_approved: ~
+      view_the_listing: ~
+    listing_rejected:
+      subject: ~
+      listing_has_been_rejected: ~
+      contact_link: ~
+      edit_the_listing: ~
+    edited_listing_submited_for_review:
+      subject: ~
+      there_is_a_edited_listing_to_review: ~
+      review_the_listing: ~
+    new_transaction:
+      subject: ~
+      there_is_a_new_transaction: ~
+      a_new_transaction: ~
+      listing: ~
+      sum: ~
+      starter: ~
+      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: ~
@@ -1250,6 +1458,7 @@ he-IL:
       buyer_cannot_pay_error: ~
       pending_review_error: ~
       seller_express_checkout_disabled: ~
+      seller_express_checkout_disabled_no_free: ~
       generic_error: ~
       cancel_error: ~
       accept_authorization_error: ~
@@ -1296,6 +1505,7 @@ he-IL:
       after: "חייב להיות אחרי ‎%{restriction}‎"
       on_or_after: "חייב להיות על או אחרי ‎%{restriction}‎"
       positive_number: ~
+      from_must_be_less_than_till: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "‎%{offerer_name}‎ הסכים להשאיל ‎%{listing_title}‎ ל‎%{requester_name}‎ ‎%{time_ago}‎"
@@ -1309,10 +1519,10 @@ he-IL:
       has_accepted_trade_item: "‎%{offerer_name}‎ הסכים להיתחלף  ‎%{listing_title}‎ ל‎%{requester_name}‎ ‎%{time_ago}‎"
       has_accepted_sell_housing: "‎%{offerer_name}‎ הסכים למכור ‎%{listing_title}‎ ל‎%{requester_name}‎ ‎%{time_ago}‎"
       has_accepted_buy_housing: "‎%{offerer_name}‎ הסכים למכור ‎%{listing_title}‎ ל‎%{requester_name}‎ ‎%{time_ago}‎"
-      has_accepted_rent_out_housing: ~
+      has_accepted_rent_out_housing: "‎%{offerer_name}‎  הסכים להשכיר את ‎%{listing_title}‎  ל‎%{requester_name}‎ ‎%{time_ago}‎ ."
       has_accepted_rent_housing: "‎%{offerer_name}‎ הסכים להשכיר ‎%{listing_title}‎ ל‎%{requester_name}‎ ‎%{time_ago}‎"
       has_accepted_favor: "‎%{offerer_name}‎ הסכים להצעה ‎%{listing_title}‎ ל‎%{requester_name}‎ ‎%{time_ago}"
-      has_accepted_rideshare: ~
+      has_accepted_rideshare: "‎%{offerer_name}‎  הסכים לנסיעה משותפת ב‎%{listing_title}‎ עם‎%{requester_name}‎ ‎%{time_ago}‎ ."
     join:
       joined_kassi: "‎%{name}‎ הצטרף ‎%{service_name}‎ ‎%{time_ago}‎"
     login:
@@ -1366,7 +1576,7 @@ he-IL:
       no_requests_visible_unless_logged_in: "עליך להתחבר בכדי שהשירות יהיה זמין"
       one_private_offer_exists: "ישנה כבר הצעה אחת‎</b>‎‎<b>‎"
       one_private_request_exists: "ישנה כבר בקשה אחת‎</b>‎‎<b>‎"
-      ride_offer: ~
+      ride_offer: "קח את ילדיהם של אחרים לתחביבים שלהם."
       ride_request: "הסעה לעבודה"
       some_private_offers_exist: "הצעות ‎<b>‎‎%{number_of_listings}‎ כבר קיים ‎</b>‎"
       some_private_requests_exist: "הזמנות ‎%{number_of_listings}‎ ישנן ‎</b>‎‎<b>‎"
@@ -1385,8 +1595,8 @@ he-IL:
       open_listing: "מודעה פתוחה"
       open_listings: "מודעות פתוחות"
       private_listing_notification_log_in: התחבר
-      is: ~
-      are: ~
+      is: הוא
+      are: אנחנו
       what_do_you_need: "?מה אתה מחפש"
       post_new_listing: "פרסם מודעה חדשה"
       are_offering: הזמנה
@@ -1519,6 +1729,23 @@ he-IL:
       messages: הודעות
     logged_in_notifications_icon:
       notifications: התראות
+    markdown_help:
+      title: ~
+      description: ~
+      formatting: ~
+      result: ~
+      h1: ~
+      h2: ~
+      h3: ~
+      italic: ~
+      bold: ~
+      underline: ~
+      strikethrough: ~
+      inline_link: ~
+      list: ~
+      one: ~
+      two: ~
+      three: ~
     mobile_logged_in:
       admin: "מנהל מערכת"
       go_to_your_profile_page: "פרופיל משתמש"
@@ -1542,8 +1769,8 @@ he-IL:
       comment_sent: "תגובה נשלחה"
       confirmation_link_is_wrong_or_used: "קישור האישור כבר בשימוש או לא תקין. נסה להיכנס או צור קשר אם הבעיה נמשכת."
       additional_email_confirmed: "המייל שהזנת כעת מאושר."
-      could_not_get_email_from_facebook: "לא ניתן היה לקבל כתובת דוא\"ל מ- Facebook ולא ניתן ליצור חשבון ללא דוא\"ל."
-      facebook_email_unconfirmed: ~
+      could_not_get_email_from_social_network: ~
+      social_network_email_unconfirmed: ~
       create_new_listing: "צור מודעה נוספת"
       create_one_here: "להרשם כאן"
       email_confirmation_sent_to_new_address: "אישור דוא\"ל נשלח כעת לכתובת החדשה."
@@ -1580,7 +1807,8 @@ he-IL:
       listing_updated_successfully: "המודעה עודכנה בהצלחה"
       listing_updated_availability_management_enabled: ~
       listing_updated_availability_management_disabled: ~
-      only_kassi_administrators_can_access_this_area: "הגישה ניתנת רק למנהלי ‎%{service_name}‎"
+      listing_deleted: ~
+      only_kassi_administrators_can_access_this_area: ~
       only_listing_author_can_close_a_listing: "רק מפרסם המודעה יכול לסגור את המודעה"
       only_listing_author_can_edit_a_listing: "רק מפרסם המודעה יכול לערוך את המודעה"
       payment_successful: "התשלום הצליח"
@@ -1646,6 +1874,7 @@ he-IL:
       user_does_not_have_email_to_delete: "אין לך את כתובת האימייל שאתה מנסה להסיר"
       email_deleted: "האימייל הוסר"
       listing_author_payment_details_missing: "צור קשר עם המחבר על ידי לחיצה על הלחצן 'צור קשר' בהמשך. הם צריכים לעדכן את פרטי התשלום שלהם כדי לקבל תשלומים."
+      listing_author_payment_details_missing_no_free: ~
       images_are_processing: ~
       automatically_logged_out_please_sign_in: ~
       stripe_you_account_balance_is_not_0: ~
@@ -1659,6 +1888,8 @@ he-IL:
       paypal_payments: ~
       stripe_payments: ~
       payments: תשלומים
+      listings: ~
+      listings_search_placeholder: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: "אין לך הרשאה לראות את המודעה."
@@ -1676,6 +1907,7 @@ he-IL:
       you_cannot_send_a_new_comment_because_listing_is_closed: "לא ניתן לשלוח הערות חדשות משום שהמודעה הזו נסגרה."
       you_must: אנא
       subscribe_to_comments: "עדכן אותי על תגובות חדשות"
+    deleting_a_listing_cannot_be_undone: ~
     edit:
       edit_listing: עריכה
     edit_links:
@@ -1687,6 +1919,11 @@ he-IL:
       show_in_updates_email_loading: טוען...
       show_in_updates_email_error: "לא ניתן להגיע לשרת. נסה שוב לאחר רענון הדף."
       show_in_updates_email_success: "רישום זה יוצג בדוא\"ל העדכון האוטומטי הבא שנשלח למשתמשים"
+      listing_is_pending: ~
+      listing_is_rejected: ~
+      approve_listing: ~
+      reject_listing: ~
+      delete_listing: ~
     map:
       open_in_google_maps: ~
     error:
@@ -1709,6 +1946,7 @@ he-IL:
       description:
         detailed_description: תיאור
         youtube_info: "אם התיאור שלך מכיל קישורים ליוטיוב, הסרטונים יפתחו מתחת לתיאור."
+        youtube_info_markdown: ~
       destination:
         destination: יעד
       form_content:
@@ -1767,6 +2005,9 @@ he-IL:
         origin: מקור
       send_button:
         save_listing: שמור
+        submit_for_review: ~
+        will_be_reviewed: ~
+        we_noticed_youre_an_admin: ~
       share_type:
         select: בחר
         borrow: השאלה
@@ -1846,6 +2087,7 @@ he-IL:
       select_one: ~
       start_time: ~
       end_time: ~
+      marketplace_fees_may_apply: ~
     new:
       listing: מודעה
       selected_category: "‎%{category}‎"
@@ -1859,6 +2101,7 @@ he-IL:
       community_not_configured_for_payments: ~
       payment_settings_link: "הגדרות תשלום"
       community_not_configured_for_payments_admin: ~
+      you_are_now_posting_a_listing_on_behalf_of: ~
     quantity:
       hour: "מספר שעות:"
       day: ":מספר ימים"
@@ -1891,8 +2134,8 @@ he-IL:
       feedback: משוב
       qr_code: "קוד QR"
       request: בקשה
-      rideshare_offer: ~
-      rideshare_request: ~
+      rideshare_offer: "הצעה לנסיעה משותפת"
+      rideshare_request: "בקשה לנסיעה משותפת"
       send_private_message: "שלח/י הודעה פרטית"
       tags: תוויות
       time: זמן
@@ -1965,7 +2208,7 @@ he-IL:
       request_something: בקש
       request_type: "סוג הבקשה"
       requests: בקשות
-      rideshare: ~
+      rideshare: "נסיעה משותפת"
       you_have_something_others_do_not: "יש לך מה להציע?"
     please_comment: תגובה
   mercury:
@@ -2086,7 +2329,7 @@ he-IL:
       username_is_invalid: "שם משתמש לא חוקי. תווים מותרים הם אותיות, מספרים וקו תחתון."
       visible_only_to_you: "גלוי רק לך ולמנהל האתר"
       visible_to_everybody: "פתוח לכולם"
-      create_account_with_facebook: "התחבר באמצעות פייסבוק"
+      create_account_with_provider: ~
       OR: או
       signup_with_email: "צור/י חשבון באמצעות כתובת הדואר האלקטרוני"
       this_field_will_be_publicly_visible: ~
@@ -2094,9 +2337,8 @@ he-IL:
       grade: "ציון:"
       and_gave_following_feedback: "ונתן את המשוב הבא"
     profile_listings:
-      show_also_closed: "הצג שירותים לא פעילים"
-      show_only_open: "הצג שירותים פעילים בלבד"
       no_image: "אין תמונה"
+      manage_listings: ~
     show:
       contact: "‎%{person}‎ שלח/י הודעה ל‎"
       about_me: "קצת עלי:"
@@ -2129,6 +2371,8 @@ he-IL:
       show_all_listings: הכל
       show_all_open_listings: "הצג את כל המודעות הפתוחות"
       show_all_reviews: "הצג את כל הביקורות"
+      admin_actions: ~
+      post_listing_as: ~
     followed_people:
       you_follow_plural: "‎%{count}‎ אתה עוקב אחר"
       you_follow_singular: "‎%{count}‎ אתה עוקב אחר"
@@ -2149,11 +2393,11 @@ he-IL:
       connect_your_facebook_to_kassi: "‎%{service_name}‎ חבר את חשבון הפייסבוק שלך אל"
       facebook_account: "חשבון פייסבוק:"
       log_in_to_link_account: "היכנס כדי לקשר אותו לחשבון פייסבוק שלך ‎ %{service_name}‎אם כבר יש לך חשבון"
-      you_can_also_create_new_account: ~
+      you_can_also_create_new_account: "אם אין לך משתמש ב‎%{service_name}‎, לחץ על קישור זה ‎%{accont_creation_link}‎ על מנת ליצור אחד עם משתמש הפייסבוק שלך."
       account_creation_link_text: "לחף כאן"
       cancle_facebook_connect: "‎%{cancel_link}‎ אם אינך רוצה לקשר חשבון זה, תוכל לבצע את ‎"
       facebook_cancel_link_text: ביטול
-      log_in_with_your_facebook_account: "התחבר באמצעות פייסבוק"
+      log_in_with_your_provider_account: ~
       or_sign_up_with_your_username: "או באמצעות שם משתמש וכתובת הדואר האלקטרוני"
       we_will_not_post_without_asking_you: "לעולם לא נפרסם בפייסבוק מבלי לשאול אותך."
     password_forgotten:
@@ -2254,6 +2498,9 @@ he-IL:
       invisible: "לא יוצג למשתמשים אחרים"
       image_is_processing: ~
       shown_in_your_public_profile: ~
+      editing_profile_of: ~
+      format_markdown_link: ~
+      format_markdown: ~
     save_information: "שמור פרטים"
   shipping_address:
     shipping_address: "כתובת למשלוח"
@@ -2455,6 +2702,7 @@ he-IL:
       signup: "הרשמו עכשיו"
       admin_dashboard: "ניהול אדמיין"
       language: שפה
+      listings: ~
     utils:
       km: ~
       mi: ~
@@ -2489,6 +2737,12 @@ he-IL:
     paypal_connected: ~
     paypal_can_accept: ~
     paypal_connected_give_permission: ~
+    stripe_account_restricted: ~
+    stripe_account_restricted_info: ~
+    stripe_account_restricted_soon: ~
+    stripe_account_restricted_soon_info: ~
+    stripe_account_pending_verification: ~
+    stripe_account_pending_verification_info: ~
     form_new:
       need_info: ~
       select_country: ~
@@ -2576,3 +2830,13 @@ he-IL:
     wrong_setup: ~
     invalid_bank_account_number: ~
     invalid_postal_code: ~
+  seo_sections:
+    you_can_use_variables: ~
+    placeholder:
+      search_results: ~
+      search_results_for: ~
+      listing_description: ~
+      listing_description_without_price: ~
+      category_description: ~
+      profile_title: ~
+      profile_description: ~

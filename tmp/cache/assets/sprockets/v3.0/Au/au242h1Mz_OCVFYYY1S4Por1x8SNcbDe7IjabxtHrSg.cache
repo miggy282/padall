@@ -1,35 +1,0 @@
-{:uriI"�file://app/assets/javascripts/locales/pl.json?type=application/json&id=536709c84ca0d464490c6948c3cb3f62894cbf0b579b1c48adcb830d6e0b1621:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/pl.json;T:	nameI"locales/pl;T:logical_pathI"locales/pl.json;T:content_typeI"application/json;T:sourceI"�{
-  "please_wait": "Proszę czekać...",
-  "validation_messages": {
-    "accept": "Plik obrazu musi być w formacie GIF, JPG lub PNG.",
-    "creditcard": "Podaj poprawny numer karty kredytowej.",
-    "date": "Podaj poprawną datę.",
-    "dateISO": "Podaj poprawną datę (ISO).",
-    "digits": "Podaj tylko cyfry.",
-    "email": "Podaj poprawny adres email.",
-    "equalTo": "Podaj tę samą wartość raz jeszcze.",
-    "max": "Podaj wartość mniejszą bądź równą do {0}.",
-    "maxlength": "Podaj nie więcej niż {0} znaków.",
-    "min": "Podaj wartość większą bądź równą {0}.",
-    "minlength": "Podaj przynajmniej {0} znaków.",
-    "number": "Podaj poprawny numer.",
-    "range": "Podaj wartość pomiędzy {0} a {1}.",
-    "rangelength": "Podaj wartość długości znaków pomiędzy {0} i {1}.",
-    "remote": "Popraw to pole.",
-    "required": "To pole jest wymagane.",
-    "url": "Podaj poprawny adres URL.",
-    "address_validator": "Lokalizacja nie została znaleziona.",
-    "money": "Musisz podać poprawną wartość pieniężną.",
-    "night_selected": "Musisz wybrać przynajmniej jedną noc",
-    "availability_range": "Wybrany zakres obejmuje niedostępne daty",
-    "min_bound": "Podaj wartość mniejszą niż maksymalna ({0}).",
-    "max_bound": "Podaj wartość wiekszą niż minimalna ({0}).",
-    "number_no_decimals": "Podaj całą liczbę",
-    "number_decimals": "Podaj poprawną wartość albo z kropką (.) lub przecinkiem (,) jako separator dziesiętny"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/pl.json;TTF:charsetI"
-utf-8;F:digest"%�s��'�2
-?8����l��0��[)�ۣ#7��h:lengthi�:dependencies_digest"%�;wte�Edt	�J��!0���y�$��ˏ�~:idI"E536709c84ca0d464490c6948c3cb3f62894cbf0b579b1c48adcb830d6e0b1621;F:
-mtimel+���[

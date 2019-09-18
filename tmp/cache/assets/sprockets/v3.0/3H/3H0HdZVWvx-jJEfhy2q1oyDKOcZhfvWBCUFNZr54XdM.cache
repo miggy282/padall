@@ -1,34 +1,0 @@
-{:uriI"áfile://app/assets/javascripts/locales/it.json?type=application/json&id=faf15168295104566d90a4c3d70f533fa550f43be26d6dfcfef8306e26165a82:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/it.json;T:	nameI"locales/it;T:logical_pathI"locales/it.json;T:content_typeI"application/json;T:sourceI"˜{
-  "please_wait": "Attendere prego",
-  "validation_messages": {
-    "accept": "Il file immagine deve essere nel formato GIF, JPG o PNG.",
-    "creditcard": "Per favore inserisci un numero di carta di credito valida.",
-    "date": "Per favore inserisci una data valida.",
-    "dateISO": "Per favore inserisci una data valida (ISO).",
-    "digits": "Per favore inserisci solo numeri.",
-    "email": "Per favore inserisci un indirizzo email valido.",
-    "equalTo": "Per favore inserisci nuovamente lo stesso valore.",
-    "max": "Per favore inserisci un valore minore o uguale a {0}.",
-    "maxlength": "Per favore inserisci non pi√π di {0} caratteri.",
-    "min": "Per favore inserisci un valore maggiore o uguale a {0}.",
-    "minlength": "Per favore inserisci almeno {0} caratteri.",
-    "number": "Per favore inserisci un numero valido.",
-    "range": "Per favore inserisci un valore compreso tra {0} e {1}.",
-    "rangelength": "Per favore inserisci un valore lungo tra {0} e {1} caratteri.",
-    "remote": "Per favore correggi questo campo.",
-    "required": "Questo campo √® obbligatorio.",
-    "url": "Per favore inserisci un URL valido.",
-    "address_validator": "La posizione non √® stata trovata.",
-    "money": "E' necessario inserire un valore monetario valido.",
-    "night_selected": "Devi selezionare almeno una notte",
-    "availability_range": "Il periodo selezionato include date che non sono disponibili",
-    "min_bound": "Per favore inserisci un valore inferiore al valore massimo ({0})",
-    "max_bound": "Per favore inserisci un valore superiore al valore minimo ({0})",
-    "number_no_decimals": "Per favore inserisci un numero intero",
-    "number_decimals": "Per favore inserisci un numero valido con punto (.) o virgola (,) come separatore decimale"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/it.json;TTF:charsetI"
-utf-8;F:digest"%‚õW≤YßñÔìûf¨ñÍüVàçÀ√Ç _@Iµﬂ∑:lengthi˜:dependencies_digest"%ê%‚Cy^fı$ahäÆ†T!≠‘lbD5ˆv0:idI"Efaf15168295104566d90a4c3d70f533fa550f43be26d6dfcfef8306e26165a82;F:
-mtimel+â·˙[

@@ -1,34 +1,0 @@
-{:uriI"äfile://app/assets/javascripts/locales/pt-BR.json?type=application/json&id=51ae2caf428344ae0b2ed5d06e7d3175554aee8b9a789c3a3dad7de4ac178faa:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/pt-BR.json;T:	nameI"locales/pt-BR;T:logical_pathI"locales/pt-BR.json;T:content_typeI"application/json;T:sourceI"ö{
-  "please_wait": "Por favor aguarde...",
-  "validation_messages": {
-    "accept": "O formato do arquivo de imagem deve ser GIF, JPG ou PNG.",
-    "creditcard": "Por favor, insira um n√∫mero v√°lido de cart√£o de cr√©dito.",
-    "date": "Digite uma data v√°lida.",
-    "dateISO": "Digite uma data v√°lida. (ISO)",
-    "digits": "Por favor digite apenas n√∫meros.",
-    "email": "Por favor, indique um e-mail v√°lido.",
-    "equalTo": "Por favor, digite o mesmo valor novamente.",
-    "max": "Por favor digite valor menor ou igual a {0}.",
-    "maxlength": "Por favor, digite mais de {0} caracteres.",
-    "min": "Por favor, digite um valor maior que {0}.",
-    "minlength": "Por favor, digite ao menos {0} caracteres.",
-    "number": "Por favor insira um n√∫mero v√°lido",
-    "range": "Por favor, digite um valor entre {0} e {1}.",
-    "rangelength": "Por favor, digite um valor entre {0} e {1} de caracteres de comprimento",
-    "remote": "Por favor, corrija este campo.",
-    "required": "Este campo √© obrigat√≥rio.",
-    "url": "Favor entrar um URL v√°lido.",
-    "address_validator": "O local n√£o foi encontrado.",
-    "money": "Voc√™ deve inserir um valor financeiro valido.",
-    "night_selected": "Voc√™ precisa selecionar pelo menos uma noite",
-    "availability_range": "O per√≠odo entre as datas selecionadas n√£o est√° dispon√≠vel",
-    "min_bound": "Por favor, insira um valor menor que o valor m√°ximo ({0})",
-    "max_bound": "Por favor, insira um valor maior que o valor m√≠nimo ({0})",
-    "number_no_decimals": "Por favor, insira um numero inteiro.",
-    "number_decimals": "Por favor, digite um numero valido com ponto (.) ou virgula (,) como separador decimal."
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/pt-BR.json;TTF:charsetI"
-utf-8;F:digest"%˜Äm>ô|ıÕt…’¯Õú!äî)z)EbvL}D∫§m:lengthiö:dependencies_digest"%ÕAËÓ‘-‹}¶®Ÿëy¿+É´ÂmkÒï<Z,Á«®~Å:idI"E51ae2caf428344ae0b2ed5d06e7d3175554aee8b9a789c3a3dad7de4ac178faa;F:
-mtimel+â·˙[

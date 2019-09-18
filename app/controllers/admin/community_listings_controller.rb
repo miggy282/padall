@@ -1,55 +1,52 @@
 class Admin::CommunityListingsController < Admin::AdminBaseController
+  before_action :set_selected_left_navi_link
+  before_action :set_service
 
-  def index
-    @selected_left_navi_link = "listings"
-    @listings = resource_scope.order("#{sort_column} #{sort_direction}")
-      .paginate(:page => params[:page], :per_page => 30)
+  layout false, only: [:edit, :update]
+  respond_to :html, :js
+
+  def update
+    @service.update
+  end
+
+  def approve
+    @service.approve
+    redirect_to listing_path(@service.listing)
+  end
+
+  def reject
+    @service.reject
+    redirect_to listing_path(@service.listing)
+  end
+
+  def export
+    @export_result = ExportTaskResult.create
+    Delayed::Job.enqueue(ExportListingsJob.new(@current_user.id, @current_community.id, @export_result.id))
+    respond_to do |format|
+      format.js { render layout: false }
+    end
+  end
+
+  def export_status
+    export_result = ExportTaskResult.where(:token => params[:token]).first
+    if export_result
+      file_url = export_result.file.present? ? export_result.file.expiring_url(ExportTaskResult::AWS_S3_URL_EXPIRES_SECONDS) : nil
+      render json: {token: export_result.token, status: export_result.status, url: file_url}
+    else
+      render json: {status: 'error'}
+    end
   end
 
   private
 
-  def resource_scope
-    scope = @current_community.listings.exist.includes(:author, :category)
-    if params[:q].present?
-      scope = scope.search_title_author_category(params[:q])
-    end
-    if params[:status].present?
-      statuses = []
-      statuses.push(Listing.status_open) if params[:status].include?('open')
-      statuses.push(Listing.status_closed) if params[:status].include?('closed')
-      statuses.push(Listing.status_expired) if params[:status].include?('expired')
-      if statuses.size > 1
-        status_scope = statuses.slice!(0)
-        statuses.map{|x| status_scope = status_scope.or(x)}
-        scope = scope.merge(status_scope)
-      else
-        scope = scope.merge(statuses.first)
-      end
-    end
-
-    scope
+  def set_selected_left_navi_link
+    @selected_left_navi_link = 'listings'
   end
 
-  def sort_column
-    case params[:sort]
-    when 'started'
-      'listings.created_at'
-    when 'updated', nil
-      'listings.updated_at'
-    end
-  end
-
-  def sort_direction
-    params[:direction] == 'asc' ? 'asc' : 'desc'
-  end
-
-  helper_method :listing_search_status_titles
-
-  def listing_search_status_titles
-    if params[:status].present?
-      I18n.t("admin.communities.listings.status.selected_js") + params[:status].size.to_s
-    else
-      I18n.t("admin.communities.listings.status.all")
-    end
+  def set_service
+    @service = Admin::ListingsService.new(
+      community: @current_community,
+      params: params)
+    @presenter = Listing::ListPresenter.new(@current_community, @current_user, params, true)
   end
 end

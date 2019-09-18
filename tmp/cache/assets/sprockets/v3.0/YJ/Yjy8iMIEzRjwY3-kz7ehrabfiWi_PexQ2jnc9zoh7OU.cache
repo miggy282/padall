@@ -1,35 +1,0 @@
-{:uriI"�file://app/assets/javascripts/locales/zh-TW.json?type=application/json&id=2a5b7c1cfad2a7a79619f5766c0fb6bb68dd1793a603f4406e53f1daaec77e19:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/zh-TW.json;T:	nameI"locales/zh-TW;T:logical_pathI"locales/zh-TW.json;T:content_typeI"application/json;T:sourceI"I{
-  "please_wait": "請稍等...",
-  "validation_messages": {
-    "accept": "圖片必須是GIF，JPG或PNG格式。",
-    "creditcard": "請輸入有效信用卡號。",
-    "date": "請輸入一個有效日期。",
-    "dateISO": "請輸入一個有效日期（ISO)。",
-    "digits": "請只輸入數字。",
-    "email": "請輸入一個有效的Email。",
-    "equalTo": "請再次輸入相同數值。",
-    "max": "請輸入小於或等於{0}的數值。",
-    "maxlength": "請輸入少於{0}個字符。",
-    "min": "請輸入大於或等於{0}的數值。",
-    "minlength": "請至少輸入{0}個字符。",
-    "number": "請輸入一個有效數字。",
-    "range": "請輸入一個介於{0}和{1}的數值。",
-    "rangelength": "請輸入大於{0}小於{1}個字符。",
-    "remote": "請修正此處。",
-    "required": "必填",
-    "url": "請輸入有效的URL。",
-    "address_validator": "沒找到您輸入的地址。",
-    "money": "您需要輸入有效的金額。",
-    "night_selected": "您需要至少選擇一個晚上",
-    "availability_range": "您所選範圍包括不可用的日期",
-    "min_bound": "請輸入小於{0}的數值",
-    "max_bound": "請輸入大於{0}的數值",
-    "number_no_decimals": "請輸入一個整數",
-    "number_decimals": "請輸入一個有效的數字，小數點用(.)"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/zh-TW.json;TTF:charsetI"
-utf-8;F:digest"%@S�4~����j��Be0�pC�H]N
-��4E`n:lengthiI:dependencies_digest"%��H��͛p)a[�K����'|���g�4��:idI"E2a5b7c1cfad2a7a79619f5766c0fb6bb68dd1793a603f4406e53f1daaec77e19;F:
-mtimel+���[

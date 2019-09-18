@@ -90,6 +90,8 @@ vi:
         transaction_agreement_checkbox_label_description: "Văn bản này sẽ được hiển thị bên cạnh một hộp kiểm trong biểu mẫu thanh toán. Người dùng cần kiểm tra hộp để tiến hành giao dịch. Một ví dụ nhãn sẽ là một cái gì đó như \"Bằng cách nhấp vào hộp này tôi chấp nhận các thỏa thuận.\""
         transaction_agreement_text_header: "Văn bản thoả thuận"
         transaction_agreement_description: "Đây là nội dung của thỏa thuận thực tế mà người dùng cần phải chấp nhận. Nội dung thỏa thuận được hiển thị khi người dùng nhấp vào liên kết \"%{read_more}\" bên cạnh nhãn thỏa thuận."
+        terms_privacy_policy_and_static_content: ~
+        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: ~
         community_logo: Logo
@@ -112,6 +114,8 @@ vi:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: ~
         cover_photo_instructions_text_with_dimensions: "Ảnh sẽ được thu nhỏ về kích thước %{width}x%{height} pixel. Những ảnh quá cao sẽ được cắt ngay giữa. %{see_how_it_looks_like}"
+        we_have_you_covered: ~
+        cover_photo_ready_made: ~
         small_cover_photo_visibility: ~
         small_cover_photo_instructions_text_with_dimensions: "Hình ảnh sẽ được thu nhỏ lại thành thành kích thước %{height}x%{width} và những hình ảnh cao hơn sẽ được cắt ở giữa."
         main_content_width: "Khi chọn ảnh bìa xin lưu ý rằng nội dung trang chính là %{main_width} pixel rộng nhất. Hãy nhớ cũng kiểm tra ảnh bìa của bạn trông như thế nào trên màn hình nhỏ hơn (ví dụ bằng cách sử dụng một cửa sổ trình duyệt hẹp hơn)."
@@ -178,27 +182,33 @@ vi:
       getting_started:
         getting_started: "Bắt đầu khóa hướng dẫn"
       available_languages:
+        cs: ~
+        da-DK: "Tiếng Đan Mạch"
+        de: "Tiếng Đức"
         en: "Tiếng Anh"
         en-AU: "Tiếng Anh (Úc)"
         en-GB: "Tiếng Anh (Vương quốc Anh)"
+        es: ~
+        es-ES: ~
+        fi: "Tiếng Phần Lan"
         fr: "Tiếng Pháp"
         fr-CA: "Tiếng Pháp (Canada)"
-        es: "Tiếng Tây Ban Nha (Chile)"
-        es-ES: "Tiếng Tây Ban Nha"
-        pt-PT: "Tiếng Bồ Đào Nha"
-        pt-BR: "Tiếng Bồ Đào Nha (Braxin)"
-        nb: "Tiếng Na Uy Bokmål"
-        sv: "Tiếng Thụy Điển"
-        da-DK: "Tiếng Đan Mạch"
-        fi: "Tiếng Phần Lan"
-        ru: "Tiếng Nga"
-        de: "Tiếng Đức"
         el: "Tiếng Hy Lạp"
-        nl: "Tiếng Hà Lan"
-        tr-TR: "Tiếng Thổ Nhĩ Kỳ"
-        zh: "Tiếng Trung"
-        ja: "Tiếng Nhật"
         it: "Tiếng Ý"
+        ja: "Tiếng Nhật"
+        ko: ~
+        nb: "Tiếng Na Uy Bokmål"
+        nl: "Tiếng Hà Lan"
+        pl: ~
+        pt-BR: "Tiếng Bồ Đào Nha (Braxin)"
+        pt-PT: "Tiếng Bồ Đào Nha"
+        ru: "Tiếng Nga"
+        sv: "Tiếng Thụy Điển"
+        th-TH: ~
+        tr-TR: "Tiếng Thổ Nhĩ Kỳ"
+        vi: ~
+        zh: "Tiếng Trung"
+        zh-TW: ~
       settings:
         settings: "Cài đặt"
         general: Chung
@@ -207,6 +217,7 @@ vi:
         users_can_invite_new_users: ~
         private: ~
         require_verification_to_post_listings: ~
+        allow_free_conversations: ~
         search_preferences: "Tùy chọn tìm kiếm"
         default_search_type: "Thể loai tìm kiếm: %{select_search_type}"
         keyword_search: "Tìm kiếm từ khoá"
@@ -229,6 +240,7 @@ vi:
         update_settings: "Lưu thiết lập"
         automatically_confirmed_no_escrow: "Đơn đặt hàng sẽ được tự động đánh dấu là %{days_dropdown} ngày hoàn thành sau khi thanh toán đã được thực hiện"
         automatically_confirmed_no_escrow_stripe_info: ~
+        buyer_transaction_fees_are_only_supported_with_stripe: ~
         automatic_newsletter_frequency: "Gửi bản tin tự động: %{frequency_dropdown}"
         newsletter_daily: "Hằng ngày"
         newsletter_weekly: "Hằng tuần"
@@ -242,6 +254,8 @@ vi:
         you_will_be_redirected_to: "Sau khi bạn đã xóa thị trường của mình, bạn sẽ được chuyển hướng đến %{destination}. Bạn sẽ không thể truy cập vào thị trường của bạn nữa."
         delete_this_marketplace: "Xóa thị trường này"
         payment_preferences: "Hệ thống thanh toán"
+        pre_approved_listings: ~
+        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "Điều hành người dùng"
         email: Email
@@ -263,6 +277,22 @@ vi:
         reset_search: ~
         for_search_terms: ~
         this_makes_the_user_an_admin: ~
+        status_filter:
+          all: ~
+          selected: ~
+          selected_js: ~
+          admin: ~
+          banned: ~
+          posting_allowed: ~
+          accepted: ~
+          unconfirmed: ~
+          pending: ~
+        this_user_hasnt_confirmed_their_email_address: ~
+        unconfirmed_user: ~
+        resend: ~
+        cancel: ~
+        user_didnt_complete_the_signup_process: ~
+        pending_user: ~
       new_layout:
         new_layout: "Bố cục mới"
         description_roadmap_new: "Khi các thành phần bố cục mới được tạo sẵn cho thị trường của bạn, bạn có thể chọn xem bạn muốn bắt đầu sử dụng thành phần mới hay tiếp tục sử dụng thành phần mới. Bạn có thể bật / tắt vùng chọn ở bất kỳ điểm nào từ trang này. Bạn nên luôn luôn sử dụng phiên bản mới vì các thành phần cũ có thể được loại bỏ tại một số điểm. Trong trường hợp một thành phần mà bạn hiện đang sử dụng sẽ được loại bỏ, bạn sẽ được liên hệ trước."
@@ -274,6 +304,12 @@ vi:
         social_media: "Mạng xã hội"
         logo: ~
         logo_info: ~
+        social_media_title: ~
+        social_media_title_info: ~
+        link_for_facebook: ~
+        link_for_linkedin: ~
+        link_for_twitter: ~
+        social_media_description: ~
         twitter_handle: "Tài khoản Twitter"
         twitter_handle_info_text: "Tên tài khoản Twitter cho chợ điện tử của bạn (nếu có). Tên này dùng cho nút tweet trong trang bài đăng."
         twitter_handle_info_text_with_instructions: "Tên tài khoản Twitter cho chợ điện tử của bạn (nếu có). Tên này dùng cho nút tweet trong trang bài đăng. %{instructions_link}."
@@ -281,6 +317,7 @@ vi:
         twitter_handle_placeholder: "tên đăng nhập"
         invalid_twitter_handle: "Tài khoản Twitter nên chỉ chứa tối đa 15 ký tự chữ và số (ký tự A-Z và số 0-9)."
         facebook_connect: Facebook
+        facebook_developers_dashboard: ~
         facebook_connect_info_text: "Để kích hoạt Đăng nhập Facebook, hãy tạo một ứng dụng cho thị trường của bạn trong <a href='https://developers.facebook.com/'> trang tổng quan của nhà phát triển Facebook </a>. Thêm ID được tạo ra và khóa bí mật của ứng dụng tại đây."
         facebook_connect_info_text_with_instructions: "Để kích hoạt Đăng nhập Facebook, hãy tạo một ứng dụng cho thị trường của bạn trong <a href='https://developers.facebook.com/'> trang tổng quan của nhà phát triển Facebook </a>. Thêm ID được tạo ra và khóa bí mật của ứng dụng tại đây. %{instructions_link}"
         facebook_instructions_link_text: "Xem hướng dẫn để cấu hình Facebook Connect."
@@ -291,6 +328,69 @@ vi:
         enable_facebook_login: ~
         save: "Lưu thiết lâp"
         add_another_image: ~
+        google_connect: ~
+        google_instructions_link_text: ~
+        google_developers_console: ~
+        google_connect_info_text_with_instructions: ~
+        google_connect_info_text: ~
+        enable_google_login: ~
+        google_connect_id: ~
+        google_connect_secret: ~
+        linkedin_connect: ~
+        linkedin_instructions_link_text: ~
+        linkedin_developers_dashboard: ~
+        linkedin_connect_info_text_with_instructions: ~
+        linkedin_connect_info_text: ~
+        enable_linkedin_login: ~
+        linkedin_connect_id: ~
+        linkedin_connect_secret: ~
+      seo_settings:
+        seo: ~
+        title: ~
+        meta_title_label: ~
+        meta_title_info: ~
+        meta_title_link_text: ~
+        meta_description_label: ~
+        meta_description_info: ~
+        meta_description_link_text: ~
+        search_title: ~
+        search_meta_title_label: ~
+        search_meta_title_info: ~
+        search_meta_title_link_text: ~
+        search_meta_description_label: ~
+        search_meta_description_info: ~
+        search_meta_description_link_text: ~
+        listing_title: ~
+        listing_meta_title_label: ~
+        listing_meta_title_info: ~
+        listing_meta_title_link_text: ~
+        listing_meta_description_label: ~
+        listing_meta_description_info: ~
+        listing_meta_description_link_text: ~
+        category_title: ~
+        category_meta_title_label: ~
+        category_meta_title_info: ~
+        category_meta_title_link_text: ~
+        category_meta_description_label: ~
+        category_meta_description_info: ~
+        category_meta_description_link_text: ~
+        profile_title: ~
+        profile_meta_title_label: ~
+        profile_meta_title_info: ~
+        profile_meta_title_link_text: ~
+        profile_meta_description_label: ~
+        profile_meta_description_info: ~
+        profile_meta_description_link_text: ~
+        sitemap_label: ~
+        sitemap_info: ~
+        sitemap_info_link_text: ~
+        sitemap_info_public: ~
+        sitemap_info_private: ~
+        robots_label: ~
+        robots_info: ~
+        robots_info_link_text: ~
+        robots_info_2: ~
+        save: ~
       analytics:
         analytics: "Phân tích"
         google_analytics_key: "ID theo dõi Google Analytics"
@@ -302,8 +402,14 @@ vi:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: "Lưu thiết lâp"
+      logo_link:
+        title: ~
+        info: ~
+        url: ~
+        placeholder: ~
       menu_links:
         menu_links: "Liên kết danh mục"
+        menu_links_display: ~
         save: "Lưu thiết lập"
         add_menu_link: "Thêm liên kết mới vào danh mục"
         title_placeholder: "Tiêu đề liên kết"
@@ -316,6 +422,15 @@ vi:
         all: "Tất cả"
         max_number_of_links_info: "Liên kết đến %{about_page} luôn được hiển thị như liên kết trình đơn đầu tiên"
         about_page: "giới thiệu trang"
+      default_menu_links:
+        title: ~
+        about_link_title: ~
+        contact_link_title: ~
+        invite_link_title: ~
+        info: ~
+        display_about: ~
+        display_contact: ~
+        display_invite: ~
       topbar:
         topbar: "Thanh trên cùng"
         new_listing_button_label: "Nội dung nút Đăng bài mới"
@@ -337,6 +452,8 @@ vi:
           canceled: ~
           preauthorized: ~
           rejected: ~
+          payment_intent_requires_action: ~
+          payment_intent_action_expired: ~
         headers:
           conversation: "Chủ đề đối thoại"
           listing: "Bài đăng"
@@ -382,6 +499,9 @@ vi:
             canceled: "Đã hủy"
             initiated: "Đang chờ thanh toán Stripe"
             pending_ext: "Đang chờ thanh toán Stripe"
+            payment_intent_requires_action: ~
+            payment_intent_action_expired: ~
+            payment_intent_failed: ~
         not_available: "Lịch bận"
       conversations:
         conversations: ~
@@ -394,10 +514,18 @@ vi:
           other_party: ~
         participants: ~
         profile: ~
+        search_by_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
       testimonials:
         testimonials: ~
         no_testimonials_found: ~
         displaying_xx_reviews: ~
+        search_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
         headers:
           transaction: ~
           author: ~
@@ -410,6 +538,16 @@ vi:
           skipped: ~
           published: ~
           blocked: ~
+        status_filter:
+          selected: ~
+          all: ~
+          published: ~
+          positive: ~
+          negative: ~
+          skipped: ~
+          waiting: ~
+          blocked: ~
+          selected_js: ~
         form:
           review_text: ~
           save: ~
@@ -419,17 +557,35 @@ vi:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
+          unskip: ~
+          if_you_unskip_the_review: ~
+          they_will_not_be_notified_automatically: ~
+      invitations:
+        invitations: ~
+        used:
+          "yes": ~
+          "no": ~
+        headers:
+          sent_by: ~
+          message: ~
+          sent_to: ~
+          used: ~
+          date_sent: ~
       listings:
         listings: ~
         search_by_title_author_category: ~
         search: ~
         reset_search: ~
+        export_all_as_csv: ~
+        processing_export: ~
         status:
           all: ~
           selected_js: ~
           open: ~
           closed: ~
           expired: ~
+          approval_pending: ~
+          approval_rejected: ~
         headers:
           title: ~
           author: ~
@@ -440,6 +596,14 @@ vi:
         open: ~
         closed: ~
         expired: ~
+        approved: ~
+        approval_pending: ~
+        approval_rejected: ~
+        form:
+          this_listing_has_not_not_been_approved_yet: ~
+          approve: ~
+          reject: ~
+          cancel: ~
       user_fields:
         user_fields: ~
       footer:
@@ -456,20 +620,26 @@ vi:
         footer_copyright: ~
         footer_enabled: ~
         social_links: ~
+        title_placeholder: ~
+        url_placeholder: ~
         style:
           dark: ~
           light: ~
+          marketplace_color: ~
+          logo: ~
         social:
-          facebook: ~
-          twitter: ~
-          instagram: ~
-          youtube: ~
-          googleplus: ~
-          linkedin: ~
-          pinterest: ~
-          soundcloud: ~
           title: ~
           url: ~
+      domain:
+        domain: ~
+        marketplace_domain: ~
+        offer_pro: ~
+        upgrade_pro_plan_link: ~
+        your_marketplace_address_is: ~
+        would_you_like_to_change_address: ~
+        contact_us: ~
+        you_can_now_use_a_custom_domain: ~
+        would_you_like_to_change_domain: ~
     custom_fields:
       edit:
         edit_listing_field: "Chỉnh sửa trường liệt kê %{field_name}"
@@ -587,6 +757,7 @@ vi:
       emails_title: Email
       subscription: "Đăng ký"
       preview: "Xem trước trang web"
+      whats_new: ~
     listing_shapes:
       availability_title: "Khả thi"
       read_more: "Đọc thêm về quản lý lịch làm việng tự động."
@@ -732,7 +903,10 @@ vi:
       stripe_fee: "Phí của Stripe"
       stripe_fee_notice: "%{stripe_fee_link} sẽ được trích ra từ phí giao dịch bạn thu được."
       fee_should_be_less_than_minimum_price: "Phí giao dịch tối thiểu phải nhỏ hơn giá trị giao dịch tối thiểu"
+      the_transaction_fee_must_be_lower_than_100: ~
       confirm_disable: ~
+      commission_from_buyer_label: ~
+      minimum_buyer_transaction_fee_label: ~
       stripe_connected:
         title: "Đã kết nối Stripe"
         disable: ~
@@ -745,6 +919,7 @@ vi:
         enable: ~
       cannot_enable_gateway: ~
       cannot_disable_gateway: ~
+      cannot_enable_gateway_because_of_buyer_commission: ~
       stripe_form:
         add_your_api_keys: "Nhập API keys của Stripe"
         how_to_get_these: "Lấy các thông tin này ở đâu?"
@@ -868,13 +1043,14 @@ vi:
       quantity_label: "Số lượng:"
       sum_label: "Tổng phụ:"
       service_fee_label: "%{service_name} phí:"
+      buyer_service_fee_label: ~
       you_will_get_label: "Bạn sẽ nhận được:"
       total_label: "Tổng:"
       total_value: "%{seller_gets}*"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee_info: "* Không bao gồm <a id='%{fee_info_link_id}' href='#'> lệ phí thanh toán của PayPal </a>"
-      payment_fee_info: ~
+      paypal_fee: ~
+      paypal_fee_info: "* Không bao gồm %{link}"
       shipping_price_label: "Vận chuyển:"
       stripe-fee_label: ~
     confirm:
@@ -913,6 +1089,7 @@ vi:
     message:
       accepted_request: ~
       received_payment: "Chấp nhận yêu cầu, đã nhận được thanh toán cho %{sum}"
+      received_payment_wo_sum: ~
       accepted_offer: "đã chấp nhận yêu cầu"
       rejected_request: "đã từ chối yêu cầu và hủy thanh toán"
       rejected_offer: "đã từ chối yêu cầu"
@@ -922,8 +1099,10 @@ vi:
       canceled_offer: "đã hủy đề nghị"
       paid: "Thanh toán %{sum}"
       payment_preauthorized: "Thanh toán đã được cho phép: %{sum}"
+      payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
+        held_payment_wo_sum: ~
         confirmed_request: ~
     new:
       message: "Tin nhắn"
@@ -1138,7 +1317,9 @@ vi:
       shipping_total: ~
       product: ~
       price_payer_paid: ~
+      subtotal: ~
       service_fee: ~
+      buyer_service_fee: ~
       you_will_get: ~
       new_payment: ~
       price_per_unit_type: ~
@@ -1154,6 +1335,7 @@ vi:
       duration: ~
       quantity: ~
       subtotal: ~
+      buyer_service_fee: ~
       total: ~
       price: ~
       service_fee: ~
@@ -1178,7 +1360,7 @@ vi:
       subtotal: "Tổng phụ:"
       total: "Tổng cộng"
       price: Giá
-      service_fee: "Phí dịch vụ"
+      buyer_service_fee: ~
       stripe_gateway_fee: ~
       paypal_gateway_fee: ~
       money_will_be_transferred: "Số tiền này sẽ được chuyển đến %{recipient_name} khi a) bạn đã đánh dấu yêu cầu hoàn thành hoặc b) %{automatic_confirmation_days} ngày đã trôi qua kể từ khi bạn trả tiền."
@@ -1244,6 +1426,32 @@ vi:
       this_is_automatic_message: "Đây là một thư tự động được gửi tới các quản trị viên của %{community}."
       person_name: "Tên:"
       person_email: "Email:"
+    listing_submited_for_review:
+      subject: ~
+      there_is_a_new_listing_to_review: ~
+      review_the_listing: ~
+      this_is_automatic_message: ~
+    listing_approved:
+      subject: ~
+      listing_has_been_approved: ~
+      view_the_listing: ~
+    listing_rejected:
+      subject: ~
+      listing_has_been_rejected: ~
+      contact_link: ~
+      edit_the_listing: ~
+    edited_listing_submited_for_review:
+      subject: ~
+      there_is_a_edited_listing_to_review: ~
+      review_the_listing: ~
+    new_transaction:
+      subject: ~
+      there_is_a_new_transaction: ~
+      a_new_transaction: ~
+      listing: ~
+      sum: ~
+      starter: ~
+      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "Việc đặt chỗ không thành công do lỗi không mong muốn. Vui lòng thử lại sau. Bạn chưa bị tính phí."
@@ -1266,6 +1474,7 @@ vi:
       buyer_cannot_pay_error: "Thanh toán đã bị PayPal từ chối. Vui lòng liên hệ với Dịch vụ Khách hàng của họ để biết thêm thông tin:%{customer_service_link}"
       pending_review_error: "Thanh toán đã được gửi nhưng bị PayPal gắn cờ là 'yêu cầu xem xét lại'. Khi PayPal hoàn tất việc xem xét, thanh toán sẽ tự động được ủy quyền."
       seller_express_checkout_disabled: "PayPal Express Checkout đã bị tắt đối với tài khoản PayPal của người đăng bài. Vui lòng liên hệ và báo cho họ biết có vấn đề với việc thanh toán đồng thời khuyên họ làm việc với Dịch vụ Khách hàng PayPal."
+      seller_express_checkout_disabled_no_free: ~
       generic_error: "Đã xảy ra lỗi trong quá trình thanh toán. Không thể hoàn tất thanh toán qua PayPal của bạn."
       cancel_error: "Đã xảy ra lỗi khi hủy. Không thể hoàn tất huỷ bỏ."
       accept_authorization_error: "Đã xảy ra lỗi khi cố gắng chấp nhận thanh toán của Paypal. Vui lòng thử lại."
@@ -1312,6 +1521,7 @@ vi:
       after: "phải sau %{restriction}"
       on_or_after: "phải ở mức hoặc sau %{restriction}"
       positive_number: "Chèn một số."
+      from_must_be_less_than_till: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} đồng ý cho %{requester_name} vay %{listing_title} %{time_ago}."
@@ -1519,7 +1729,7 @@ vi:
       how_to_use: "Cách sử dụng"
       info_about_kassi: "Thông tin về %{service_name}"
       news: "Tin tức"
-      register_details: "Chi tiết đăng ký"
+      register_details: "Chính sách bảo mật"
       terms: "Điều khoản sử dụng"
     logged_in:
       admin: "Quản trị"
@@ -1535,6 +1745,23 @@ vi:
       messages: "Các tin nhắn"
     logged_in_notifications_icon:
       notifications: "Các thông báo"
+    markdown_help:
+      title: ~
+      description: ~
+      formatting: ~
+      result: ~
+      h1: ~
+      h2: ~
+      h3: ~
+      italic: ~
+      bold: ~
+      underline: ~
+      strikethrough: ~
+      inline_link: ~
+      list: ~
+      one: ~
+      two: ~
+      three: ~
     mobile_logged_in:
       admin: "Quản trị"
       go_to_your_profile_page: "Hồ Sơ"
@@ -1558,8 +1785,8 @@ vi:
       comment_sent: "Bình luận đã gửi"
       confirmation_link_is_wrong_or_used: "Liên kết xác nhận vừa được sử dụng hoặc bị hỏng. Thử đăng nhập lại, hoặc gửi thông tin phản hồi nếu lỗi vẫn tồn tại."
       additional_email_confirmed: "Thư điện tử bạn đã nhập bây giờ được xác nhận. Bây giờ, bạn có thể tham gia cộng đồng bằng cách nhập lại nó."
-      could_not_get_email_from_facebook: "Tài khoảng Facebook không chứa địa chỉ mail. Bạn cần ít nhất 1 địa chỉ mail để tạo tài khoản trên trang này."
-      facebook_email_unconfirmed: "Địa chỉ email '%{email}' liên kết với tài khoản Facebook của bạn đã được sử dụng nhưng chưa được xác nhận. Vui lòng xác nhận địa chỉ email trước khi đăng nhập vào Facebook."
+      could_not_get_email_from_social_network: ~
+      social_network_email_unconfirmed: ~
       create_new_listing: "Đăng một sản phẩm khác"
       create_one_here: "tạo một ở đây"
       email_confirmation_sent_to_new_address: "Bây giờ, email xác nhận được gửi đến địa chỉ mới."
@@ -1596,7 +1823,8 @@ vi:
       listing_updated_successfully: "Cập nhật thành công"
       listing_updated_availability_management_enabled: "Bài đăng cập nhật thành công. Quản lý lịch làm việc đã được bật."
       listing_updated_availability_management_disabled: "Bài đăng cập nhật thành công. Quản lý lịch làm việc đã được tắt"
-      only_kassi_administrators_can_access_this_area: "Chỉ ban quản trị của %{service_name} mới có thể truy cập khu vực này"
+      listing_deleted: ~
+      only_kassi_administrators_can_access_this_area: ~
       only_listing_author_can_close_a_listing: "Chỉ tác giả của bài đăng mới có thể đóng bài đăng"
       only_listing_author_can_edit_a_listing: "Chỉ tác giả của bài đăng mới có thể chỉnh sửa bài đăng"
       payment_successful: "Thanh toán thành công"
@@ -1662,6 +1890,7 @@ vi:
       user_does_not_have_email_to_delete: "Địa chỉ mail mà bạn đang xóa không tồn tại."
       email_deleted: "Email đã được xóa."
       listing_author_payment_details_missing: "Vui lòng liên hệ người đăng bằng cách nhấn vào nút 'Liên hệ' bên dưới. Họ cần phải cập nhật chi tiết thanh toán để nhận thanh toán."
+      listing_author_payment_details_missing_no_free: ~
       images_are_processing: "Chúng tôi đang xử lý hình ảnh của bạn. Hãy cho chúng tôi vài phút và chúng sẽ được hiển thị."
       maintenance_mode:
         zero: "Trang web bây giờ sẽ không hoạt động để bảo trì"
@@ -1678,6 +1907,8 @@ vi:
       paypal_payments: ~
       stripe_payments: ~
       payments: "Thanh toán"
+      listings: ~
+      listings_search_placeholder: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: "Bạn không có quyền xem bài đăng này."
@@ -1695,6 +1926,7 @@ vi:
       you_cannot_send_a_new_comment_because_listing_is_closed: "Bạn không thể đăng bình luận mới bài đăng này đã đóng."
       you_must: "Bạn phải"
       subscribe_to_comments: "Thông báo cho tôi khi có bình luận và cập nhật mới"
+    deleting_a_listing_cannot_be_undone: ~
     edit:
       edit_listing: "Thay đổi bài đăng"
     edit_links:
@@ -1706,6 +1938,11 @@ vi:
       show_in_updates_email_loading: "Đang tải..."
       show_in_updates_email_error: "Không thể truy cập máy chủ. Hãy thử lại sau khi làm mới trang."
       show_in_updates_email_success: ~
+      listing_is_pending: ~
+      listing_is_rejected: ~
+      approve_listing: ~
+      reject_listing: ~
+      delete_listing: ~
     map:
       open_in_google_maps: "Mở bằng bản đồ Google"
     error:
@@ -1728,6 +1965,7 @@ vi:
       description:
         detailed_description: "Mô tả chi tiết"
         youtube_info: "Nếu mô tả của bạn có liên kết trên YouTube, các video sẽ được hiển thị bên dưới mô tả."
+        youtube_info_markdown: ~
       destination:
         destination: Đích
       form_content:
@@ -1786,6 +2024,9 @@ vi:
         origin: Gốc
       send_button:
         save_listing: Lưu
+        submit_for_review: ~
+        will_be_reviewed: ~
+        we_noticed_youre_an_admin: ~
       share_type:
         select: Chọn
         borrow: Mượn
@@ -1865,6 +2106,7 @@ vi:
       select_one: ~
       start_time: ~
       end_time: ~
+      marketplace_fees_may_apply: ~
     new:
       listing: "sản phẩm"
       selected_category: "Danh mục : %{category}"
@@ -1878,6 +2120,7 @@ vi:
       community_not_configured_for_payments: "%{service_name} chưa được định cấu hình nhận thanh toán, vì vậy bạn không thể đăng bài mới. Vui lòng %{contact_admin_link} để được hỗ trợ."
       payment_settings_link: "Cài đặt thanh toán"
       community_not_configured_for_payments_admin: "%{service_name} chưa được cấu hình thanh toán vì vậy bạn không thể đăng bài mới. Truy cập %{payment_settings_link} để điền các thông tin cần thiết."
+      you_are_now_posting_a_listing_on_behalf_of: ~
     quantity:
       hour: "Số giờ:"
       day: "Số ngày"
@@ -2097,12 +2340,12 @@ vi:
       show_my_name_to_others: "Hiển thị tên thật của tôi cho các người dùng %{service_name} khác"
       sign_up: "Tạo một tài khoản mới trong %{service_name}"
       terms: "Điều khoản sử dụng"
-      privacy: ~
+      privacy: "Chính sách bảo mật"
       username_is_in_use: "Tên người dùng này đang được sử dụng."
       username_is_invalid: "Tên người dùng không hợp lệ. Cho phép các ký tự là chữ cái, số và gạch dưới."
       visible_only_to_you: "chỉ hiện thị đối với bạn và cộng đồng quản trị"
       visible_to_everybody: "hiển thị đối với mọi người"
-      create_account_with_facebook: "Đăng nhập bằng Facebook"
+      create_account_with_provider: ~
       OR: HOẶC
       signup_with_email: "Đăng ký với email"
       this_field_will_be_publicly_visible: ~
@@ -2110,9 +2353,8 @@ vi:
       grade: "xếp loại:"
       and_gave_following_feedback: "và đã cung cấp thông tin phản hồi sau"
     profile_listings:
-      show_also_closed: "Hiển thị cả những bài đăng đang đóng"
-      show_only_open: "Chỉ hiển thị mở"
       no_image: "Không có hình ảnh"
+      manage_listings: ~
     show:
       contact: "Liên hệ %{person}"
       about_me: "Về tôi:"
@@ -2145,6 +2387,8 @@ vi:
       show_all_listings: "Hiện tất cả sản phẩm/dịch vụ đang bán"
       show_all_open_listings: "Hiện tất cả các bài đăng đang mở"
       show_all_reviews: "Hiện tất cả phản hồi"
+      admin_actions: ~
+      post_listing_as: ~
     followed_people:
       you_follow_plural: "Bạn theo dõi %{count} người"
       you_follow_singular: "Bạn theo dõi %{count} người"
@@ -2169,7 +2413,7 @@ vi:
       account_creation_link_text: "nhấn vào đây"
       cancle_facebook_connect: "Nếu bạn không muốn liên kết tài khoản này, bạn có thể %{cancel_link}."
       facebook_cancel_link_text: "hủy bỏ"
-      log_in_with_your_facebook_account: "Đăng nhập với tài khoản Facebook của bạn:"
+      log_in_with_your_provider_account: ~
       or_sign_up_with_your_username: "...hoặc với tên người dùng và mật khẩu của bạn:"
       we_will_not_post_without_asking_you: "Chúng tôi sẽ không bao giờ đăng tin lên Facebook của bạn mà không hỏi ý bạn trước."
     password_forgotten:
@@ -2270,6 +2514,9 @@ vi:
       invisible: "(Không hiển thị cho người dùng khác)"
       image_is_processing: "Xin chờ. Chúng tôi đang xử lý ảnh tiểu sử của bạn. Nó sẽ được sẵn sàng trong một hoặc hai phút."
       shown_in_your_public_profile: ~
+      editing_profile_of: ~
+      format_markdown_link: ~
+      format_markdown: ~
     save_information: "Lưu thông tin"
   shipping_address:
     shipping_address: "Địa chỉ giao hàng"
@@ -2476,6 +2723,7 @@ vi:
       signup: "Đăng ký"
       admin_dashboard: "Bảng điều khiển quản trị"
       language: "Ngôn ngữ"
+      listings: ~
     utils:
       km: km
       mi: mi
@@ -2520,6 +2768,12 @@ vi:
     paypal_connected: ~
     paypal_can_accept: ~
     paypal_connected_give_permission: ~
+    stripe_account_restricted: ~
+    stripe_account_restricted_info: ~
+    stripe_account_restricted_soon: ~
+    stripe_account_restricted_soon_info: ~
+    stripe_account_pending_verification: ~
+    stripe_account_pending_verification_info: ~
     form_new:
       need_info: ~
       select_country: ~
@@ -2607,3 +2861,13 @@ vi:
     wrong_setup: ~
     invalid_bank_account_number: ~
     invalid_postal_code: ~
+  seo_sections:
+    you_can_use_variables: ~
+    placeholder:
+      search_results: ~
+      search_results_for: ~
+      listing_description: ~
+      listing_description_without_price: ~
+      category_description: ~
+      profile_title: ~
+      profile_description: ~

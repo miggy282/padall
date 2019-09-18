@@ -22,6 +22,7 @@ module FeatureFlagService::Store
       :manage_searchpage,
       :stripe,
       :footer,
+      :stripe_payment_intents,
     ].to_set
 
     def initialize(additional_flags:)
@@ -120,7 +121,7 @@ module FeatureFlagService::Store
         FeatureFlagModel
           .where(community_id: community_id, person_id: person_id, feature: feature)
           .first_or_create
-          .update_attributes(enabled: enabled)
+          .update(enabled: enabled)
       }
     end
   end

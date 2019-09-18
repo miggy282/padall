@@ -1,35 +1,0 @@
-{:uriI"�file://app/assets/javascripts/locales/sk-SK.json?type=application/json&id=ca74b94be0fe7d45e765f6db1a251e4294b2eadc2b37152fc613050967d04454:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/sk-SK.json;T:	nameI"locales/sk-SK;T:logical_pathI"locales/sk-SK.json;T:content_typeI"application/json;T:sourceI"|{
-  "please_wait": "Čakajte prosím...",
-  "validation_messages": {
-    "accept": "Tento dokument musí byť vo formáte GIF, JPG alebo PNG.",
-    "creditcard": "Prosím zadajte správne číslo kreditnej karty.",
-    "date": "Prosím zadajte platný dátum.",
-    "dateISO": "Prosím zadajte platný dátum (ISO).",
-    "digits": "Prosím zadajte iba číslice.",
-    "email": "Prosím zadajte platnú e-mailovú adresu.",
-    "equalTo": "Prosím zadajte rovnakú hodnotu.",
-    "max": "Prosím zadajte menej alebo rovnakú hodnotu {0}.",
-    "maxlength": "Prosím, zadajte nie viac ako {0} znakov.",
-    "min": "Prosím zadajte hodnotu väčšiu alebo rovnakú ako {0},",
-    "minlength": "Prosím zadajte najmenej {0} znakov.",
-    "number": "Prosím zadajte správne číslo.",
-    "range": "Prosím zadajte hodnotu medzi {0} a {1}.",
-    "rangelength": "Prosím zadajte hodnotu znakov medzi {0} a {1}.",
-    "remote": "Prosím potvrdit pole.",
-    "required": "Toto pole je povinné.",
-    "url": "Prosím zadajte platnú URL.",
-    "address_validator": "Lokalita nebola nájdená.",
-    "money": "Musíte vložiť platnú peňažnú hodnotu.",
-    "night_selected": "Musíte vybrať aspoň jednu noc",
-    "availability_range": "vybraný rozsah zahŕňa dátumy, ktoré nie sú k dispozícii",
-    "min_bound": "Prosím, zadajte hodnotu menšiu, než maximálna hodnota {0}",
-    "max_bound": "Prosím, zadajte hodnotu väčšiu než minimálna hodnota {0}",
-    "number_no_decimals": "Prosím zadajte celé číslo.",
-    "number_decimals": "Prosím zadajte platné číslo buď s bodkou (.) Alebo čiarkou (,) ako oddeľovač desatinných miest"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/sk-SK.json;TTF:charsetI"
-utf-8;F:digest"%��ڦ3j��1�3��J�����S�%����<c�:lengthi|:dependencies_digest"%c0��ʱ�r2e���ғZu�\$D6���r
-��Q:idI"Eca74b94be0fe7d45e765f6db1a251e4294b2eadc2b37152fc613050967d04454;F:
-mtimel+���[

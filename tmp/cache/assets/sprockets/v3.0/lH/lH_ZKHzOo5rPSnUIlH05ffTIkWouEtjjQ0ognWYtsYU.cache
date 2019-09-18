@@ -1,35 +1,0 @@
-{:uriI"�file://app/assets/javascripts/locales/vi.json?type=application/json&id=70acdb653ce8363ab55b9e90e20fa8aba692d98bf781beeb447351cbde6d7e80:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/locales/vi.json;T:	nameI"locales/vi;T:logical_pathI"locales/vi.json;T:content_typeI"application/json;T:sourceI"F{
-  "please_wait": "Vui lòng chờ...",
-  "validation_messages": {
-    "accept": "Tập tin ảnh phải là một trong các định dạng GIF, JPG hoặc PNG",
-    "creditcard": "Vui lòng nhập số thẻ tín dụng hợp lệ.",
-    "date": "Vui lòng nhập ngày hợp lệ.",
-    "dateISO": "Vui lòng nhập ngày hợp lệ (ISO).",
-    "digits": "Vui lòng chỉ nhập con số.",
-    "email": "Vui lòng nhập địa chỉ email hợp lệ.",
-    "equalTo": "Vui lòng nhập cùng giá trị lần nữa.",
-    "max": "Xin hãy nhập giá trị nhỏ hơn hoặc bằng {0}.",
-    "maxlength": "Vui lòng nhập không nhiều hơn {0} ký tự.",
-    "min": "Xin hãy nhập giá trị lớn hơn hoặc bằng {0}.",
-    "minlength": "Xin hãy nhập ít nhất {0} ký tự.",
-    "number": "Hãy nhập số hợp lệ.",
-    "range": "Vui lòng nhập giá trị nằm giữa {0} và {1}.",
-    "rangelength": "Vui lòng nhập một giá trị giữa  {0} và  {1} độ dài các ký tự.",
-    "remote": "Hãy sửa trường này.",
-    "required": "Trường này là bắt buộc.",
-    "url": "Vui lòng nhập URL hợp lệ.",
-    "address_validator": "Không tìm thấy địa điểm.",
-    "money": "Bạn cần điền giá trị tiền tệ hợp lệ",
-    "night_selected": "Bạn cần phải chọn ít nhất một đêm",
-    "availability_range": "Phạm vi lựa chọn bao gồm ngày mà không khả dụng",
-    "min_bound": "Vui lòng điền giá trị nhỏ hơn giá trị lớn nhất ({0})",
-    "max_bound": "Vui lòng điền giá trị lớn hơn giá trị nhỏ nhất ({0})",
-    "number_no_decimals": "Vui lòng nhập cả số",
-    "number_decimals": "Vui lòng nhập số với các dấu (.) hoặc phẩy (,) để tách các số theo đơn vị"
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://app/assets/javascripts/locales/vi.json;TTF:charsetI"
-utf-8;F:digest"%M�(�8٪�$��Ǩ�:�x}�`�J!�hW���:lengthiF:dependencies_digest"%�������D9o�*sk5Y��P�2��
-�0�:idI"E70acdb653ce8363ab55b9e90e20fa8aba692d98bf781beeb447351cbde6d7e80;F:
-mtimel+���[

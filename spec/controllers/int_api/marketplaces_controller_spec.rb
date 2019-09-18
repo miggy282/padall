@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'spec_helper'
 
 # Override the API with test API
@@ -25,7 +23,7 @@ describe IntApi::MarketplacesController, type: :controller do
 
   describe "#create" do
     it "should create a marketplace and an admin user" do
-      post :create, params: { admin_email: "eddie.admin@example.com", 
+      post :create, params: { admin_email: "eddie.admin@example.com",
                      admin_first_name: "Eddie",
                      admin_last_name: "Admin",
                      admin_password: "secret_word",
@@ -65,10 +63,15 @@ describe IntApi::MarketplacesController, type: :controller do
       expect(p.emails.first.address).to eql "eddie.admin@example.com"
 
       expect_trial_plan(c.id)
+
+      stripe_settings = TransactionService::API::Api.settings.get_active_by_gateway(community_id: c.id, payment_gateway: 'stripe')[:data]
+      expect(stripe_settings[:payment_gateway]).to eql :stripe
+      expect(stripe_settings[:payment_process]).to eql :preauthorize
+      expect(stripe_settings[:key_encryption_padding]).to eql true
     end
 
     it "should handle emails starting with info@" do
-      post :create, params: { admin_email: "info@example.com", 
+      post :create, params: { admin_email: "info@example.com",
                      admin_first_name: "Eddiè",
                      admin_last_name: "Admin",
                      admin_password: "secret_word",
@@ -104,7 +107,7 @@ describe IntApi::MarketplacesController, type: :controller do
     end
 
     it "should handle short emails like fo@barbar.com" do
-      post :create, params: { admin_email: "fo@example.com", 
+      post :create, params: { admin_email: "fo@example.com",
                      admin_first_name: "Eddie_",
                      admin_last_name: "Admin",
                      admin_password: "secret_word",
@@ -175,23 +178,23 @@ describe IntApi::MarketplacesController, type: :controller do
       expect_trial_plan(c.id)
     end
 
-  end
+    it "should create a marketplace and assign feature flags" do
+      default_flags_for_trial = [:topbar_v1]
+      post :create, params: { admin_email: "eddie.admin@example.com",
+                     admin_first_name: "Eddie",
+                     admin_last_name: "Admin",
+                     admin_password: "secret_word",
+                     marketplace_country: "FI",
+                     marketplace_language: "fi",
+                     marketplace_name: "ImaginationTraders",
+                     marketplace_type: "product"}
 
-  describe "#create_prospect_email" do
-    it "should add given email as prospect email" do
-      post :create_prospect_email, params: { :email => "something.not.used@example.com" }
-
-      expect(response.status).to eql 200
-      expect(response.body).to eql ""
-      expect(ProspectEmail.last.email).to eql "something.not.used@example.com"
-    end
-    it "should return with an error when an email is not provided" do
-      post :create_prospect_email, params: { }
-
-      expect(response.status).to eql 400
-      r = JSON.parse(response.body)
-      expect(r[0]).to eql "Email missing from payload"
-      expect(ProspectEmail.last).to be_nil
+      expect(response.status).to eql 201
+      community = Community.find_by(ident: "imaginationtraders")
+      default_flags_for_trial.each do |flag_name|
+        feature_flag = FeatureFlag.find_by(community_id: community.id, enabled: true, feature: flag_name)
+        expect(feature_flag.persisted?).to eq true
+      end
     end
   end
 end

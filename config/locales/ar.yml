@@ -80,6 +80,8 @@ ar:
         transaction_agreement_checkbox_label_description: ~
         transaction_agreement_text_header: "محتوى الاتفاق"
         transaction_agreement_description: ~
+        terms_privacy_policy_and_static_content: ~
+        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "‎%{community_name}‎ تحرير مظهر السوق الإلكتروني"
         community_logo: الشعار
@@ -102,6 +104,8 @@ ar:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "صورة الغطاء تظهر في الصفحة الرئيسية للمستخدمين الغير مسجلين."
         cover_photo_instructions_text_with_dimensions: ~
+        we_have_you_covered: ~
+        cover_photo_ready_made: ~
         small_cover_photo_visibility: "صورة الغطاء المصغرة تظهر في كل الصفحات ما عدا الصفحة الرئيسية للمستخدمين المسجلين"
         small_cover_photo_instructions_text_with_dimensions: ~
         main_content_width: ~
@@ -168,27 +172,33 @@ ar:
       getting_started:
         getting_started: ~
       available_languages:
+        cs: ~
+        da-DK: ~
+        de: ~
         en: ~
         en-AU: ~
         en-GB: ~
-        fr: ~
-        fr-CA: ~
         es: ~
         es-ES: ~
-        pt-PT: ~
-        pt-BR: ~
-        nb: ~
-        sv: ~
-        da-DK: ~
         fi: ~
-        ru: ~
-        de: ~
+        fr: ~
+        fr-CA: ~
         el: ~
-        nl: ~
-        tr-TR: ~
-        zh: ~
-        ja: ~
         it: ~
+        ja: ~
+        ko: ~
+        nb: ~
+        nl: ~
+        pl: ~
+        pt-BR: ~
+        pt-PT: ~
+        ru: ~
+        sv: ~
+        th-TH: ~
+        tr-TR: ~
+        vi: ~
+        zh: ~
+        zh-TW: ~
       settings:
         settings: إعدادات
         general: عام
@@ -197,6 +207,7 @@ ar:
         users_can_invite_new_users: "السماح لكل المشتركين بدعوة الآخرين"
         private: "السماح فقط للمشتركين المسجلين بمشاهدة الإعلانات والملفات الشخصية، اجعل هذا السوق خاص"
         require_verification_to_post_listings: "السماح فقط للمشتركين المؤكدين من المشرف بإضافة إعلانات"
+        allow_free_conversations: ~
         search_preferences: "تفضيلات البحث"
         default_search_type: "‎%{select_search_type}‎ :نوع البحث"
         keyword_search: "بحث بالكلمة"
@@ -219,6 +230,7 @@ ar:
         update_settings: "حفظ الإعدادات"
         automatically_confirmed_no_escrow: ~
         automatically_confirmed_no_escrow_stripe_info: "للعمليات الشرائية التي تتم من خلال سترب يتم تأخير الدفعات لمزود الخدمة إلى أن يتم تحديد الطلب بالمكتمل. ‎%{learn_more}‎"
+        buyer_transaction_fees_are_only_supported_with_stripe: ~
         automatic_newsletter_frequency: "‎%{frequency_dropdown}‎: أرسل نشرات إخبارية تلقائيا"
         newsletter_daily: يومي
         newsletter_weekly: أسبوعي
@@ -232,6 +244,8 @@ ar:
         you_will_be_redirected_to: ~
         delete_this_marketplace: ~
         payment_preferences: "نظام الدفع"
+        pre_approved_listings: ~
+        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "إدارة المستخدمين"
         email: "بريد إلكتروني"
@@ -253,6 +267,22 @@ ar:
         reset_search: "أظهر الكل"
         for_search_terms: ~
         this_makes_the_user_an_admin: ~
+        status_filter:
+          all: ~
+          selected: ~
+          selected_js: ~
+          admin: ~
+          banned: ~
+          posting_allowed: ~
+          accepted: ~
+          unconfirmed: ~
+          pending: ~
+        this_user_hasnt_confirmed_their_email_address: ~
+        unconfirmed_user: ~
+        resend: ~
+        cancel: ~
+        user_didnt_complete_the_signup_process: ~
+        pending_user: ~
       new_layout:
         new_layout: "تصميم جديد"
         description_roadmap_new: ~
@@ -264,6 +294,12 @@ ar:
         social_media: "وسائل التواصل الاجتماعي"
         logo: ~
         logo_info: ~
+        social_media_title: ~
+        social_media_title_info: ~
+        link_for_facebook: ~
+        link_for_linkedin: ~
+        link_for_twitter: ~
+        social_media_description: ~
         twitter_handle: ~
         twitter_handle_info_text: ~
         twitter_handle_info_text_with_instructions: ~
@@ -271,6 +307,7 @@ ar:
         twitter_handle_placeholder: "اسم المستخدم"
         invalid_twitter_handle: ~
         facebook_connect: فيسبوك
+        facebook_developers_dashboard: ~
         facebook_connect_info_text: ~
         facebook_connect_info_text_with_instructions: ~
         facebook_instructions_link_text: ~
@@ -281,6 +318,69 @@ ar:
         enable_facebook_login: ~
         save: "حفظ الإعدادات"
         add_another_image: ~
+        google_connect: ~
+        google_instructions_link_text: ~
+        google_developers_console: ~
+        google_connect_info_text_with_instructions: ~
+        google_connect_info_text: ~
+        enable_google_login: ~
+        google_connect_id: ~
+        google_connect_secret: ~
+        linkedin_connect: ~
+        linkedin_instructions_link_text: ~
+        linkedin_developers_dashboard: ~
+        linkedin_connect_info_text_with_instructions: ~
+        linkedin_connect_info_text: ~
+        enable_linkedin_login: ~
+        linkedin_connect_id: ~
+        linkedin_connect_secret: ~
+      seo_settings:
+        seo: ~
+        title: ~
+        meta_title_label: ~
+        meta_title_info: ~
+        meta_title_link_text: ~
+        meta_description_label: ~
+        meta_description_info: ~
+        meta_description_link_text: ~
+        search_title: ~
+        search_meta_title_label: ~
+        search_meta_title_info: ~
+        search_meta_title_link_text: ~
+        search_meta_description_label: ~
+        search_meta_description_info: ~
+        search_meta_description_link_text: ~
+        listing_title: ~
+        listing_meta_title_label: ~
+        listing_meta_title_info: ~
+        listing_meta_title_link_text: ~
+        listing_meta_description_label: ~
+        listing_meta_description_info: ~
+        listing_meta_description_link_text: ~
+        category_title: ~
+        category_meta_title_label: ~
+        category_meta_title_info: ~
+        category_meta_title_link_text: ~
+        category_meta_description_label: ~
+        category_meta_description_info: ~
+        category_meta_description_link_text: ~
+        profile_title: ~
+        profile_meta_title_label: ~
+        profile_meta_title_info: ~
+        profile_meta_title_link_text: ~
+        profile_meta_description_label: ~
+        profile_meta_description_info: ~
+        profile_meta_description_link_text: ~
+        sitemap_label: ~
+        sitemap_info: ~
+        sitemap_info_link_text: ~
+        sitemap_info_public: ~
+        sitemap_info_private: ~
+        robots_label: ~
+        robots_info: ~
+        robots_info_link_text: ~
+        robots_info_2: ~
+        save: ~
       analytics:
         analytics: تحليلات
         google_analytics_key: ~
@@ -292,8 +392,14 @@ ar:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: "حفظ الإعدادات"
+      logo_link:
+        title: ~
+        info: ~
+        url: ~
+        placeholder: ~
       menu_links:
         menu_links: "روابط القائمة"
+        menu_links_display: ~
         save: "حفظ الإعدادات"
         add_menu_link: ~
         title_placeholder: ~
@@ -306,6 +412,15 @@ ar:
         all: "إظهار الكل"
         max_number_of_links_info: ~
         about_page: نبذة
+      default_menu_links:
+        title: ~
+        about_link_title: ~
+        contact_link_title: ~
+        invite_link_title: ~
+        info: ~
+        display_about: ~
+        display_contact: ~
+        display_invite: ~
       topbar:
         topbar: "القائمة العلوية"
         new_listing_button_label: "أدخل نص جديد لزر الإضافة الجديدة"
@@ -327,6 +442,8 @@ ar:
           canceled: ~
           preauthorized: ~
           rejected: ~
+          payment_intent_requires_action: ~
+          payment_intent_action_expired: ~
         headers:
           conversation: ~
           listing: إعلان
@@ -372,6 +489,9 @@ ar:
             canceled: ملغي
             initiated: "انتظار دفع سترب"
             pending_ext: "انتظار دفع سترب"
+            payment_intent_requires_action: ~
+            payment_intent_action_expired: ~
+            payment_intent_failed: ~
         not_available: "غير متوفر"
       conversations:
         conversations: "أظهر المحادثات"
@@ -384,10 +504,18 @@ ar:
           other_party: "الجهة الأخرى"
         participants: "‎%{author}‎ مع ‎%{starter}‎ :المحادثه"
         profile: "الشخصي ‎%{author}‎‎ ملف"
+        search_by_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
       testimonials:
         testimonials: ~
         no_testimonials_found: ~
         displaying_xx_reviews: ~
+        search_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
         headers:
           transaction: ~
           author: ~
@@ -400,6 +528,16 @@ ar:
           skipped: ~
           published: ~
           blocked: ~
+        status_filter:
+          selected: ~
+          all: ~
+          published: ~
+          positive: ~
+          negative: ~
+          skipped: ~
+          waiting: ~
+          blocked: ~
+          selected_js: ~
         form:
           review_text: ~
           save: ~
@@ -409,17 +547,35 @@ ar:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
+          unskip: ~
+          if_you_unskip_the_review: ~
+          they_will_not_be_notified_automatically: ~
+      invitations:
+        invitations: ~
+        used:
+          "yes": ~
+          "no": ~
+        headers:
+          sent_by: ~
+          message: ~
+          sent_to: ~
+          used: ~
+          date_sent: ~
       listings:
         listings: ~
         search_by_title_author_category: ~
         search: ~
         reset_search: ~
+        export_all_as_csv: ~
+        processing_export: ~
         status:
           all: ~
           selected_js: ~
           open: ~
           closed: ~
           expired: ~
+          approval_pending: ~
+          approval_rejected: ~
         headers:
           title: ~
           author: ~
@@ -430,6 +586,14 @@ ar:
         open: ~
         closed: ~
         expired: ~
+        approved: ~
+        approval_pending: ~
+        approval_rejected: ~
+        form:
+          this_listing_has_not_not_been_approved_yet: ~
+          approve: ~
+          reject: ~
+          cancel: ~
       user_fields:
         user_fields: ~
       footer:
@@ -446,20 +610,26 @@ ar:
         footer_copyright: ~
         footer_enabled: ~
         social_links: ~
+        title_placeholder: ~
+        url_placeholder: ~
         style:
           dark: ~
           light: ~
+          marketplace_color: ~
+          logo: ~
         social:
-          facebook: ~
-          twitter: ~
-          instagram: ~
-          youtube: ~
-          googleplus: ~
-          linkedin: ~
-          pinterest: ~
-          soundcloud: ~
           title: ~
           url: ~
+      domain:
+        domain: ~
+        marketplace_domain: ~
+        offer_pro: ~
+        upgrade_pro_plan_link: ~
+        your_marketplace_address_is: ~
+        would_you_like_to_change_address: ~
+        contact_us: ~
+        you_can_now_use_a_custom_domain: ~
+        would_you_like_to_change_domain: ~
     custom_fields:
       edit:
         edit_listing_field: "‎%{field_name}‎ تعديل حقل الإعلان"
@@ -577,6 +747,7 @@ ar:
       emails_title: "عناوين بريدية"
       subscription: الإشتراك
       preview: "معاينة الموقع"
+      whats_new: ~
     listing_shapes:
       availability_title: الإتاحة
       read_more: ~
@@ -724,7 +895,10 @@ ar:
       stripe_fee: ~
       stripe_fee_notice: ~
       fee_should_be_less_than_minimum_price: ~
+      the_transaction_fee_must_be_lower_than_100: ~
       confirm_disable: ~
+      commission_from_buyer_label: ~
+      minimum_buyer_transaction_fee_label: ~
       stripe_connected:
         title: ~
         disable: "تعطيل سترب"
@@ -737,6 +911,7 @@ ar:
         enable: "إعادة تفعيل باي بال"
       cannot_enable_gateway: "‎%{gateway}‎ لا يمكنك تفعيل طريقة الدفع ."
       cannot_disable_gateway: "‎%{gateway}‎ لا يمكنك تعطيل طريقة الدفع ."
+      cannot_enable_gateway_because_of_buyer_commission: ~
       stripe_form:
         add_your_api_keys: ~
         how_to_get_these: ~
@@ -860,13 +1035,14 @@ ar:
       quantity_label: "الكمية:"
       sum_label: "المجموع الفرعي:"
       service_fee_label: ":‎%{service_name}‎ رسوم خدمة"
+      buyer_service_fee_label: ~
       you_will_get_label: "ستحصل على:"
       total_label: "المجموع:"
       total_value: "*‎%{seller_gets}‎"
       total_value_paypal: ~
       total_value_stripe: ~
+      paypal_fee: ~
       paypal_fee_info: ~
-      payment_fee_info: ~
       shipping_price_label: "الشحن:"
       stripe-fee_label: ~
     confirm:
@@ -905,6 +1081,7 @@ ar:
     message:
       accepted_request: "قَبِل الطلب"
       received_payment: "‎%{sum}‎ قبل الطلب وتم استقبال دفعة بقيمة"
+      received_payment_wo_sum: ~
       accepted_offer: "قَبِل العرض"
       rejected_request: "رفض الطلب، وألغى عملية الشراء"
       rejected_offer: "ألغى العرض"
@@ -914,8 +1091,10 @@ ar:
       canceled_offer: "ألغى العرض"
       paid: "‎%{sum}‎ تم دفع"
       payment_preauthorized: ~
+      payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
+        held_payment_wo_sum: ~
         confirmed_request: ~
     new:
       message: رسالة
@@ -1133,7 +1312,9 @@ ar:
       shipping_total: ~
       product: ~
       price_payer_paid: ~
+      subtotal: ~
       service_fee: ~
+      buyer_service_fee: ~
       you_will_get: ~
       new_payment: ~
       price_per_unit_type: ~
@@ -1149,6 +1330,7 @@ ar:
       duration: ~
       quantity: ~
       subtotal: ~
+      buyer_service_fee: ~
       total: ~
       price: ~
       service_fee: ~
@@ -1173,7 +1355,7 @@ ar:
       subtotal: "المجموع الجزئي"
       total: المجموع
       price: السعر
-      service_fee: "رسوم الخدمة"
+      buyer_service_fee: ~
       stripe_gateway_fee: ~
       paypal_gateway_fee: ~
       money_will_be_transferred: ~
@@ -1243,6 +1425,32 @@ ar:
       this_is_automatic_message: "‎%{community}‎ رسالة تلقائية مرسلة من قبل"
       person_name: "الإسم:"
       person_email: "البريد الإلكتروني:"
+    listing_submited_for_review:
+      subject: ~
+      there_is_a_new_listing_to_review: ~
+      review_the_listing: ~
+      this_is_automatic_message: ~
+    listing_approved:
+      subject: ~
+      listing_has_been_approved: ~
+      view_the_listing: ~
+    listing_rejected:
+      subject: ~
+      listing_has_been_rejected: ~
+      contact_link: ~
+      edit_the_listing: ~
+    edited_listing_submited_for_review:
+      subject: ~
+      there_is_a_edited_listing_to_review: ~
+      review_the_listing: ~
+    new_transaction:
+      subject: ~
+      there_is_a_new_transaction: ~
+      a_new_transaction: ~
+      listing: ~
+      sum: ~
+      starter: ~
+      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "فشل في الحجز بسبب خطأ غير معروف. يرجى المحاولة مرة أخرى. لم يتم احتساب أي تكلفة عليك."
@@ -1265,6 +1473,7 @@ ar:
       buyer_cannot_pay_error: ~
       pending_review_error: ~
       seller_express_checkout_disabled: ~
+      seller_express_checkout_disabled_no_free: ~
       generic_error: ~
       cancel_error: ~
       accept_authorization_error: ~
@@ -1311,6 +1520,7 @@ ar:
       after: "‎%{restriction}‎ يجب أن يكون بعد"
       on_or_after: "‎%{restriction}‎ يجب أن يكون عند أو بعد"
       positive_number: "أدخل رقم."
+      from_must_be_less_than_till: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "‎%{time_ago}‎ ‎%{listing_title}‎ ‎%{requester_name}‎ وافق على إعارة ‎%{offerer_name}‎"
@@ -1534,6 +1744,23 @@ ar:
       messages: الرسائل
     logged_in_notifications_icon:
       notifications: الإشعارات
+    markdown_help:
+      title: ~
+      description: ~
+      formatting: ~
+      result: ~
+      h1: ~
+      h2: ~
+      h3: ~
+      italic: ~
+      bold: ~
+      underline: ~
+      strikethrough: ~
+      inline_link: ~
+      list: ~
+      one: ~
+      two: ~
+      three: ~
     mobile_logged_in:
       admin: المشرف
       go_to_your_profile_page: "الملف الشخصي"
@@ -1557,8 +1784,8 @@ ar:
       comment_sent: "تم إرسال التعليق"
       confirmation_link_is_wrong_or_used: "رابط التفعيل استخدم من قبل أو لم يعد صالحا. حاول التسجيل مرة أخرى، أو قم بالتواصل معنا في حال استمرار المشكلة."
       additional_email_confirmed: "تم تأكيد البريد الإلكتروني بنجاح"
-      could_not_get_email_from_facebook: "تعذر الحصول على بريد إلكتروني من فيسبوك، ولا يمكن إنشاء حساب دون بريد إلكتروني."
-      facebook_email_unconfirmed: "‎%{email}‎ مربوط مع حسابك في فيسبوك مسبقا ولكن يبدو أنه لم يتم تأكيده بعد. يرجى تأكيد البريد الإلكتروني أولا قبل تسجيل الدخول باستخدام حساب فيسبوك"
+      could_not_get_email_from_social_network: ~
+      social_network_email_unconfirmed: ~
       create_new_listing: "أضف إعلان جديد"
       create_one_here: "إنشاء جديد هنا"
       email_confirmation_sent_to_new_address: "رسالة التأكيد تم إرسالها إلى البريد الإلكتروني الجديد"
@@ -1595,7 +1822,8 @@ ar:
       listing_updated_successfully: "تم تحديث الإعلان بنجاح"
       listing_updated_availability_management_enabled: ~
       listing_updated_availability_management_disabled: ~
-      only_kassi_administrators_can_access_this_area: "يستطيعون دخول هذه الصفحة ‎%{service_name}‎ مسؤولي"
+      listing_deleted: ~
+      only_kassi_administrators_can_access_this_area: ~
       only_listing_author_can_close_a_listing: "فقط من وضع الاعلان يمكنه إغلاقه"
       only_listing_author_can_edit_a_listing: "فقط من وضع الإعلان يمكنه تعديله"
       payment_successful: "تم الدفع بنجاح"
@@ -1661,6 +1889,7 @@ ar:
       user_does_not_have_email_to_delete: "أنت لا تملك البريد الإلكتروني الذي تود حذفه"
       email_deleted: "تم حذف الربيد الإلكتروني"
       listing_author_payment_details_missing: "يرجى التواصل مع المعلن عبر الضغط على زر الاتصال بالأسفل يجب عليه تعديل تفاصيل عملية الدفع ليتمكن من استقبال الدفعات"
+      listing_author_payment_details_missing_no_free: ~
       images_are_processing: "نقوم حاليا بمعالجة الصور. ستكون جاهزة في دقائق."
       automatically_logged_out_please_sign_in: "لقدم تم تسجيل خروجك تلقائيا. يرجى تسجيل الدخول مرة أخرى."
       stripe_you_account_balance_is_not_0: ~
@@ -1674,6 +1903,8 @@ ar:
       paypal_payments: ~
       stripe_payments: ~
       payments: المدفوعات
+      listings: ~
+      listings_search_placeholder: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: "ليس لديك صلاحية لعرض هذا المحتوى"
@@ -1691,6 +1922,7 @@ ar:
       you_cannot_send_a_new_comment_because_listing_is_closed: "لا يمكنك إضافة تعليق لأن الإعلان مغلق."
       you_must: "يجب عليك"
       subscribe_to_comments: "قم بإشعاري في حال وجود تعليقات أو تحديثات"
+    deleting_a_listing_cannot_be_undone: ~
     edit:
       edit_listing: "تعديل الإعلان"
     edit_links:
@@ -1702,6 +1934,11 @@ ar:
       show_in_updates_email_loading: "جاري التحميل..."
       show_in_updates_email_error: "تعذر الوصول إلى الخادم. رجاء قم بإعادة تهيئة الصفحة وحاول مرة أخرى"
       show_in_updates_email_success: ~
+      listing_is_pending: ~
+      listing_is_rejected: ~
+      approve_listing: ~
+      reject_listing: ~
+      delete_listing: ~
     map:
       open_in_google_maps: "افتح بواسطة خرائط جوجل"
     error:
@@ -1724,6 +1961,7 @@ ar:
       description:
         detailed_description: "شرح مفصل"
         youtube_info: "إذا كان شرحك يحتوي على رابط فيديو من اليوتيوب، سوف يظهر مقطع الفيديو في آخر الشرح."
+        youtube_info_markdown: ~
       destination:
         destination: "مكان الوصول"
       form_content:
@@ -1782,6 +2020,9 @@ ar:
         origin: الأصل
       send_button:
         save_listing: "حفظ الإعلان"
+        submit_for_review: ~
+        will_be_reviewed: ~
+        we_noticed_youre_an_admin: ~
       share_type:
         select: اختر
         borrow: استعارة
@@ -1861,6 +2102,7 @@ ar:
       select_one: ~
       start_time: ~
       end_time: ~
+      marketplace_fees_may_apply: ~
     new:
       listing: إعلان
       selected_category: "‎%{category}‎ :قسم"
@@ -1874,6 +2116,7 @@ ar:
       community_not_configured_for_payments: ~
       payment_settings_link: "إعدادات طريقة الدفع"
       community_not_configured_for_payments_admin: ~
+      you_are_now_posting_a_listing_on_behalf_of: ~
     quantity:
       hour: ":عدد الساعات"
       day: "عدد الأيام:"
@@ -2100,7 +2343,7 @@ ar:
       username_is_invalid: "اسم المستخدم غير صحيح، الرموز المسموحة هي الأحرف، الأرقام والشرطة السفلية"
       visible_only_to_you: "‎%{service_name}‎ مرئية فقط لك ولمشرفي"
       visible_to_everybody: "مرئية للكل"
-      create_account_with_facebook: "سجل باستخدام حساب فيسبوك"
+      create_account_with_provider: ~
       OR: أو
       signup_with_email: "تسجيل الدخول بالبريد الإلكتروني"
       this_field_will_be_publicly_visible: ~
@@ -2108,9 +2351,8 @@ ar:
       grade: "الدرجة:"
       and_gave_following_feedback: "وقام بإعطاء الرأي التالي"
     profile_listings:
-      show_also_closed: "أظهر أيضا المغلقة"
-      show_only_open: "أظهر فقط المفتوحة"
       no_image: "لا يوجد صورة"
+      manage_listings: ~
     show:
       contact: "‎%{person}‎ اتصل بـ"
       about_me: "تحدث عن نفسك:"
@@ -2143,6 +2385,8 @@ ar:
       show_all_listings: "أظهر كل الإعلانات"
       show_all_open_listings: "أظهر كل الإعلانات المفتوحة"
       show_all_reviews: "أظهر كل المراجعات"
+      admin_actions: ~
+      post_listing_as: ~
     followed_people:
       you_follow_plural: "من الأشخاص ‎%{count}‎ أنت تتابع"
       you_follow_singular: "شخص ‎%{count}‎ أنت تتابع"
@@ -2167,7 +2411,7 @@ ar:
       account_creation_link_text: "اضغط هنا"
       cancle_facebook_connect: "‎%{cancel_link}‎ إذا لا تريد ربط هذا الحساب يمكنك"
       facebook_cancel_link_text: إلغاء
-      log_in_with_your_facebook_account: "قم بالدخول عبر فيسبوك"
+      log_in_with_your_provider_account: ~
       or_sign_up_with_your_username: "...أو بإسم الدخول الخاص بك والبريد الإلكتروني:"
       we_will_not_post_without_asking_you: "لن نقوم أبدا بالنشر على حساب فيسبوك الخاص بك دون إذنك"
     password_forgotten:
@@ -2268,6 +2512,9 @@ ar:
       invisible: "غير مرئي للمشتركين الآخرين"
       image_is_processing: ~
       shown_in_your_public_profile: ~
+      editing_profile_of: ~
+      format_markdown_link: ~
+      format_markdown: ~
     save_information: "حفظ المعلومات"
   shipping_address:
     shipping_address: "عنوان الشحن"
@@ -2495,6 +2742,7 @@ ar:
       signup: "إنشاء حساب"
       admin_dashboard: "لوحة التحكم"
       language: اللغة
+      listings: ~
     utils:
       km: كلم
       mi: ميل
@@ -2537,6 +2785,12 @@ ar:
     paypal_connected: ~
     paypal_can_accept: ~
     paypal_connected_give_permission: ~
+    stripe_account_restricted: ~
+    stripe_account_restricted_info: ~
+    stripe_account_restricted_soon: ~
+    stripe_account_restricted_soon_info: ~
+    stripe_account_pending_verification: ~
+    stripe_account_pending_verification_info: ~
     form_new:
       need_info: ~
       select_country: ~
@@ -2624,3 +2878,13 @@ ar:
     wrong_setup: ~
     invalid_bank_account_number: ~
     invalid_postal_code: ~
+  seo_sections:
+    you_can_use_variables: ~
+    placeholder:
+      search_results: ~
+      search_results_for: ~
+      listing_description: ~
+      listing_description_without_price: ~
+      category_description: ~
+      profile_title: ~
+      profile_description: ~

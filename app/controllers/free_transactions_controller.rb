@@ -37,7 +37,7 @@ class FreeTransactionsController < ApplicationController
             listing_author_id: @listing.author.id,
             listing_author_uuid: @listing.author.uuid_object,
             unit_type: @listing.unit_type,
-            unit_price: @listing.price,
+            unit_price: @listing.price || Money.new(0, @current_community.currency),
             unit_tr_key: @listing.unit_tr_key,
             availability: :none, # Always none for free transactions and contacts
             listing_quantity: 1,
@@ -85,7 +85,7 @@ class FreeTransactionsController < ApplicationController
 
   # Ensure that only users with appropriate visibility settings can reply to the listing
   def ensure_authorized_to_reply
-    unless @listing.visible_to?(@current_user, @current_community)
+    unless Policy::ListingPolicy.new(@listing, @current_community, @current_user).visible?
       flash[:error] = t("layouts.notifications.you_are_not_authorized_to_view_this_content")
       redirect_to search_path and return
     end

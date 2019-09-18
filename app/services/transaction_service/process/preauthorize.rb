@@ -1,4 +1,3 @@
-# coding: utf-8
 module TransactionService::Process
   Gateway = TransactionService::Gateway
   Worker = TransactionService::Worker
@@ -95,7 +94,11 @@ module TransactionService::Process
             end
 
           booking_res.on_success {
-            TransactionService::StateMachine.transition_to(tx.id, :preauthorized)
+            if tx.stripe_payments.last.try(:intent_requires_action?)
+              TransactionService::StateMachine.transition_to(tx.id, :payment_intent_requires_action)
+            else
+              TransactionService::StateMachine.transition_to(tx.id, :preauthorized)
+            end
           }
         end
 

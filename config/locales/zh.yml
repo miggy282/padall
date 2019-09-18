@@ -90,6 +90,8 @@ zh:
         transaction_agreement_checkbox_label_description: 该文本将被显示于结帐表单的检查框边上。用户需要勾选该框以继续交易。标签文字类似于“通过勾选该检查框表明我接受协议。“
         transaction_agreement_text_header: 协定文本
         transaction_agreement_description: "这是用户需要接受的实际协议的内容。该协议内容会在用户点击协议标签旁边的“%{read_more}”链接时展现。"
+        terms_privacy_policy_and_static_content: ~
+        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "编辑集市”%{community_name}“的外观"
         community_logo: 页面展示Logo
@@ -112,6 +114,8 @@ zh:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: 封面照片将显示在未登录用户的首页
         cover_photo_instructions_text_with_dimensions: "照片大小将调整为%{width}x%{height}像素，超过高度的图片将从中间截取。%{see_how_it_looks_like}"
+        we_have_you_covered: ~
+        cover_photo_ready_made: ~
         small_cover_photo_visibility: 小的封面照片将显示在除未登录用户首页的所有页面。
         small_cover_photo_instructions_text_with_dimensions: "照片大小将调整为%{width}x%{height}像素，超过高度的图片将从中间截取。"
         main_content_width: "在选择封面照片时注意页面主要内容最多是%{main_width}像素宽。记得检查你的封面照片在较小屏幕上看上去如何（比如使用较窄的浏览器窗口）。"
@@ -178,27 +182,33 @@ zh:
       getting_started:
         getting_started: 获取入门指南
       available_languages:
+        cs: ~
+        da-DK: 丹麦语
+        de: 德语
         en: 英文
         en-AU: 英文(澳大利亚)
         en-GB: 英文(英国)
+        es: ~
+        es-ES: ~
+        fi: 芬兰文
         fr: 法文
         fr-CA: 法文(加拿大)
-        es: 西班牙文(智利)
-        es-ES: 西班牙文
-        pt-PT: 葡萄牙文
-        pt-BR: 葡萄牙文（巴西）
-        nb: 挪威博克马尔文
-        sv: 瑞典语
-        da-DK: 丹麦语
-        fi: 芬兰文
-        ru: 俄语
-        de: 德语
         el: 希腊文
-        nl: 荷兰文
-        tr-TR: 土耳其文
-        zh: 中文
-        ja: 日文
         it: 意大利文
+        ja: 日文
+        ko: ~
+        nb: 挪威博克马尔文
+        nl: 荷兰文
+        pl: ~
+        pt-BR: 葡萄牙文（巴西）
+        pt-PT: 葡萄牙文
+        ru: 俄语
+        sv: 瑞典语
+        th-TH: ~
+        tr-TR: 土耳其文
+        vi: ~
+        zh: 中文
+        zh-TW: ~
       settings:
         settings: 设置
         general: 常规
@@ -207,6 +217,7 @@ zh:
         users_can_invite_new_users: 所有用户都可以邀请新用户来到这个集市
         private: 这个集市是私有的（只有注册用户可以看到内容）
         require_verification_to_post_listings: 只有经管理员验证的用户可以发布新的信息
+        allow_free_conversations: ~
         search_preferences: ~
         default_search_type: ~
         keyword_search: 按关键词搜索
@@ -229,6 +240,7 @@ zh:
         update_settings: 保存设置
         automatically_confirmed_no_escrow: "在付款后%{days_dropdown}天内交易将被自动标记为完成。"
         automatically_confirmed_no_escrow_stripe_info: ~
+        buyer_transaction_fees_are_only_supported_with_stripe: ~
         automatic_newsletter_frequency: "自动发送新闻邮件：%{frequency_dropdown}"
         newsletter_daily: 每日
         newsletter_weekly: 每周
@@ -242,6 +254,8 @@ zh:
         you_will_be_redirected_to: "当你删除了你的集市，你会被重定向到%{destination}。你将再也无法访问你的集市。"
         delete_this_marketplace: 删除这个集市。
         payment_preferences: ~
+        pre_approved_listings: ~
+        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: 管理用户
         email: 电子邮件
@@ -263,6 +277,22 @@ zh:
         reset_search: ~
         for_search_terms: ~
         this_makes_the_user_an_admin: ~
+        status_filter:
+          all: ~
+          selected: ~
+          selected_js: ~
+          admin: ~
+          banned: ~
+          posting_allowed: ~
+          accepted: ~
+          unconfirmed: ~
+          pending: ~
+        this_user_hasnt_confirmed_their_email_address: ~
+        unconfirmed_user: ~
+        resend: ~
+        cancel: ~
+        user_didnt_complete_the_signup_process: ~
+        pending_user: ~
       new_layout:
         new_layout: 新布局
         description_roadmap_new: ~
@@ -274,6 +304,12 @@ zh:
         social_media: 社交媒体
         logo: ~
         logo_info: ~
+        social_media_title: ~
+        social_media_title_info: ~
+        link_for_facebook: ~
+        link_for_linkedin: ~
+        link_for_twitter: ~
+        social_media_description: ~
         twitter_handle: Twitter用户名
         twitter_handle_info_text: 当人们使用信息页面上的tweet按钮时，你的集市Twitter帐号的用户名（如果你有的话）将被提及。
         twitter_handle_info_text_with_instructions: "当人们使用信息页面上的Tweet按钮时，你的集市Twitter帐号的用户名（如果你有的话）将被提及。%{instructions_link}"
@@ -281,6 +317,7 @@ zh:
         twitter_handle_placeholder: 用户名
         invalid_twitter_handle: Twitter用户名最多不能超过15个字母和数字（字母A-Z和数字0-9）。
         facebook_connect: Facebook
+        facebook_developers_dashboard: ~
         facebook_connect_info_text: "为了启用Facebook登录，在<a href='https://developers.facebook.com/'>Facebook开发者Dashboard</a>中为你的集市创建一个应用。在这里添加应用生成的ID和密钥。"
         facebook_connect_info_text_with_instructions: "为了启用Facebook登录，在<a href='https://developers.facebook.com/'>Facebook开发者Dashboard</a>中为你的集市创建一个应用。在这里添加应用生成的ID和密钥。%{instructions_link}"
         facebook_instructions_link_text: "关于如何配置Facebook Connect请参考说明。"
@@ -291,6 +328,69 @@ zh:
         enable_facebook_login: ~
         save: 保存设置
         add_another_image: ~
+        google_connect: ~
+        google_instructions_link_text: ~
+        google_developers_console: ~
+        google_connect_info_text_with_instructions: ~
+        google_connect_info_text: ~
+        enable_google_login: ~
+        google_connect_id: ~
+        google_connect_secret: ~
+        linkedin_connect: ~
+        linkedin_instructions_link_text: ~
+        linkedin_developers_dashboard: ~
+        linkedin_connect_info_text_with_instructions: ~
+        linkedin_connect_info_text: ~
+        enable_linkedin_login: ~
+        linkedin_connect_id: ~
+        linkedin_connect_secret: ~
+      seo_settings:
+        seo: ~
+        title: ~
+        meta_title_label: ~
+        meta_title_info: ~
+        meta_title_link_text: ~
+        meta_description_label: ~
+        meta_description_info: ~
+        meta_description_link_text: ~
+        search_title: ~
+        search_meta_title_label: ~
+        search_meta_title_info: ~
+        search_meta_title_link_text: ~
+        search_meta_description_label: ~
+        search_meta_description_info: ~
+        search_meta_description_link_text: ~
+        listing_title: ~
+        listing_meta_title_label: ~
+        listing_meta_title_info: ~
+        listing_meta_title_link_text: ~
+        listing_meta_description_label: ~
+        listing_meta_description_info: ~
+        listing_meta_description_link_text: ~
+        category_title: ~
+        category_meta_title_label: ~
+        category_meta_title_info: ~
+        category_meta_title_link_text: ~
+        category_meta_description_label: ~
+        category_meta_description_info: ~
+        category_meta_description_link_text: ~
+        profile_title: ~
+        profile_meta_title_label: ~
+        profile_meta_title_info: ~
+        profile_meta_title_link_text: ~
+        profile_meta_description_label: ~
+        profile_meta_description_info: ~
+        profile_meta_description_link_text: ~
+        sitemap_label: ~
+        sitemap_info: ~
+        sitemap_info_link_text: ~
+        sitemap_info_public: ~
+        sitemap_info_private: ~
+        robots_label: ~
+        robots_info: ~
+        robots_info_link_text: ~
+        robots_info_2: ~
+        save: ~
       analytics:
         analytics: 分析
         google_analytics_key: "Google Analytics Tracking ID"
@@ -302,8 +402,14 @@ zh:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: 保存设置
+      logo_link:
+        title: ~
+        info: ~
+        url: ~
+        placeholder: ~
       menu_links:
         menu_links: 菜单链接
+        menu_links_display: ~
         save: 保存设置
         add_menu_link: 添加一个新连链接到菜单
         title_placeholder: 链接名称
@@ -316,6 +422,15 @@ zh:
         all: 全部
         max_number_of_links_info: ~
         about_page: 关于
+      default_menu_links:
+        title: ~
+        about_link_title: ~
+        contact_link_title: ~
+        invite_link_title: ~
+        info: ~
+        display_about: ~
+        display_contact: ~
+        display_invite: ~
       topbar:
         topbar: 顶部条
         new_listing_button_label: ~
@@ -337,6 +452,8 @@ zh:
           canceled: ~
           preauthorized: ~
           rejected: ~
+          payment_intent_requires_action: ~
+          payment_intent_action_expired: ~
         headers:
           conversation: 会话
           listing: 发布的信息
@@ -382,6 +499,9 @@ zh:
             canceled: ~
             initiated: ~
             pending_ext: ~
+            payment_intent_requires_action: ~
+            payment_intent_action_expired: ~
+            payment_intent_failed: ~
         not_available: 无
       conversations:
         conversations: ~
@@ -394,10 +514,18 @@ zh:
           other_party: ~
         participants: ~
         profile: ~
+        search_by_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
       testimonials:
         testimonials: ~
         no_testimonials_found: ~
         displaying_xx_reviews: ~
+        search_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
         headers:
           transaction: ~
           author: ~
@@ -410,6 +538,16 @@ zh:
           skipped: ~
           published: ~
           blocked: ~
+        status_filter:
+          selected: ~
+          all: ~
+          published: ~
+          positive: ~
+          negative: ~
+          skipped: ~
+          waiting: ~
+          blocked: ~
+          selected_js: ~
         form:
           review_text: ~
           save: ~
@@ -419,17 +557,35 @@ zh:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
+          unskip: ~
+          if_you_unskip_the_review: ~
+          they_will_not_be_notified_automatically: ~
+      invitations:
+        invitations: ~
+        used:
+          "yes": ~
+          "no": ~
+        headers:
+          sent_by: ~
+          message: ~
+          sent_to: ~
+          used: ~
+          date_sent: ~
       listings:
         listings: ~
         search_by_title_author_category: ~
         search: ~
         reset_search: ~
+        export_all_as_csv: ~
+        processing_export: ~
         status:
           all: ~
           selected_js: ~
           open: ~
           closed: ~
           expired: ~
+          approval_pending: ~
+          approval_rejected: ~
         headers:
           title: ~
           author: ~
@@ -440,6 +596,14 @@ zh:
         open: ~
         closed: ~
         expired: ~
+        approved: ~
+        approval_pending: ~
+        approval_rejected: ~
+        form:
+          this_listing_has_not_not_been_approved_yet: ~
+          approve: ~
+          reject: ~
+          cancel: ~
       user_fields:
         user_fields: ~
       footer:
@@ -456,20 +620,26 @@ zh:
         footer_copyright: ~
         footer_enabled: ~
         social_links: ~
+        title_placeholder: ~
+        url_placeholder: ~
         style:
           dark: ~
           light: ~
+          marketplace_color: ~
+          logo: ~
         social:
-          facebook: ~
-          twitter: ~
-          instagram: ~
-          youtube: ~
-          googleplus: ~
-          linkedin: ~
-          pinterest: ~
-          soundcloud: ~
           title: ~
           url: ~
+      domain:
+        domain: ~
+        marketplace_domain: ~
+        offer_pro: ~
+        upgrade_pro_plan_link: ~
+        your_marketplace_address_is: ~
+        would_you_like_to_change_address: ~
+        contact_us: ~
+        you_can_now_use_a_custom_domain: ~
+        would_you_like_to_change_domain: ~
     custom_fields:
       edit:
         edit_listing_field: "编辑信息字段“%{field_name}”"
@@ -587,6 +757,7 @@ zh:
       emails_title: 电邮
       subscription: 订阅
       preview: 预览站点
+      whats_new: ~
     listing_shapes:
       availability_title: ~
       read_more: ~
@@ -728,7 +899,10 @@ zh:
       stripe_fee: ~
       stripe_fee_notice: ~
       fee_should_be_less_than_minimum_price: ~
+      the_transaction_fee_must_be_lower_than_100: ~
       confirm_disable: ~
+      commission_from_buyer_label: ~
+      minimum_buyer_transaction_fee_label: ~
       stripe_connected:
         title: ~
         disable: ~
@@ -741,6 +915,7 @@ zh:
         enable: ~
       cannot_enable_gateway: ~
       cannot_disable_gateway: ~
+      cannot_enable_gateway_because_of_buyer_commission: ~
       stripe_form:
         add_your_api_keys: ~
         how_to_get_these: ~
@@ -862,13 +1037,14 @@ zh:
       quantity_label: "数量:"
       sum_label: 小计
       service_fee_label: "%{service_name}费："
+      buyer_service_fee_label: ~
       you_will_get_label: 你将得到：
       total_label: 总计：
       total_value: "%{seller_gets}*"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee_info: "* 不包括<a id='%{fee_info_link_id}' href='#'>PayPal的支付处理费用</a>"
-      payment_fee_info: ~
+      paypal_fee: ~
+      paypal_fee_info: "* 不包括 %{link}"
       shipping_price_label: "运费:"
       stripe-fee_label: ~
     confirm:
@@ -907,6 +1083,7 @@ zh:
     message:
       accepted_request: 已接受请求
       received_payment: ~
+      received_payment_wo_sum: ~
       accepted_offer: 已接受的宝贝
       rejected_request: 已拒绝的请求
       rejected_offer: 已拒绝的宝贝
@@ -916,8 +1093,10 @@ zh:
       canceled_offer: 已取消宝贝
       paid: "支付了%{sum}"
       payment_preauthorized: "授权支付:%{sum}"
+      payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
+        held_payment_wo_sum: ~
         confirmed_request: ~
     new:
       message: 消息
@@ -1132,7 +1311,9 @@ zh:
       shipping_total: ~
       product: ~
       price_payer_paid: ~
+      subtotal: ~
       service_fee: ~
+      buyer_service_fee: ~
       you_will_get: ~
       new_payment: ~
       price_per_unit_type: ~
@@ -1148,6 +1329,7 @@ zh:
       duration: ~
       quantity: ~
       subtotal: ~
+      buyer_service_fee: ~
       total: ~
       price: ~
       service_fee: ~
@@ -1172,7 +1354,7 @@ zh:
       subtotal: 小计
       total: 总共
       price: 价格
-      service_fee: 服务费
+      buyer_service_fee: ~
       stripe_gateway_fee: ~
       paypal_gateway_fee: ~
       money_will_be_transferred: "以下两种情况发生时，钱将被转给%{recipient_name} a)你标记请求为完成 b)你付款之后的%{automatic_confirmation_days}天。"
@@ -1238,6 +1420,32 @@ zh:
       this_is_automatic_message: ~
       person_name: "名字:"
       person_email: "电子邮件:"
+    listing_submited_for_review:
+      subject: ~
+      there_is_a_new_listing_to_review: ~
+      review_the_listing: ~
+      this_is_automatic_message: ~
+    listing_approved:
+      subject: ~
+      listing_has_been_approved: ~
+      view_the_listing: ~
+    listing_rejected:
+      subject: ~
+      listing_has_been_rejected: ~
+      contact_link: ~
+      edit_the_listing: ~
+    edited_listing_submited_for_review:
+      subject: ~
+      there_is_a_edited_listing_to_review: ~
+      review_the_listing: ~
+    new_transaction:
+      subject: ~
+      there_is_a_new_transaction: ~
+      a_new_transaction: ~
+      listing: ~
+      sum: ~
+      starter: ~
+      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: ~
@@ -1260,6 +1468,7 @@ zh:
       buyer_cannot_pay_error: " 该支付被Paypal拒绝。请联系他们的客服获得更多信息：%{customer_service_link}"
       pending_review_error: 支付已经提交，但是被Paypal标记为‘需要检查’。当Paypal完成检查后，该支付将会被自动授权。
       seller_express_checkout_disabled: ~
+      seller_express_checkout_disabled_no_free: ~
       generic_error: 付款过程中出现错误。无法完成你的PayPal付款。
       cancel_error: 取消时发生错误。不能完成取消操作。
       accept_authorization_error: 尝试接受预授权的PayPal付款时出错。请重试。
@@ -1306,6 +1515,7 @@ zh:
       after: "必须在%{restriction}之后"
       on_or_after: "必须在%{restriction}时或之后"
       positive_number: 填入一个数字
+      from_must_be_less_than_till: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} 同意将 %{listing_title} 借给 %{requester_name} %{time_ago}."
@@ -1529,6 +1739,23 @@ zh:
       messages: 私信
     logged_in_notifications_icon:
       notifications: 通知
+    markdown_help:
+      title: ~
+      description: ~
+      formatting: ~
+      result: ~
+      h1: ~
+      h2: ~
+      h3: ~
+      italic: ~
+      bold: ~
+      underline: ~
+      strikethrough: ~
+      inline_link: ~
+      list: ~
+      one: ~
+      two: ~
+      three: ~
     mobile_logged_in:
       admin: 后台管理
       go_to_your_profile_page: 个人主页
@@ -1552,8 +1779,8 @@ zh:
       comment_sent: 评论已发送
       confirmation_link_is_wrong_or_used: 确认链接已使用或失效。请尝试登录，如果问题依然存在请发送反馈。
       additional_email_confirmed: 你输入的电子邮件已被确认。
-      could_not_get_email_from_facebook: 不能从Facebook获取邮件地址，没有邮件地址则无法创建帐号。
-      facebook_email_unconfirmed: ~
+      could_not_get_email_from_social_network: ~
+      social_network_email_unconfirmed: ~
       create_new_listing: 发布另一条消息
       create_one_here: 创建新用户
       email_confirmation_sent_to_new_address: 电子邮件确认信已经送往你的新地址。
@@ -1590,7 +1817,8 @@ zh:
       listing_updated_successfully: 信息更新成功
       listing_updated_availability_management_enabled: ~
       listing_updated_availability_management_disabled: ~
-      only_kassi_administrators_can_access_this_area: "只有%{service_name}管理员有权限进入此区域"
+      listing_deleted: ~
+      only_kassi_administrators_can_access_this_area: ~
       only_listing_author_can_close_a_listing: 仅作者可以关闭发布的信息
       only_listing_author_can_edit_a_listing: 仅作者可以编辑发布的信息
       payment_successful: 付款成功
@@ -1656,6 +1884,7 @@ zh:
       user_does_not_have_email_to_delete: 你想要移除的邮件地址不存在
       email_deleted: 邮件已删除
       listing_author_payment_details_missing: 请点击下面的‘联系’按钮联系卖家。他们需要更新付款信息来接收付款。
+      listing_author_payment_details_missing_no_free: ~
       images_are_processing: ~
       automatically_logged_out_please_sign_in: 你已被自动登出。请重新登录。
       stripe_you_account_balance_is_not_0: ~
@@ -1669,6 +1898,8 @@ zh:
       paypal_payments: ~
       stripe_payments: ~
       payments: 付款
+      listings: ~
+      listings_search_placeholder: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: 你无权查看此信息。
@@ -1686,6 +1917,7 @@ zh:
       you_cannot_send_a_new_comment_because_listing_is_closed: 你不能发表新的评论，因为这条信息已经关闭。
       you_must: 你必须
       subscribe_to_comments: 若有新评论或更新，发邮件通知我
+    deleting_a_listing_cannot_be_undone: ~
     edit:
       edit_listing: 编辑发布的信息
     edit_links:
@@ -1697,6 +1929,11 @@ zh:
       show_in_updates_email_loading: 加载……
       show_in_updates_email_error: 不能访问服务器。页面刷新后重试。
       show_in_updates_email_success: 这个发布的信息将被显示在下一封自动发送给用户的邮件中。
+      listing_is_pending: ~
+      listing_is_rejected: ~
+      approve_listing: ~
+      reject_listing: ~
+      delete_listing: ~
     map:
       open_in_google_maps: 在Google地图中打开
     error:
@@ -1719,6 +1956,7 @@ zh:
       description:
         detailed_description: 详细描述
         youtube_info: "如果您的描述包括Youtube连结, 该影片将会在描述栏下方显示."
+        youtube_info_markdown: ~
       destination:
         destination: 目的地
       form_content:
@@ -1777,6 +2015,9 @@ zh:
         origin: 来源
       send_button:
         save_listing: 发布
+        submit_for_review: ~
+        will_be_reviewed: ~
+        we_noticed_youre_an_admin: ~
       share_type:
         select: 选择
         borrow: 借入
@@ -1856,6 +2097,7 @@ zh:
       select_one: ~
       start_time: ~
       end_time: ~
+      marketplace_fees_may_apply: ~
     new:
       listing: 信息
       selected_category: "分类：%{category}"
@@ -1869,6 +2111,7 @@ zh:
       community_not_configured_for_payments: "%{service_name}没有配置支付方式，所以你不能发布新的信息。详情请联系%{contact_admin_link}。"
       payment_settings_link: 付款设置
       community_not_configured_for_payments_admin: "%{service_name}没有配置支付方式，所以你不能发布新的信息。点击%{payment_settings_link}填写详细付款信息。"
+      you_are_now_posting_a_listing_on_behalf_of: ~
     quantity:
       hour: "小时数:"
       day: "天数:"
@@ -2098,7 +2341,7 @@ zh:
       username_is_invalid: 用户名格式不正确。请使用字母，数字以及下划线。
       visible_only_to_you: 仅对你和集市管理员可见
       visible_to_everybody: 所有人可见
-      create_account_with_facebook: 用Facebook帐号注册
+      create_account_with_provider: ~
       OR: 或
       signup_with_email: 使用你自己的邮箱注册
       this_field_will_be_publicly_visible: ~
@@ -2106,9 +2349,8 @@ zh:
       grade: 评分：
       and_gave_following_feedback: 并且给出以下反馈
     profile_listings:
-      show_also_closed: 显示已关闭的
-      show_only_open: 仅显示开放的
       no_image: 没有图片
+      manage_listings: ~
     show:
       contact: "联系%{person}"
       about_me: 关于我：
@@ -2141,6 +2383,8 @@ zh:
       show_all_listings: 显示所有已发布的信息
       show_all_open_listings: 显示所有公开的信息
       show_all_reviews: 显示所有评论
+      admin_actions: ~
+      post_listing_as: ~
     followed_people:
       you_follow_plural: "你关注了%{count}个人"
       you_follow_singular: "你关注了%{count}个人"
@@ -2165,7 +2409,7 @@ zh:
       account_creation_link_text: 点击这里
       cancle_facebook_connect: "如果你不想关联此帐号，你可以%{cancel_link}。"
       facebook_cancel_link_text: 取消
-      log_in_with_your_facebook_account: 用你Facebook账号登录
+      log_in_with_your_provider_account: ~
       or_sign_up_with_your_username: ……或者用你的用户名或电子邮件：
       we_will_not_post_without_asking_you: 我们永远不会在Facebook上未经你的允许发布任何信息
     password_forgotten:
@@ -2266,6 +2510,9 @@ zh:
       invisible: （不显示给其他用户）
       image_is_processing: 你的个人头像图片正在准备。请过一会重新刷新页面。
       shown_in_your_public_profile: ~
+      editing_profile_of: ~
+      format_markdown_link: ~
+      format_markdown: ~
     save_information: 保存信息
   shipping_address:
     shipping_address: 送货地址
@@ -2468,6 +2715,7 @@ zh:
       signup: 注册
       admin_dashboard: 管理员空间
       language: 语言
+      listings: ~
     utils:
       km: ~
       mi: ~
@@ -2512,6 +2760,12 @@ zh:
     paypal_connected: ~
     paypal_can_accept: ~
     paypal_connected_give_permission: ~
+    stripe_account_restricted: ~
+    stripe_account_restricted_info: ~
+    stripe_account_restricted_soon: ~
+    stripe_account_restricted_soon_info: ~
+    stripe_account_pending_verification: ~
+    stripe_account_pending_verification_info: ~
     form_new:
       need_info: ~
       select_country: ~
@@ -2599,3 +2853,13 @@ zh:
     wrong_setup: ~
     invalid_bank_account_number: ~
     invalid_postal_code: ~
+  seo_sections:
+    you_can_use_variables: ~
+    placeholder:
+      search_results: ~
+      search_results_for: ~
+      listing_description: ~
+      listing_description_without_price: ~
+      category_description: ~
+      profile_title: ~
+      profile_description: ~

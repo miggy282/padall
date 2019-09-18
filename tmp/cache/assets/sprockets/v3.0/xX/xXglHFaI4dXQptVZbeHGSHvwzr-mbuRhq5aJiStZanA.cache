@@ -1,34 +1,0 @@
-{:uriI"Šfile://app/assets/javascripts/locales/hy-AM.json?type=application/json&id=2ea7868b97cf88c9a7386031dc1674bfab2b8b63658d8056e7e84fcc84107ab9:ET:load_pathI"app/assets/javascripts;T:filenameI".app/assets/javascripts/locales/hy-AM.json;T:	nameI"locales/hy-AM;T:logical_pathI"locales/hy-AM.json;T:content_typeI"application/json;T:sourceI"k{
-  "please_wait": null,
-  "validation_messages": {
-    "accept": null,
-    "creditcard": null,
-    "date": null,
-    "dateISO": null,
-    "digits": null,
-    "email": null,
-    "equalTo": null,
-    "max": null,
-    "maxlength": null,
-    "min": null,
-    "minlength": null,
-    "number": null,
-    "range": null,
-    "rangelength": null,
-    "remote": null,
-    "required": null,
-    "url": null,
-    "address_validator": null,
-    "money": null,
-    "night_selected": null,
-    "availability_range": null,
-    "min_bound": null,
-    "max_bound": null,
-    "number_no_decimals": null,
-    "number_decimals": null
-  }
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"<file-digest://app/assets/javascripts/locales/hy-AM.json;TTF:charsetI"
-utf-8;F:digest"%‹'}~Ü©în ÙåÎñŸ†ëŠ~¶Š½xËbô|L¼ƒ:lengthik:dependencies_digest"%v±™¸Û	˜”µÜK\)8ÿ,&õã<ò<å#šÍu:idI"E2ea7868b97cf88c9a7386031dc1674bfab2b8b63658d8056e7e84fcc84107ab9;F:
-mtimel+‰áú[

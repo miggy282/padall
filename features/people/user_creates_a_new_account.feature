@@ -31,7 +31,7 @@ Feature: User creates a new account
     When I open user menu
     When I follow "Settings"
     And I follow "settings-tab-notifications"
-    Then the "I accept to receive occasional emails from" checkbox should be checked
+    Then the "I agree to receive occasional emails from" checkbox should be checked
 
   Scenario: Creating a new account successfully without giving admin email consent
     Then I should not see "The access to Sharetribe is restricted."
@@ -55,7 +55,7 @@ Feature: User creates a new account
     When I open user menu
     When I follow "Settings"
     And I follow "settings-tab-notifications"
-    Then the "I accept to receive occasional emails from" checkbox should not be checked
+    Then the "I agree to receive occasional emails from" checkbox should not be checked
 
   Scenario: Trying to create account with unavailable username
     When I fill in "person[username]" with "kassi_testperson2"
@@ -128,7 +128,7 @@ Feature: User creates a new account
     When I open the email
     And I click the first link in the email
     And wait for 1 seconds
-    Then "kassi_testperson3@example.com" should have 2 emails
+    Then "kassi_testperson3@example.com" should have 1 emails
     And I should see "The email you entered is now confirmed"
 
   @subdomain2
@@ -155,7 +155,7 @@ Feature: User creates a new account
     When I open the email
     And I click the first link in the email
     And wait for 1 seconds
-    Then "kassi_testperson3@example.com" should have 2 emails
+    Then "kassi_testperson3@example.com" should have 1 emails
     And I should see "The email you entered is now confirmed"
 
   Scenario: Creating a new account with custom fields successfully
@@ -207,7 +207,7 @@ Feature: User creates a new account
     And the "person[custom_field_values_attributes][][date_value(1i)]" field should contain "2000"
     And the "person[custom_field_values_attributes][][date_value(2i)]" field should contain "6"
     And the "person[custom_field_values_attributes][][date_value(3i)]" field should contain "21"
-    And I should see "French balcony"
+    Then I should see selected "French balcony" in the "person_custom_fields_3" dropdown
     And the "English language" checkbox should be checked
     And the "German language" checkbox should not be checked
     And the "French language" checkbox should be checked

@@ -16,6 +16,7 @@ Feature: Admin edits a category
       | main           | Services          | Palvelut       |
       | main           | Furniture         | Huonekalut     |
     And I am on the categories admin page
+    And I wait for 1 seconds
 
   @javascript
   Scenario: Admin changes category name
@@ -61,6 +62,7 @@ Feature: Admin edits a category
 
   @javascript
   Scenario: Admin edits category order
+    And I wait for 1 seconds
     When I move category "Goodies" down 1 step
     Then the category order should be following:
       | category  |
@@ -69,6 +71,7 @@ Feature: Admin edits a category
       | Tools     |
       | Books     |
       | Furniture |
+    And I wait for 1 seconds
     When I move category "Books" up 1 step
     Then the category order should be following:
       | category  |
@@ -78,6 +81,7 @@ Feature: Admin edits a category
       | Tools     |
       | Furniture |
     Then I should see "Successfully saved"
+    And I wait for 1 seconds
     When I refresh the page
     Then the category order should be following:
       | category  |

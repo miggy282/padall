@@ -70,6 +70,8 @@ window.ST = window.ST || {};
         down: $(".menu-link-action-down", entry)
       };
       orderManager.add(newField);
+      fieldCount++;
+      updateTableVisibility();
       return event.preventDefault();
     });
 
@@ -87,7 +89,20 @@ window.ST = window.ST || {};
       form.submit();
     };
 
-    form.validate({submitHandler: submitHandler});
+    $('.social-link-check-box').on('change', function() {
+      var provider = $(this).data('provider'),
+        socialLink = $('.social-link-required[provider="' + provider + '"]');
+      if ($(this).is(":checked")) {
+        socialLink.removeClass('ignore-validation');
+      } else {
+        socialLink.addClass('ignore-validation');
+      }
+    });
+
+    form.validate({
+      submitHandler: submitHandler,
+      ignore: ":hidden, .ignore-validation"
+    });
   };
 
   module.FooterMenu = {
