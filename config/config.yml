@@ -8,6 +8,8 @@
 # Copy this file from `config/config.example.yml` to `config/config.yml`
 #
 domain: "padall-core.herokuapp.com"
+clp_static_enabled: true
+
 
 development:
   secret_key_base: 37f0382f5c697f4fc756cdefb2409473796d166140f2b8ca7783c9917a7630e79e8c3a3bc03dba84a1ecbd4bebfcb11dcce301e6a770174966cdbc22939afe0a
