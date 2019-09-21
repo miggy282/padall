@@ -29,7 +29,6 @@ module CustomLandingPage
       "id": "hero",
       "kind": "hero",
       "variation": {"type": "marketplace_data", "id": "search_type"},
-      "title": {"type": "marketplace_data", "id": "slogan"},
       "subtitle": {"type": "marketplace_data", "id": "description"},
       "background_image": {"type": "assets", "id": "default_hero_background"},
       "background_image_variation": "dark",
@@ -350,7 +349,7 @@ module CustomLandingPage
         {"service": "pinterest", "url": "https://www.pinterest.com/"},
         {"service": "soundcloud", "url": "https://soundcloud.com/"}
       ],
-      "copyright": "Copyright Marketplace Ltd 2016"
+      "copyright": "Copyright Padall Ltd 2020"
     }
   ],
 
