@@ -11,7 +11,7 @@ class Admin::Communities::FooterService
     if plan
       !plan[:features][:footer] ? true : nil
     else
-      true
+      false
     end
   end
 
