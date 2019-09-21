@@ -7,9 +7,9 @@ module CustomLandingPage
     DATA_STR = <<JSON
 {
   "settings": {
-    "marketplace_id": 001,
+    "marketplace_id": 9999,
     "locale": "en",
-    "sitename": "Padall"
+    "sitename": "example"
   },
 
   "page": {
