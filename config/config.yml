@@ -10,6 +10,7 @@
 domain: "padall-core.herokuapp.com"
 clp_static_enabled: true
 clp_asset_url: "landing_page/"
+clp_cache_time: 0
 
 
 development:
