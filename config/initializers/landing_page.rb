@@ -30,7 +30,6 @@ module CustomLandingPage
       "kind": "hero",
       "variation": {"type": "marketplace_data", "id": "search_type"},
       "title": {"type": "marketplace_data", "id": "slogan"},
-      "subtitle": {"type": "marketplace_data", "id": "description"},
       "background_image": {"type": "assets", "id": "default_hero_background"},
       "background_image_variation": "dark",
       "search_button": {"type": "translation", "id": "search_button"},
