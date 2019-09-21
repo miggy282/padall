@@ -7,9 +7,9 @@ module CustomLandingPage
     DATA_STR = <<JSON
 {
   "settings": {
-    "marketplace_id": 1,
+    "marketplace_id": 9999,
     "locale": "en",
-    "sitename": "Padall"
+    "sitename": "example"
   },
 
   "page": {
@@ -25,25 +25,7 @@ module CustomLandingPage
   },
 
   "sections": [
-    {
-      "id": "hero",
-      "kind": "hero",
-      "variation": {"type": "marketplace_data", "id": "search_type"},
-      "title": {"type": "marketplace_data", "id": "slogan"},
-      "subtitle": {"type": "marketplace_data", "id": "description"},
-      "background_image": {"type": "assets", "id": "default_hero_background"},
-      "background_image_variation": "dark",
-      "search_button": {"type": "translation", "id": "search_button"},
-      "search_path": {"type": "path", "id": "search"},
-      "search_placeholder": {"type": "marketplace_data", "id": "search_placeholder"},
-      "search_location_with_keyword_placeholder": {"type": "marketplace_data", "id": "search_location_with_keyword_placeholder"},
-      "signup_path": {"type": "path", "id": "signup"},
-      "signup_button": {"type": "translation", "id": "signup_button"},
-      "search_button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "search_button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
-      "signup_button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "signup_button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"}
-    },
+  
     {
       "id": "video",
       "kind": "video",
@@ -355,6 +337,7 @@ module CustomLandingPage
   ],
 
   "composition": [
+    { "section": {"type": "sections", "id": "hero"}},
     { "section": {"type": "sections", "id": "markdown_support"}},
     { "section": {"type": "sections", "id": "single_info_without_background_and_cta"}},
     { "section": {"type": "sections", "id": "single_info_without_cta"}},
@@ -367,8 +350,6 @@ module CustomLandingPage
     { "section": {"type": "sections", "id": "three_column_info_without_icons_and_buttons"}},
     { "section": {"type": "sections", "id": "video"}},
     { "section": {"type": "sections", "id": "footer"}}
-    { "section": {"type": "sections", "id": "hero"}},
-
   ],
 
   "assets": [
