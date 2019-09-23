@@ -36,6 +36,9 @@ module CustomLandingPage
       "search_button": {"type": "translation", "id": "search_button"},
       "search_path": {"type": "path", "id": "search"},
       "search_placeholder": {"type": "marketplace_data", "id": "search_placeholder"},
+      "postcode_placeholder": {"type": "marketplace_data", "id": "postcode_placeholder"},
+      "postcode_lookup": {"type": "path", "id": "lookup"},
+
       "search_location_with_keyword_placeholder": {"type": "marketplace_data", "id": "search_location_with_keyword_placeholder"},
       "signup_path": {"type": "path", "id": "signup"},
       "signup_button": {"type": "translation", "id": "signup_button"},

@@ -45,7 +45,7 @@ class LandingPageController < ActionController::Metal
     cid = com.id
     is_private = com.private?
     user_logged_in = user(request).present?
-    cta = is_private && !user_logged_in ? "signup" : "search" # cta: Call to action
+    cta = is_private && !user_logged_in ? "signup" : "search" # cta: Call to action If market place is private and the user is not logged in what to do?
     default_locale = community(request).default_locale
     version = CLP::LandingPageStore.released_version(cid)
     locale_param = params[:locale]

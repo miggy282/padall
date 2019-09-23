@@ -1696,6 +1696,8 @@ en:
       signup: "Sign up"
       search_placeholder: "What are you looking for?"
       search_location_placeholder: Location
+      postcode_button: "Get an offer"
+      postcode_placeholder: "eg. SW18 4GB"
     listings:
       no_listing_image: "No picture"
   layouts:
