@@ -34,7 +34,7 @@ module CustomLandingPage
       "background_image": {"type": "assets", "id": "default_hero_background"},
       "background_image_variation": "dark",
       "postcode_placeholder": {"type": "marketplace_data", "id": "postcode_placeholder"},
-      "postcode_button": {"type": "path", "id": "lookup"},
+      "postcode_button": {"type": "path", "id": "lookup"}
     },
     {
       "id": "video",
