@@ -33,19 +33,8 @@ module CustomLandingPage
       "subtitle": {"type": "marketplace_data", "id": "description"},
       "background_image": {"type": "assets", "id": "default_hero_background"},
       "background_image_variation": "dark",
-      "search_button": {"type": "translation", "id": "search_button"},
-      "search_path": {"type": "path", "id": "search"},
-      "search_placeholder": {"type": "marketplace_data", "id": "search_placeholder"},
       "postcode_placeholder": {"type": "marketplace_data", "id": "postcode_placeholder"},
-      "postcode_lookup": {"type": "path", "id": "lookup"},
-
-      "search_location_with_keyword_placeholder": {"type": "marketplace_data", "id": "search_location_with_keyword_placeholder"},
-      "signup_path": {"type": "path", "id": "signup"},
-      "signup_button": {"type": "translation", "id": "signup_button"},
-      "search_button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "search_button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
-      "signup_button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "signup_button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"}
+      "postcode_button": {"type": "path", "id": "lookup"},
     },
     {
       "id": "video",

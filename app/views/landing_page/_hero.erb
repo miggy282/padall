@@ -86,7 +86,7 @@ section_style_class = hero_style_variations[s["background_image_variation"]]
         </div>
 
       <% when "private" %>
-      <div class="hero__search-bar-padding">
+      <div class="hero__postcode-bar-padding">
       <form method="get" id="<%= section_id %>__search-form" class="hero__search-bar<%= combined_mode %>" action="<%= s["postcode_path"]["value"] %>">
         <input type="search" name="postcode" class="hero__keyword-search-input--combined" placeholder="<%= s["postcode_placeholder"]["value"] %>"/>
         <button type="submit" class="hero__search-button hero__search-button<%= combined_mode %>"><%= s["postcode_button"]["value"] %></button>
