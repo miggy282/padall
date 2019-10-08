@@ -32,8 +32,7 @@ module CustomLandingPage
       "title": {"type": "marketplace_data", "id": "slogan"},
       "subtitle": {"type": "marketplace_data", "id": "description"},
       "background_image": {"type": "assets", "id": "default_hero_background"},
-      "background_image_variation": "dark",
-      "postcode_button": {"type": "path", "id": "lookup"}
+      "background_image_variation": "dark"
     },
     {
       "id": "video",
