@@ -1,6 +1,6 @@
 require 'will_paginate/array'
 
-class ApplicationController < ActionController::Base
+class ApplicationController < ActionController::API
 
   module DefaultURLOptions
     # Adds locale to all links

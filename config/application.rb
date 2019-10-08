@@ -35,6 +35,7 @@ module Kassi
     # and thus class const
     config.load_defaults 5.1
     config.active_record.belongs_to_required_by_default = false
+    config.api_only = true
 
     # This is a little cubersome, but this needs to be shared with the StylesheetCompiler,
     # and thus class const
