@@ -173,5 +173,5 @@ gem 'twitter_cldr'
 gem 'memoist'
 gem 'biz'
 gem 'ffi', '>= 1.9.25'
-gem 'rubyzip', '~> 1.2.2'
+gem 'rubyzip', '~> 1.3.0'
 gem 'bootsnap', require: false
